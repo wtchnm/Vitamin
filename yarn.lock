@@ -1040,13 +1040,13 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.3.tgz#9c088679876f374eb5983f150d4787aa6fb32d7e"
   integrity sha512-FvUupuM3rlRsRtCN+fDudtmytGO6iHJuuRKS1Ss0pG5z8oX0diNEw94UEL7hgDbpN94rgaK5R7sWm6RrSkZuAQ==
 
-"@typescript-eslint/eslint-plugin@4.14.2":
-  version "4.14.2"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.14.2.tgz#47a15803cfab89580b96933d348c2721f3d2f6fe"
-  integrity sha512-uMGfG7GFYK/nYutK/iqYJv6K/Xuog/vrRRZX9aEP4Zv1jsYXuvFUMDFLhUnc8WFv3D2R5QhNQL3VYKmvLS5zsQ==
+"@typescript-eslint/eslint-plugin@4.15.0":
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.15.0.tgz#13a5a07cf30d0d5781e43480aa2a8d38d308b084"
+  integrity sha512-DJgdGZW+8CFUTz5C/dnn4ONcUm2h2T0itWD85Ob5/V27Ndie8hUoX5HKyGssvR8sUMkAIlUc/AMK67Lqa3kBIQ==
   dependencies:
-    "@typescript-eslint/experimental-utils" "4.14.2"
-    "@typescript-eslint/scope-manager" "4.14.2"
+    "@typescript-eslint/experimental-utils" "4.15.0"
+    "@typescript-eslint/scope-manager" "4.15.0"
     debug "^4.1.1"
     functional-red-black-tree "^1.0.1"
     lodash "^4.17.15"
@@ -1054,15 +1054,15 @@
     semver "^7.3.2"
     tsutils "^3.17.1"
 
-"@typescript-eslint/experimental-utils@4.14.2":
-  version "4.14.2"
-  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-4.14.2.tgz#9df35049d1d36b6cbaba534d703648b9e1f05cbb"
-  integrity sha512-mV9pmET4C2y2WlyHmD+Iun8SAEqkLahHGBkGqDVslHkmoj3VnxnGP4ANlwuxxfq1BsKdl/MPieDbohCEQgKrwA==
+"@typescript-eslint/experimental-utils@4.15.0":
+  version "4.15.0"
+  resolved "https://registry.yarnpkg.com/@typescript-eslint/experimental-utils/-/experimental-utils-4.15.0.tgz#b87c36410a9b23f637689427be85007a2ec1a9c6"
+  integrity sha512-V4vaDWvxA2zgesg4KPgEGiomWEBpJXvY4ZX34Y3qxK8LUm5I87L+qGIOTd9tHZOARXNRt9pLbblSKiYBlGMawg==
   dependencies:
     "@types/json-schema" "^7.0.3"
-    "@typescript-eslint/scope-manager" "4.14.2"
-    "@typescript-eslint/types" "4.14.2"
-    "@typescript-eslint/typescript-estree" "4.14.2"
+    "@typescript-eslint/scope-manager" "4.15.0"
+    "@typescript-eslint/types" "4.15.0"
+    "@typescript-eslint/typescript-estree" "4.15.0"
     eslint-scope "^5.0.0"
     eslint-utils "^2.0.0"
 
@@ -1864,14 +1864,7 @@ debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.2.0, debug@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
-  integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
-  dependencies:
-    ms "2.1.2"
-
-debug@^4.3.2:
+debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.2.0, debug@^4.3.1, debug@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
   integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
