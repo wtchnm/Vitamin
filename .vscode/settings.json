@@ -1,0 +1,7 @@
+{
+  "css.validate": false,
+  "stylelint.validate": ["css"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+
+  "git.enableCommitSigning": true
+}
