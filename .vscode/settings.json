@@ -1,7 +1,19 @@
 {
   "css.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.exclude": {
+    "**/.gitignore": true,
+    "**/.vscode": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/yarn.lock": true
+  },
+  "git.enableCommitSigning": true,
   "stylelint.validate": ["css"],
-  "typescript.tsdk": "node_modules/typescript/lib",
-
-  "git.enableCommitSigning": true
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
