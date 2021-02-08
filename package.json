@@ -36,7 +36,6 @@
     "vite-plugin-pwa": "0.4.6"
   },
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "build": "tsc && vite build",
     "dev": "vite",
     "serve": "vite preview"
