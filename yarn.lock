@@ -623,6 +623,20 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
 
+"@babel/plugin-transform-react-jsx-self@^7.12.10":
+  version "7.12.13"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.12.13.tgz#422d99d122d592acab9c35ea22a6cfd9bf189f60"
+  integrity sha512-FXYw98TTJ125GVCCkFLZXlZ1qGcsYqNQhVBQcZjyrwf8FEUtVfKIoidnO8S0q+KBQpDYNTmiGo1gn67Vti04lQ==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.12.13"
+
+"@babel/plugin-transform-react-jsx-source@^7.12.10":
+  version "7.12.13"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx-source/-/plugin-transform-react-jsx-source-7.12.13.tgz#051d76126bee5c9a6aa3ba37be2f6c1698856bcb"
+  integrity sha512-O5JJi6fyfih0WfDgIJXksSPhGP/G0fQpfxYy87sDc+1sFmsCS6wr3aAn+whbzkhbjtq4VMqLRaSzR6IsshIC0Q==
+  dependencies:
+    "@babel/helper-plugin-utils" "^7.12.13"
+
 "@babel/plugin-transform-regenerator@^7.12.13":
   version "7.12.13"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-regenerator/-/plugin-transform-regenerator-7.12.13.tgz#b628bcc9c85260ac1aeb05b45bde25210194a2f5"
@@ -1155,13 +1169,15 @@
     "@typescript-eslint/types" "4.15.0"
     eslint-visitor-keys "^2.0.0"
 
-"@vitejs/plugin-react-refresh@1.2.2":
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-react-refresh/-/plugin-react-refresh-1.2.2.tgz#8bd03673d8306125c3b7fb212cc0c341d30d464d"
-  integrity sha512-MEVSqncF/u1nvfeZsBJtPc3pLZWccN77CjY0itW7/Vji5BMmttW25a1kjSmooE+4JK4kaF3ElwF3LbV2kiVZWw==
+"@vitejs/plugin-react-refresh@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-react-refresh/-/plugin-react-refresh-1.3.0.tgz#d12fd79cb33f48ea9891c6eee8d6921cbe2caa26"
+  integrity sha512-6N4CqjzGFcbSTeiC90BPDm2QVo5qkIdqSJQNvuASB3U48+GTJTvUwBGaru46FgEni4eYKM9xBdqYoBhCAfkPLA==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-syntax-import-meta" "^7.10.4"
+    "@babel/plugin-transform-react-jsx-self" "^7.12.10"
+    "@babel/plugin-transform-react-jsx-source" "^7.12.10"
     react-refresh "^0.9.0"
 
 acorn-jsx@^5.3.1:
