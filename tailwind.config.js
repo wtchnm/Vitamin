@@ -1,3 +1,5 @@
+const formsPlugin = require("@tailwindcss/forms");
+
 module.exports = {
   purge: {
     content: ["index.html", "src/**/*.tsx"],
@@ -6,4 +8,5 @@ module.exports = {
       keyframes: true,
     },
   },
+  plugins: [formsPlugin],
 };
