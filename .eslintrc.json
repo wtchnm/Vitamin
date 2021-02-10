@@ -9,17 +9,6 @@
     "prettier",
     "prettier/unicorn"
   ],
-  "rules": {
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": ["tailwind.config.js"],
-        "optionalDependencies": false,
-        "peerDependencies": true,
-        "bundledDependencies": false
-      }
-    ]
-  },
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
@@ -28,6 +17,9 @@
         "project": "./tsconfig.json"
       },
       "extends": [
+        "eslint:recommended",
+        "plugin:import/warnings",
+        "plugin:import/errors",
         "plugin:import/typescript",
         "plugin:react/recommended",
         "plugin:react-hooks/recommended",
@@ -36,18 +28,18 @@
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "airbnb-typescript",
         "airbnb/hooks",
+        "plugin:unicorn/recommended",
+        "prettier",
         "prettier/@typescript-eslint",
-        "prettier/react"
+        "prettier/react",
+        "prettier/unicorn"
       ],
       "rules": {
         "import/namespace": "off",
         "import/no-extraneous-dependencies": [
           "error",
           {
-            "devDependencies": ["vite.config.ts"],
-            "optionalDependencies": false,
-            "peerDependencies": true,
-            "bundledDependencies": false
+            "optionalDependencies": false
           }
         ],
 
