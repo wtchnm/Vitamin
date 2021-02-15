@@ -31,7 +31,7 @@ export default function Fruit({ fruit }: Properties): ReactElement {
     [onClick]
   );
 
-  const imageWidth = Math.min(384, window.innerWidth);
+  const imageWidth = Math.min(384, window.innerWidth - 16);
   const imageHeight = imageWidth / (16 / 9);
 
   return (
