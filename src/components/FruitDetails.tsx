@@ -33,10 +33,10 @@ export default function FruitDetails({ fruit }: Properties): ReactElement {
       <div className="my-8 sm:my-0 sm:ml-16">
         <Link to="/" className="flex items-center">
           <BackIcon />
-          <span className="ml-2 text-xl">Back</span>
+          <span className="ml-4 text-xl">Back</span>
         </Link>
 
-        <h1 className="text-6xl font-extrabold">{fruit.name}</h1>
+        <h1 className="mt-8 text-6xl font-extrabold">{fruit.name}</h1>
         <h2 className="mt-3 text-xl text-gray-500">
           Vitamins per 100 g (3.5 oz)
         </h2>
