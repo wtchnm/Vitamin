@@ -1,0 +1,15 @@
+.FruitGallery {
+  grid-template-columns: minmax(0, 384px);
+}
+
+@screen md {
+  .FruitGallery {
+    grid-template-columns: repeat(2, minmax(0, 384px));
+  }
+}
+
+@screen xl {
+  .FruitGallery {
+    grid-template-columns: repeat(3, 384px);
+  }
+}

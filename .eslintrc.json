@@ -9,6 +9,12 @@
     "prettier",
     "prettier/unicorn"
   ],
+  "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["tailwind.config.js"] }
+    ]
+  },
   "overrides": [
     {
       "files": ["*.ts", "*.tsx"],
@@ -38,9 +44,7 @@
         "import/namespace": "off",
         "import/no-extraneous-dependencies": [
           "error",
-          {
-            "optionalDependencies": false
-          }
+          { "devDependencies": ["vite.config.ts"] }
         ],
 
         "unicorn/filename-case": [
