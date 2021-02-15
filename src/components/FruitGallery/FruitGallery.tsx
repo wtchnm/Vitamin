@@ -11,7 +11,7 @@ export default function FruitGallery({ fruits }: Properties): ReactElement {
   return (
     <div
       className={clsx(
-        "w-full min-h-screen grid gap-2 place-content-center",
+        "m-2 md:m-0 min-h-screen grid gap-2 place-content-center",
         styles.FruitGallery
       )}
     >
