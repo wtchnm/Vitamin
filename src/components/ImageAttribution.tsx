@@ -7,8 +7,8 @@ interface Properties {
 export default function ImageAttribution({ author }: Properties): ReactElement {
   return (
     <>
-      <div className="w-full h-full absolute top-0 bg-gradient-to-b from-transparent via-transparent text-opacity-60 text-black to-current" />
-      <div className="absolute bottom-1 right-1 text-sm text-white px-1">
+      <div className="w-full h-full absolute top-0 bg-gradient-to-b from-transparent via-transparent text-opacity-50 text-black to-current" />
+      <div className="absolute bottom-1 right-1 text-xs text-white px-1">
         <span>Photo by </span>
         <a
           href={author.url}
