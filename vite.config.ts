@@ -1,9 +1,12 @@
 import reactRefresh from "@vitejs/plugin-react-refresh";
-import type { UserConfig } from "vite";
+import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 import tsconfigPaths from "vite-tsconfig-paths";
 
-export default {
+export default defineConfig({
+  build: {
+    brotliSize: false,
+  },
   plugins: [
     tsconfigPaths(),
     reactRefresh(),
@@ -28,4 +31,4 @@ export default {
       },
     }),
   ],
-} as UserConfig;
+});
