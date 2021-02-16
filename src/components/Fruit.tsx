@@ -17,6 +17,7 @@ export default function Fruit({ fruit }: Properties): ReactElement {
         return;
       }
 
+      window.scrollTo(0, 0);
       history.push(fruit.name.toLowerCase());
     },
     [fruit.name, history]
