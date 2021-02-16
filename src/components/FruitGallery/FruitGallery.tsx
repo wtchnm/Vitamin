@@ -1,13 +1,17 @@
+import getFruits from "api/getFruits";
 import clsx from "clsx";
 import Fruit from "components/Fruit";
+import LoadingOrError from "components/LoadingOrError";
 import React, { ReactElement } from "react";
-import { IFruit } from "types";
+import { useQuery } from "react-query";
 import styles from "./FruitGallery.module.css";
 
-interface Properties {
-  fruits: IFruit[];
-}
-export default function FruitGallery({ fruits }: Properties): ReactElement {
+export default function FruitGallery(): ReactElement {
+  const { isLoading, isError, error, data } = useQuery("fruits", getFruits);
+  if (isLoading || isError) {
+    return <LoadingOrError error={error as Error} />;
+  }
+
   return (
     <div
       className={clsx(
@@ -15,7 +19,7 @@ export default function FruitGallery({ fruits }: Properties): ReactElement {
         styles.FruitGallery
       )}
     >
-      {fruits.map((fruit) => (
+      {data?.map((fruit) => (
         <Fruit key={`FruitCard-${fruit.name}`} fruit={fruit} />
       ))}
     </div>

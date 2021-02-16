@@ -1,13 +1,27 @@
+import getFruits from "api/getFruits";
 import React, { ReactElement } from "react";
-import { Link } from "react-router-dom";
-import { IFruit } from "types";
+import { useQuery } from "react-query";
+import { Link, Redirect, RouteComponentProps } from "react-router-dom";
 import BackIcon from "./BackIcon";
 import ImageAttribution from "./ImageAttribution";
+import LoadingOrError from "./LoadingOrError";
 
-interface Properties {
-  fruit: IFruit;
-}
-export default function FruitDetails({ fruit }: Properties): ReactElement {
+export default function FruitDetails({
+  match,
+}: RouteComponentProps<{ fruitName: string }>): ReactElement {
+  const { isLoading, isError, error, data } = useQuery("fruits", getFruits);
+  if (isLoading || isError) {
+    return <LoadingOrError error={error as Error} />;
+  }
+
+  const { fruitName } = match.params;
+  const fruit = data?.find(
+    (f) => f.name.toLowerCase() === fruitName.toLowerCase()
+  );
+  if (!fruit) {
+    return <Redirect to="/" />;
+  }
+
   const isMobile = window.matchMedia("(min-width: 640px)").matches;
   const imageWidth =
     (isMobile ? window.innerWidth * 0.4 : window.innerWidth) *
