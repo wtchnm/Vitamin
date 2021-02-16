@@ -31,7 +31,7 @@ export default function FruitDetails({
     window.devicePixelRatio;
 
   return (
-    <div className="w-full h-full flex flex-col sm:flex-row items-center">
+    <div className="min-h-screen flex flex-col sm:flex-row items-center">
       <div className="relative">
         <img
           width={imageWidth}
