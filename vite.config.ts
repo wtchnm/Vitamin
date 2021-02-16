@@ -11,6 +11,15 @@ export default defineConfig({
     tsconfigPaths(),
     reactRefresh(),
     VitePWA({
+      workbox: {
+        additionalManifestEntries: [
+          // eslint-disable-next-line unicorn/no-null
+          { url: "https://rsms.me/inter/inter.css", revision: null },
+        ],
+        cleanupOutdatedCaches: true,
+        clientsClaim: true,
+        skipWaiting: true,
+      },
       manifest: {
         name: "Vitamin",
         short_name: "Vitamin",
