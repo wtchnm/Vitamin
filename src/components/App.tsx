@@ -30,11 +30,14 @@ export default function App(): ReactElement {
     [fruits]
   );
 
-  if (isLoading) {
-    return <h1>Loading...</h1>;
-  }
-  if (isError) {
-    return <h1>Error: {(error as Error).message}</h1>;
+  if (isLoading || isError) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <h1 className="text-xl">
+          {isLoading ? "Loading..." : `Error: ${(error as Error).message}`}
+        </h1>
+      </div>
+    );
   }
   return (
     <BrowserRouter>
