@@ -49,7 +49,7 @@
     "tailwindcss": "2.0.3",
     "typescript": "4.1.5",
     "vite": "2.0.0-beta.70",
-    "vite-plugin-pwa": "0.4.6",
+    "vite-plugin-pwa": "0.4.7",
     "vite-tsconfig-paths": "2.1.0"
   },
   "lint-staged": {
