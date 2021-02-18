@@ -51,7 +51,7 @@ export default function FruitDetails({
         </Link>
 
         <h1 className="mt-2 sm:mt-8 text-6xl font-extrabold">{fruit.name}</h1>
-        <h2 className="mt-3 text-xl text-gray-500">
+        <h2 className="mt-3 text-xl text-gray-500 dark:text-gray-400">
           Vitamins per 100 g (3.5 oz)
         </h2>
         <table className="mt-8 text-lg">

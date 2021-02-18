@@ -14,5 +14,11 @@ module.exports = {
       sans: ["Inter var", defaultConfig.theme.fontFamily.sans],
     },
   },
+  variants: {
+    extend: {
+      boxShadow: ["dark"],
+    },
+  },
+  darkMode: "media",
   plugins: [formsPlugin],
 };

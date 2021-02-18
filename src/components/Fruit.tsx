@@ -37,7 +37,7 @@ export default function Fruit({ fruit }: Properties): ReactElement {
 
   return (
     <div
-      className="select-none focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-gray-500 focus:border-gray-300 cursor-pointer overflow-hidden shadow-lg rounded-lg"
+      className="select-none focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-gray-500 focus:border-gray-300 cursor-pointer overflow-hidden shadow-lg dark:shadow-2xl rounded-lg"
       role="button"
       tabIndex={0}
       onClick={onClick}
