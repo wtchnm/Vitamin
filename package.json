@@ -11,12 +11,8 @@
   },
   "dependencies": {
     "clsx": "1.1.1",
-    "i18next": "19.8.9",
-    "i18next-browser-languagedetector": "6.0.1",
-    "i18next-http-backend": "1.1.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-i18next": "11.8.7",
     "react-query": "3.9.8",
     "react-router-dom": "5.2.0"
   },
