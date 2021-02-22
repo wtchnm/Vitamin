@@ -6,8 +6,7 @@
     "plugin:import/errors",
     "eslint-config-airbnb-base",
     "plugin:unicorn/recommended",
-    "prettier",
-    "prettier/unicorn"
+    "prettier"
   ],
   "rules": {
     "import/no-extraneous-dependencies": [
@@ -35,10 +34,7 @@
         "airbnb-typescript",
         "airbnb/hooks",
         "plugin:unicorn/recommended",
-        "prettier",
-        "prettier/@typescript-eslint",
-        "prettier/react",
-        "prettier/unicorn"
+        "prettier"
       ],
       "rules": {
         "import/namespace": "off",
