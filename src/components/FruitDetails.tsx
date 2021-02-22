@@ -3,7 +3,7 @@ import React, { ReactElement } from "react";
 import { useQuery } from "react-query";
 import { Link, Redirect, RouteComponentProps } from "react-router-dom";
 import BackIcon from "./BackIcon";
-import DocumentTitle from "./DocumentTitle";
+import Head from "./Head";
 import ImageAttribution from "./ImageAttribution";
 import LoadingOrError from "./LoadingOrError";
 
@@ -33,7 +33,7 @@ export default function FruitDetails({
 
   return (
     <>
-      <DocumentTitle>{fruit.name}</DocumentTitle>
+      <Head title={fruit.name} />
       <div className="min-h-screen flex flex-col sm:flex-row items-center">
         <div className="relative">
           <img

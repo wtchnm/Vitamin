@@ -1,7 +1,7 @@
 import getFruits from "api/getFruits";
 import clsx from "clsx";
-import DocumentTitle from "components/DocumentTitle";
 import Fruit from "components/Fruit";
+import Head from "components/Head";
 import LoadingOrError from "components/LoadingOrError";
 import React, { ReactElement } from "react";
 import { useQuery } from "react-query";
@@ -15,7 +15,7 @@ export default function FruitGallery(): ReactElement {
 
   return (
     <>
-      <DocumentTitle>Vitamin</DocumentTitle>
+      <Head title="Vitamin" />
       <div
         className={clsx(
           "m-2 md:m-0 min-h-screen grid gap-2 place-content-center",
