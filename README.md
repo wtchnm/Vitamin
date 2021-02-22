@@ -6,8 +6,9 @@ Opinionated Vite starter template.
 
 - [Vite 2](https://vitejs.dev) with [React](https://reactjs.org) [Typescript](https://www.typescriptlang.org) and [absolute imports](https://github.com/aleclarson/vite-tsconfig-paths).
 - [Tailwind CSS v2.0](https://tailwindcss.com) with a [basic reset for form styles](https://github.com/tailwindlabs/tailwindcss-forms) and dark mode.
-- [PWA](https://github.com/antfu/vite-plugin-pwa) with [17/17 Lighthouse score](https://web.dev/pwa-checklist/).
 - [ESLint](https://eslint.org), [stylelint](https://stylelint.io) and [Prettier](https://prettier.io).
+- [PWA](https://github.com/antfu/vite-plugin-pwa) with [17/17 Lighthouse score](https://web.dev/pwa-checklist/).
+- Write e2e tests with [Cypress](https://www.cypress.io).
 - Deploy to [Vercel](vercel.com) with pre-configured [SPA fallback](https://vercel.com/docs/configuration#routes/advanced/spa-fallback).
 
 ## Getting started
@@ -43,3 +44,7 @@ Just run `yarn dev`.
 ### Production
 
 Run `yarn build`. The generated files will be on the `dist` folder.
+
+### Testing
+
+Run `yarn test`. Tests are performed on production build, so be sure to build your app first.
