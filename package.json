@@ -7,6 +7,7 @@
     "postinstall": "husky install",
     "dev": "vite --open",
     "test": "cypress open",
+    "test:headless": "cypress run",
     "build": "tsc --project tsconfig.json && vite build",
     "serve": "vite preview"
   },
