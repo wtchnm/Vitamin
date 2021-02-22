@@ -11,6 +11,7 @@ export default function ImageAttribution({ author }: Properties): ReactElement {
       <div className="absolute bottom-1 right-1 text-xs text-white px-1">
         <span>Photo by </span>
         <a
+          data-cy="FruitImageAuthor"
           href={author.url}
           target="_blank"
           rel="noreferrer noopener"

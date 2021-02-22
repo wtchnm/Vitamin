@@ -37,6 +37,7 @@ export default function FruitDetails({
       <div className="min-h-screen flex flex-col sm:flex-row items-center">
         <div className="relative">
           <img
+            data-cy="FruitImage"
             width={imageWidth}
             height={imageHeight}
             style={{
@@ -48,12 +49,17 @@ export default function FruitDetails({
           <ImageAttribution author={fruit.image.author} />
         </div>
         <div className="my-8 sm:my-0 sm:ml-16">
-          <Link to="/" className="flex items-center">
+          <Link data-cy="BackLink" to="/" className="flex items-center">
             <BackIcon />
             <span className="ml-4 text-xl">Back</span>
           </Link>
 
-          <h1 className="mt-2 sm:mt-8 text-6xl font-extrabold">{fruit.name}</h1>
+          <h1
+            data-cy="FruitName"
+            className="mt-2 sm:mt-8 text-6xl font-extrabold"
+          >
+            {fruit.name}
+          </h1>
           <h2 className="mt-3 text-xl text-gray-500 dark:text-gray-400">
             Vitamins per 100 g (3.5 oz)
           </h2>

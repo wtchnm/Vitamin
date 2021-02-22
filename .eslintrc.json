@@ -44,7 +44,9 @@
         "import/namespace": "off",
         "import/no-extraneous-dependencies": [
           "error",
-          { "devDependencies": ["vite.config.ts"] }
+          {
+            "devDependencies": ["vite.config.ts"]
+          }
         ],
 
         "unicorn/filename-case": [

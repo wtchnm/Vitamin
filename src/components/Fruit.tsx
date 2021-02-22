@@ -10,10 +10,7 @@ export default function Fruit({ fruit }: Properties): ReactElement {
   const history = useHistory();
   const onClick = useCallback(
     (event: React.SyntheticEvent<HTMLElement, Event>) => {
-      if (
-        event.defaultPrevented ||
-        (event.target as HTMLElement).nodeName === "A"
-      ) {
+      if ((event.target as HTMLElement).nodeName === "A") {
         return;
       }
 
@@ -37,6 +34,7 @@ export default function Fruit({ fruit }: Properties): ReactElement {
 
   return (
     <div
+      data-cy="FruitCard"
       className="select-none focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-gray-500 focus:border-gray-300 cursor-pointer overflow-hidden shadow-lg dark:shadow-2xl rounded-lg"
       role="button"
       tabIndex={0}
@@ -45,6 +43,7 @@ export default function Fruit({ fruit }: Properties): ReactElement {
     >
       <div className="relative">
         <img
+          data-cy="FruitCardImage"
           loading="lazy"
           width={imageWidth}
           height={imageHeight}
@@ -58,7 +57,9 @@ export default function Fruit({ fruit }: Properties): ReactElement {
         />
         <ImageAttribution author={fruit.image.author} />
       </div>
-      <h3 className="p-6 font-bold text-xl">{fruit.name}</h3>
+      <h3 data-cy="FruitCardName" className="p-6 font-bold text-xl">
+        {fruit.name}
+      </h3>
     </div>
   );
 }
