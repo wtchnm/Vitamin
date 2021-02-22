@@ -3,5 +3,6 @@
   "fileServerFolder": "dist",
   "fixturesFolder": false,
   "pluginsFile": false,
-  "supportFile": false
+  "supportFile": false,
+  "video": false
 }
