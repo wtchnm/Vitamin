@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "husky install",
     "dev": "vite --open",
-    "test": "yarn build && cypress open",
+    "test": "cypress open",
     "build": "tsc --project tsconfig.json && vite build",
     "serve": "vite preview"
   },
