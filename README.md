@@ -27,15 +27,15 @@ yarn install
 
 ### Before you start coding
 
-- If you don't plan to use GitHub and [Dependabot](https://dependabot.com), delete the `.github` directory.
-- Clean up the `cypress/integration/index.spec.ts` file.
-- Change the `favicon.png`, `apple-touch-icon.png`, `android-chrome-192x192.png` and `android-chrome-512x512.png`. [favicon.io](https://favicon.io) is a cool tool for generating these assets.
-- Remove the `fruits.json` in the public folder.
-- In the `src` folder, remove the `api` and `components` folder and the `types.ts` file.
-- If you don't plan to use `react-query`, remove the query client logic in the `main.tsx` file.
-- Change the title, description and theme color in the `index.html` and `vite.config.ts`. [Inter font](https://rsms.me/inter/) is included, so remove it if you want.
-- Modify or delete the `LICENSE` file.
-- Change the `name` field in package.json.
+- [ ] If you don't plan to use GitHub and [Dependabot](https://dependabot.com), delete the `.github` directory.
+- [ ] Clean up the `cypress/integration/index.spec.ts` file.
+- [ ] Change the `favicon.png`, `apple-touch-icon.png`, `android-chrome-192x192.png` and `android-chrome-512x512.png`. [favicon.io](https://favicon.io) is a cool tool for generating these assets.
+- [ ] Remove the `fruits.json` in the public folder.
+- [ ] In the `src` folder, remove the `api` and `components` folder and the `types.ts` file.
+- [ ] If you don't plan to use `react-query`, remove the query client logic in the `main.tsx` file.
+- [ ] Change the title, description and theme color in the `index.html` and `vite.config.ts`. [Inter font](https://rsms.me/inter/) is included, so remove it if you want.
+- [ ] Modify or delete the `LICENSE` file.
+- [ ] Change the `name` field in package.json.
 
 ### Development
 
