@@ -1,11 +1,13 @@
 # Vitamin
 
+✨ _Now with TailwindCSS JIT!_ ✨
+
 Opinionated Vite starter template.
 
 ## Features
 
 - [Vite 2](https://vitejs.dev) with [React](https://reactjs.org) [Typescript](https://www.typescriptlang.org) and [absolute imports](https://github.com/aleclarson/vite-tsconfig-paths).
-- [Tailwind CSS v2.0](https://tailwindcss.com) with a [basic reset for form styles](https://github.com/tailwindlabs/tailwindcss-forms) and dark mode.
+- [Tailwind CSS v2.0](https://tailwindcss.com) with a [JIT compiler](https://github.com/tailwindlabs/tailwindcss-jit), a [basic reset for form styles](https://github.com/tailwindlabs/tailwindcss-forms) and dark mode.
 - Use [ESLint](https://eslint.org), [stylelint](https://stylelint.io) and [Prettier](https://prettier.io) on your IDE and before you commit with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged).
 - [PWA](https://github.com/antfu/vite-plugin-pwa) with [17/17 Lighthouse score](https://web.dev/pwa-checklist/).
 - Write e2e tests with [Cypress](https://www.cypress.io).
