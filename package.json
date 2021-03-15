@@ -12,7 +12,6 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "clsx": "1.1.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-query": "3.12.1",

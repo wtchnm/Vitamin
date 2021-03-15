@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import LoadingOrError from "./LoadingOrError";
 
 const FruitDetails = lazy(() => import("./FruitDetails"));
-const FruitGallery = lazy(() => import("./FruitGallery/FruitGallery"));
+const FruitGallery = lazy(() => import("./FruitGallery"));
 
 export default function App(): ReactElement {
   return (
