@@ -1061,15 +1061,16 @@
   dependencies:
     mini-svg-data-uri "^1.2.3"
 
-"@tailwindcss/jit@0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@tailwindcss/jit/-/jit-0.1.3.tgz#50390d9ac95fee78ed23a7e2320ef20bd4a35354"
-  integrity sha512-7VAvHKNLJxbGWRKxo2Z+beiodag7vWPx8b/+Egd5fve4zFihsngeNt6RwQFnll+almjppRYefRC5Py5v5K+6vg==
+"@tailwindcss/jit@0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/jit/-/jit-0.1.10.tgz#3bbc4eac9e6ace63f59983412279de90f726ada6"
+  integrity sha512-fmNJQE7clhauVcmYWJ2C4En5X6BF5ZsKqeIjl7UzbM37fvPHmrhgMzc5K4/l32LV8aPX2dRS/0XsbnZ4mrcSHg==
   dependencies:
     chokidar "^3.5.1"
     dlv "^1.1.3"
     fast-glob "^3.2.5"
     lodash.topath "^4.5.2"
+    normalize-path "^3.0.0"
     object-hash "^2.1.1"
     postcss-selector-parser "^6.0.4"
     quick-lru "^5.1.1"
