@@ -10,7 +10,6 @@
     "moduleResolution": "Node",
     "noEmit": true,
     "resolveJsonModule": true,
-    "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
     "types": ["vite/client"]
