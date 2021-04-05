@@ -5803,10 +5803,10 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
-vite-plugin-pwa@0.6.4:
-  version "0.6.4"
-  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.6.4.tgz#50294b67c545c689d9e234e266e042a68ddb9c56"
-  integrity sha512-YEKloivP8400uax8aqfYN2ygYjfok9xD/VgM9fyi1KVtP2JAgZKNPZnBc66HyaKPPDPr1TCeeXvB+aCSDSznqw==
+vite-plugin-pwa@0.6.5:
+  version "0.6.5"
+  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.6.5.tgz#04bb01c7363260bfb6ee8d6b976ef954e23b8adc"
+  integrity sha512-OBp1hIuVVwA0gEVCF3RsfaRrZWlIUOS4yYttLpznCH69BoGvgPH8M9qVGMj7/KbMI4+2YbTo7YzwSl+LWHX49A==
   dependencies:
     debug "^4.3.2"
     fast-glob "^3.2.5"
