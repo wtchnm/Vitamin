@@ -1,6 +1,6 @@
 module.exports = (context) => ({
   plugins: {
-    "@tailwindcss/jit": {},
+    tailwindcss: {},
     autoprefixer: context.env === "production" ? {} : false,
   },
 });
