@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "husky install",
     "dev": "vite --open",
     "test": "cypress open",
     "test:headless": "cypress run",
