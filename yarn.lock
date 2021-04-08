@@ -1998,10 +1998,10 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.7.tgz#2a5fb75e1015e84dd15692f71e89a1450290950b"
   integrity sha512-KxnUB0ZMlnUWCsx2Z8MUsr6qV6ja1w9ArPErJaJaF8a5SOWoHLIszeCTKGRGRgtLgYrs1E8CHkNSP1VZTTPc9g==
 
-cypress@7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/cypress/-/cypress-7.0.0.tgz#78b67a87bace1b530c123ba8d779899e676ed676"
-  integrity sha512-gri53gIGQPf/RoUknwvNS3alUjZwdmtp9BcKzLgyrwA/gBxJcpDLZ1t+MTvXy57ifRWEMxmEWzQe+iszCzJZqA==
+cypress@7.0.1:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/cypress/-/cypress-7.0.1.tgz#8603f84d828fd4c5462a856f55cef5642e4ce573"
+  integrity sha512-dMZmZDo+x3jslEQiXRGQlMmMVMhe4JpMHQ6g1unMGXTUsapU1EXlnubevmKmqZ1IQpntAlDKmx8dupOTd3oW+g==
   dependencies:
     "@cypress/listr-verbose-renderer" "^0.4.1"
     "@cypress/request" "^2.88.5"
