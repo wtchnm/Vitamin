@@ -4904,10 +4904,10 @@ rollup-plugin-terser@^7.0.0:
     serialize-javascript "^4.0.0"
     terser "^5.0.0"
 
-rollup@^2.25.0, rollup@^2.38.5:
-  version "2.44.0"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.44.0.tgz#8da324d1c4fd12beef9ae6e12f4068265b6d95eb"
-  integrity sha512-rGSF4pLwvuaH/x4nAS+zP6UNn5YUDWf/TeEU5IoXSZKBbKRNTCI3qMnYXKZgrC0D2KzS2baiOZt1OlqhMu5rnQ==
+rollup@^2.25.0, rollup@^2.38.5, rollup@^2.44.0:
+  version "2.45.0"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.45.0.tgz#bfcce2347c96f15f5c78ac860bc38e3349ba27c9"
+  integrity sha512-JJznbtGIsHZfKH0Sa9RpCAy5JarH8SWvBzRAGuRkgzAafb8e8D7VSMJ0O1Bsix1nn91koN/Ecvl2+ZWhljcuTw==
   optionalDependencies:
     fsevents "~2.3.1"
 
@@ -5796,14 +5796,15 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
-vite-plugin-pwa@0.6.5:
-  version "0.6.5"
-  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.6.5.tgz#04bb01c7363260bfb6ee8d6b976ef954e23b8adc"
-  integrity sha512-OBp1hIuVVwA0gEVCF3RsfaRrZWlIUOS4yYttLpznCH69BoGvgPH8M9qVGMj7/KbMI4+2YbTo7YzwSl+LWHX49A==
+vite-plugin-pwa@0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.7.0.tgz#cde774b2a65dbd84dc8831c964898563f7e2c22c"
+  integrity sha512-Mf7O5Ecubv25nSSdkfpeackVKX9+SOpH7U2I6IFPb/NupG7wn3KzBOke3ksu+bA8GzN5923vD/kw1GWOsLZL4w==
   dependencies:
     debug "^4.3.2"
     fast-glob "^3.2.5"
     pretty-bytes "^5.6.0"
+    rollup "^2.44.0"
     workbox-build "^6.1.2"
     workbox-window "^6.1.2"
 
