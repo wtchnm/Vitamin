@@ -5842,10 +5842,10 @@ vite-plugin-pwa@0.7.0:
     workbox-build "^6.1.2"
     workbox-window "^6.1.2"
 
-vite-tsconfig-paths@2.5.0:
-  version "2.5.0"
-  resolved "https://registry.yarnpkg.com/vite-tsconfig-paths/-/vite-tsconfig-paths-2.5.0.tgz#ea502da972a2f2ae9c579824449ee610eeeefd3d"
-  integrity sha512-ww6FxtEdeXlB6TmC/TiZABLXaOtIs3bECfgrnjj2GNCdQTrAsuQdkvZ+VzCJnOh6o/lkuY7M+o4xxWJASQKw4Q==
+vite-tsconfig-paths@2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/vite-tsconfig-paths/-/vite-tsconfig-paths-2.5.1.tgz#5bce56220a5f8d3cf4dc2bc5bbb4758f2672d2e5"
+  integrity sha512-qVFOvu6rd4hmWnETyVBGNuhcgj5M68D5gVrc/zpyTLk5WapXzHqmb5V/AywMFSD+5wptOuWcvH6KMdYFEwJAUA==
   dependencies:
     debug "^4.1.1"
     tsconfig-paths "^3.9.0"
