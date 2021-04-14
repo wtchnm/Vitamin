@@ -5796,10 +5796,10 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
-vite-plugin-pwa@0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.7.0.tgz#cde774b2a65dbd84dc8831c964898563f7e2c22c"
-  integrity sha512-Mf7O5Ecubv25nSSdkfpeackVKX9+SOpH7U2I6IFPb/NupG7wn3KzBOke3ksu+bA8GzN5923vD/kw1GWOsLZL4w==
+vite-plugin-pwa@0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.7.1.tgz#fb217335687d217cc2a0973781ec2fe66523167b"
+  integrity sha512-cweBld0QnNYvV93UdHdyu7YieJW6vOQPNNutmvuZ0jgWscoX2v9qwXM76tw5w0aZu4ShUFYVAvboxZ2Avmbt6Q==
   dependencies:
     debug "^4.3.2"
     fast-glob "^3.2.5"
