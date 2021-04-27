@@ -12,9 +12,7 @@
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
     "airbnb-typescript/base",
     "plugin:unicorn/recommended",
-    "prettier",
-    "prettier/@typescript-eslint",
-    "prettier/unicorn"
+    "prettier"
   ],
   "rules": {
     "import/namespace": "off",
