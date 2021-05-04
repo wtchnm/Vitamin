@@ -1,13 +1,13 @@
 # Vitamin
 
-✨ _Now with TailwindCSS JIT!_ ✨
+![Test workflow](https://github.com/wtchnm/Vitamin/actions/workflows/test.yml/badge.svg) ![CodeQL workflow](https://github.com/wtchnm/Vitamin/actions/workflows/codeql-analysis.yml/badge.svg) ![Up to date dependencies](https://status.david-dm.org/gh/wtchnm/Vitamin.svg) ![Up to date dev dependencies](https://status.david-dm.org/gh/wtchnm/Vitamin.svg?type=dev) [![Cypress.io](https://img.shields.io/badge/tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/) [![license](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/wtchnm/Vitamin/blob/main/LICENSE)
 
 Opinionated Vite starter template.
 
 ## Features
 
 - [Vite 2](https://vitejs.dev) with [React](https://reactjs.org) [Typescript](https://www.typescriptlang.org) and [absolute imports](https://github.com/aleclarson/vite-tsconfig-paths).
-- [Tailwind CSS v2.0](https://tailwindcss.com) with a [JIT compiler](https://github.com/tailwindlabs/tailwindcss-jit), a [basic reset for form styles](https://github.com/tailwindlabs/tailwindcss-forms) and dark mode.
+- [Tailwind CSS v2.1](https://tailwindcss.com) with the new JIT engine enabled, a [basic reset for form styles](https://github.com/tailwindlabs/tailwindcss-forms) and dark mode.
 - Use [ESLint](https://eslint.org), [stylelint](https://stylelint.io) and [Prettier](https://prettier.io) on your IDE and before you commit with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged).
 - [PWA](https://github.com/antfu/vite-plugin-pwa) with [17/17 Lighthouse score](https://web.dev/pwa-checklist/).
 - Write e2e tests with [Cypress](https://www.cypress.io).
