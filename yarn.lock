@@ -2072,7 +2072,7 @@ dayjs@^1.10.4:
   resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.10.5.tgz#5600df4548fc2453b3f163ebb2abbe965ccfb986"
   integrity sha512-BUFis41ikLz+65iH6LHQCDm4YPMj5r1YFLdupPIyM4SGcXMmtiLQ7U37i+hGS8urIuqe7I/ou3IS1jVc4nbN4g==
 
-debug@4.3.2, debug@^4.3.2:
+debug@4.3.2, debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
   integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
@@ -2092,13 +2092,6 @@ debug@^3.1.0, debug@^3.2.7:
   integrity sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==
   dependencies:
     ms "^2.1.1"
-
-debug@^4.0.0, debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
-  integrity sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
-  dependencies:
-    ms "2.1.2"
 
 decamelize-keys@^1.1.0:
   version "1.1.0"
@@ -4806,10 +4799,10 @@ rollup-plugin-terser@^7.0.0:
     serialize-javascript "^4.0.0"
     terser "^5.0.0"
 
-rollup@^2.38.5, rollup@^2.43.1, rollup@^2.45.2:
-  version "2.51.1"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.51.1.tgz#87bcd4095fe79b14c9bec0edc7ffa44e4827f793"
-  integrity sha512-8xfDbAtBleXotb6qKEHWuo/jkn94a9dVqGc7Rwl3sqspCVlnCfbRek7ldhCARSi7h32H0xR4QThm1t9zHN+3uw==
+rollup@^2.38.5, rollup@^2.43.1, rollup@^2.51.2:
+  version "2.51.2"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.51.2.tgz#6de71e28c833089a0bd745a09671a3e2b92af6b7"
+  integrity sha512-ReV2eGEadA7hmXSzjxdDKs10neqH2QURf2RxJ6ayAlq93ugy6qIvXMmbc5cWMGCDh1h5T4thuWO1e2VNbMq8FA==
   optionalDependencies:
     fsevents "~2.3.1"
 
@@ -5650,15 +5643,15 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
-vite-plugin-pwa@0.7.3:
-  version "0.7.3"
-  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.7.3.tgz#ce3fdd64ac68033ea840bfea41add1af4d13f93a"
-  integrity sha512-RgGJW02OxRxziNKYTUtWXr9hF+Px6jcdyMN7IkuOOV9WcFaJQCKb3Pxqizb8GMjIBLtjEebwa0XbKXWDFhZWjw==
+vite-plugin-pwa@0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.8.1.tgz#8b6fc6c26fcc6fab9d39a087256ba6280173b6eb"
+  integrity sha512-Hrfz+NpZ6yroVm5yiCWQ1N9HX9o6H/CCyg7ZHiaP3ZZC29a0Z9lqnnicEAhZMLkVPJqHM60wowL0EJkyOVyxBg==
   dependencies:
     debug "^4.3.2"
     fast-glob "^3.2.5"
     pretty-bytes "^5.6.0"
-    rollup "^2.45.2"
+    rollup "^2.51.2"
     workbox-build "^6.1.5"
     workbox-window "^6.1.5"
 
