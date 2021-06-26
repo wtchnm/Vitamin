@@ -14,30 +14,40 @@ function get(id: string) {
   return cy.get(`[data-cy="${id}"]`);
 }
 
-it("Basic flow", () => {
-  cy.visit("/");
-  cy.location("pathname").should("eq", "/");
-  cy.viewport("macbook-13");
+describe("Basic flow", () => {
+  beforeEach(() => {
+    cy.viewport("macbook-13");
+  });
 
-  // App.tsx
-  get("FruitCard").should("have.length", fruits.length);
-  get("FruitCardImage")
-    .first()
-    .should("have.attr", "src")
-    .and("contain", fruitImage);
-  get("FruitImageAuthor")
-    .first()
-    .should("have.text", authorName)
-    .and("have.attr", "href", authorURL)
-    .click();
-  get("FruitCardName").first().should("have.text", fruitName).click();
+  it("Should render the fruit gallery correctly", () => {
+    cy.visit("/");
+    cy.location("pathname").should("eq", "/");
 
-  // FruitDetails.tsx
-  cy.location("pathname").should("eq", `/${fruitName.toLowerCase()}`);
-  get("FruitImage").should("have.attr", "src").and("contain", fruitImage);
-  get("FruitName").should("have.text", fruitName);
-  get("BackLink").click();
+    get("FruitCard").should("have.length", fruits.length);
+    get("FruitCardImage")
+      .first()
+      .should("have.attr", "src")
+      .and("contain", fruitImage);
+    get("FruitImageAuthor")
+      .first()
+      .should("have.text", authorName)
+      .and("have.attr", "href", authorURL)
+      .click();
+    get("FruitCardName").first().should("have.text", fruitName);
+  });
 
-  // App.tsx
-  cy.location("pathname").should("eq", "/");
+  it("Should navigate to the details page on click", () => {
+    get("FruitCard").first().click();
+    cy.location("pathname").should("eq", `/${fruitName.toLowerCase()}`);
+  });
+
+  it("Should render the fruit details correctly", () => {
+    get("FruitImage").should("have.attr", "src").and("contain", fruitImage);
+    get("FruitName").should("have.text", fruitName);
+  });
+
+  it("Should go back to gallery on back button click", () => {
+    get("BackLink").click();
+    cy.location("pathname").should("eq", "/");
+  });
 });
