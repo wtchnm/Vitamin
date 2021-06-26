@@ -1,13 +1,13 @@
 import getFruits from "api/getFruits";
+import BackIcon from "components/BackIcon";
+import Head from "components/Head";
+import ImageAttribution from "components/ImageAttribution";
+import LoadingOrError from "components/LoadingOrError";
 import React, { ReactElement } from "react";
 import { useQuery } from "react-query";
 import { Link, Redirect, RouteComponentProps } from "react-router-dom";
-import BackIcon from "./BackIcon";
-import Head from "./Head";
-import ImageAttribution from "./ImageAttribution";
-import LoadingOrError from "./LoadingOrError";
 
-export default function FruitDetails({
+export default function DetailsPage({
   match,
 }: RouteComponentProps<{ fruitName: string }>): ReactElement {
   const { isLoading, isError, error, data } = useQuery("fruits", getFruits);
