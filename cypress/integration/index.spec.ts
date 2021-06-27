@@ -37,7 +37,17 @@ describe("Basic flow", () => {
   });
 
   it("Should navigate to the details page on click", () => {
-    get("FruitCard").first().click();
+    get("FruitCardName").first().click();
+    cy.location("pathname").should("eq", `/${fruitName.toLowerCase()}`);
+  });
+
+  it("Should go back to gallery on back button click", () => {
+    get("BackLink").click();
+    cy.location("pathname").should("eq", "/");
+  });
+
+  it("Should navigate to the details page on enter", () => {
+    get("FruitCard").first().focus().type("{enter}");
     cy.location("pathname").should("eq", `/${fruitName.toLowerCase()}`);
   });
 
@@ -46,8 +56,18 @@ describe("Basic flow", () => {
     get("FruitName").should("have.text", fruitName);
   });
 
-  it("Should go back to gallery on back button click", () => {
-    get("BackLink").click();
+  it("Should render a error message", () => {
+    cy.viewport("iphone-xr");
+    cy.intercept("/fruits.json", (request) => request.destroy()).as(
+      "getFruits"
+    );
+    cy.reload();
+    cy.wait("@getFruits");
+    get("LoadingOrError").should("have.text", "Failed to fetch");
+  });
+
+  it("Should redirect to gallery when trying to access a invalid fruit", () => {
+    cy.visit("/cypress");
     cy.location("pathname").should("eq", "/");
   });
 });

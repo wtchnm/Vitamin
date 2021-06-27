@@ -1,4 +1,4 @@
-import React, { ReactElement, useCallback } from "react";
+import React, { ReactElement } from "react";
 import { useHistory } from "react-router-dom";
 import { IFruit } from "types";
 import ImageAttribution from "./ImageAttribution";
@@ -8,26 +8,16 @@ interface Properties {
 }
 export default function Fruit({ fruit }: Properties): ReactElement {
   const history = useHistory();
-  const onClick = useCallback(
-    (event: React.SyntheticEvent<HTMLElement, Event>) => {
-      if ((event.target as HTMLElement).nodeName === "A") {
-        return;
-      }
+  function onClick() {
+    window.scrollTo(0, 0);
+    history.push(fruit.name.toLowerCase());
+  }
 
-      window.scrollTo(0, 0);
-      history.push(fruit.name.toLowerCase());
-    },
-    [fruit.name, history]
-  );
-
-  const onKeyDown = useCallback(
-    (event: React.KeyboardEvent<HTMLElement>) => {
-      if (event.key === "Enter") {
-        onClick(event);
-      }
-    },
-    [onClick]
-  );
+  function onKeyDown(event: React.KeyboardEvent<HTMLElement>) {
+    if (event.key === "Enter") {
+      onClick();
+    }
+  }
 
   const imageWidth = Math.min(384, window.innerWidth - 16);
   const imageHeight = imageWidth / (16 / 9);
