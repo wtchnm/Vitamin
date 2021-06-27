@@ -1,9 +1,10 @@
 import reactRefresh from "@vitejs/plugin-react-refresh";
+import istanbul from "rollup-plugin-istanbul";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 import tsconfigPaths from "vite-tsconfig-paths";
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   build: {
     brotliSize: false,
   },
@@ -40,5 +41,9 @@ export default defineConfig({
         ],
       },
     }),
+    mode === "test" &&
+      istanbul({
+        include: ["src/**/*.tsx"],
+      }),
   ],
-});
+}));

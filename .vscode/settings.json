@@ -13,7 +13,8 @@
     "**/.vscode": true,
     "**/dist": true,
     "**/node_modules": true,
-    "**/yarn.lock": true
+    "**/yarn.lock": true,
+    "**/.nyc_output": true
   },
   "git.enableCommitSigning": true,
   "stylelint.validate": ["css"],

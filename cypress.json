@@ -2,7 +2,5 @@
   "chromeWebSecurity": false,
   "fileServerFolder": "dist",
   "fixturesFolder": false,
-  "pluginsFile": false,
-  "supportFile": false,
   "video": false
 }
