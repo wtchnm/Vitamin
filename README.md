@@ -11,7 +11,7 @@ Opinionated Vite starter template.
 - Use [ESLint](https://eslint.org), [stylelint](https://stylelint.io) and [Prettier](https://prettier.io) on your IDE and before you commit with [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged).
 - [PWA](https://github.com/antfu/vite-plugin-pwa) with [17/17 Lighthouse score](https://web.dev/pwa-checklist/).
 - Write e2e tests with [Cypress](https://www.cypress.io).
-- GitHub Actions for [dependency updates](https://dependabot.com), [CodeQL Analysis](https://securitylab.github.com/tools/codeql) and running [Cypress](https://www.cypress.io) tests automatically.
+- GitHub Actions for [dependency updates](https://dependabot.com), [CodeQL Analysis](https://securitylab.github.com/tools/codeql), running [Cypress](https://www.cypress.io) tests and code coverage with [Codecov](https://about.codecov.io/).
 - Deploy to [Vercel](vercel.com) with pre-configured [SPA fallback](https://vercel.com/docs/configuration#routes/advanced/spa-fallback).
 
 ## Getting started
