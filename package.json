@@ -5,10 +5,11 @@
   "private": true,
   "scripts": {
     "dev": "vite --open",
-    "test": "cypress open",
-    "test:headless": "cypress run",
+    "test": "yarn serve:test 'cypress open'",
+    "test:headless": "yarn serve:test 'cypress run'",
     "build": "tsc --project tsconfig.json && vite build",
     "serve": "vite preview",
+    "serve:test": "start-server-and-test 'yarn serve' http://localhost:5000",
     "prepare": "husky install",
     "commit": "cz"
   },
@@ -44,6 +45,7 @@
     "postcss": "8.3.5",
     "prettier": "2.3.1",
     "rollup-plugin-istanbul": "3.0.0",
+    "start-server-and-test": "1.12.5",
     "stylelint": "13.13.1",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "22.0.0",
