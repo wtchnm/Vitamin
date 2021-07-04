@@ -19,8 +19,6 @@ jobs:
         with:
           install-command: yarn --frozen-lockfile --silent
           build: yarn build --mode test
-          start: yarn serve
-          wait-on: http://localhost:5000
           command: yarn test:headless
 
       - name: Upload coverage
