@@ -6,7 +6,7 @@ module.exports = {
   purge: ["index.html", "src/**/*.tsx"],
   theme: {
     fontFamily: {
-      sans: ["Inter var", defaultConfig.theme.fontFamily.sans],
+      sans: ["Inter", defaultConfig.theme.fontFamily.sans],
     },
   },
   darkMode: "media",
