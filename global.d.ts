@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 declare module "rollup-plugin-istanbul" {
   import type { Plugin } from "vite";
 

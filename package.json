@@ -7,7 +7,7 @@
     "dev": "vite --open",
     "test": "yarn serve:test 'cypress open'",
     "test:headless": "yarn serve:test 'cypress run'",
-    "build": "tsc --project tsconfig.json && vite build",
+    "build": "tsc && vite build",
     "serve": "vite preview",
     "serve:test": "start-server-and-test 'yarn serve' http://localhost:5000",
     "prepare": "husky install",
