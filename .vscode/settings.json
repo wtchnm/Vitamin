@@ -10,11 +10,11 @@
   "files.exclude": {
     "**/.eslintcache": true,
     "**/.gitignore": true,
+    "**/.nyc_output": true,
     "**/.vscode": true,
     "**/dist": true,
     "**/node_modules": true,
-    "**/yarn.lock": true,
-    "**/.nyc_output": true
+    "**/yarn.lock": true
   },
   "git.enableCommitSigning": true,
   "stylelint.validate": ["css"],
