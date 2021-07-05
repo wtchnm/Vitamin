@@ -1,17 +1,17 @@
 {
   "name": "vitamin",
   "license": "MIT",
-  "version": "0.0.0",
   "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "dev": "vite --open",
-    "test": "yarn serve:test 'cypress open'",
-    "test:headless": "yarn serve:test 'cypress run'",
     "build": "tsc && vite build",
+    "commit": "cz",
+    "dev": "vite --open",
+    "prepare": "husky install",
     "serve": "vite preview",
     "serve:test": "start-server-and-test 'yarn serve' http://localhost:5000",
-    "prepare": "husky install",
-    "commit": "cz"
+    "test": "yarn serve:test 'cypress open'",
+    "test:headless": "yarn serve:test 'cypress run'"
   },
   "dependencies": {
     "react": "17.0.2",
@@ -55,15 +55,15 @@
     "vite-plugin-pwa": "0.8.1",
     "vite-tsconfig-paths": "3.3.13"
   },
-  "lint-staged": {
-    "*.{js,ts,tsx}": "eslint --cache --fix",
-    "*.css": "stylelint --fix",
-    "*.{html,js,ts,tsx,css,md,json}": "prettier --write"
-  },
   "browserslist": "Edge >= 18, Firefox >= 60, Chrome >= 61, Safari >= 11, Opera >= 48",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "lint-staged": {
+    "*.css": "stylelint --fix",
+    "*.{html,js,ts,tsx,css,md,json}": "prettier --write",
+    "*.{js,ts,tsx}": "eslint --cache --fix"
   }
 }
