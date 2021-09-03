@@ -45,7 +45,7 @@
     "postcss": "8.3.6",
     "prettier": "2.3.2",
     "rollup-plugin-istanbul": "3.0.0",
-    "start-server-and-test": "1.13.1",
+    "start-server-and-test": "1.14.0",
     "stylelint": "13.13.1",
     "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "22.0.0",
