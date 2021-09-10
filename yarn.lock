@@ -8402,20 +8402,20 @@ vite-plugin-pwa@0.8.1:
     workbox-build "^6.1.5"
     workbox-window "^6.1.5"
 
-vite-tsconfig-paths@3.3.13:
-  version "3.3.13"
-  resolved "https://registry.yarnpkg.com/vite-tsconfig-paths/-/vite-tsconfig-paths-3.3.13.tgz#a9e60aa3759799f3035581de8e4bb00215f039f6"
-  integrity sha512-G7OO+1g2H6xVN61RIp1xFjvciqJoF5cGKcWfP6ZOZFeA8QRy2X7yaGUZLhXtKxNLEsR2MthDm7KwSNTKQHzwvA==
+vite-tsconfig-paths@3.3.14:
+  version "3.3.14"
+  resolved "https://registry.yarnpkg.com/vite-tsconfig-paths/-/vite-tsconfig-paths-3.3.14.tgz#4f1e099e04105952dbdef1c70f72fc5ae9047575"
+  integrity sha512-Z501YCOTTwBk+zDq0furrD+O+X/zawKIo8L3eE0GVSr700AvWAArnlUHOzoRJQw0fJLfd+61rD7jkT20Jh8gtA==
   dependencies:
     debug "^4.1.1"
     globrex "^0.1.2"
     recrawl-sync "^2.0.3"
     tsconfig-paths "^3.9.0"
 
-vite@2.5.3:
-  version "2.5.3"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.5.3.tgz#88d40a9efb9bec66bd87a7676c5689f35ff63742"
-  integrity sha512-1wMDnjflvtTTkMov8O/Xb5+w1/VW/Gw8oCf8f6dqgHn8lMOEqq0SaPtFEQeikFcOKCfSbiU0nEi0LDIx6DNsaQ==
+vite@2.5.6:
+  version "2.5.6"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.5.6.tgz#51431bb5b99b041289595300ba15947bad0f89aa"
+  integrity sha512-P++qzXuOPhTql8iDamsatlJfD7/yGi8NCNwzyqkB2p0jrNJC567WEdXiKn3hQ+ZV8amQmB2dTH6svo3Z2tJ6MQ==
   dependencies:
     esbuild "^0.12.17"
     postcss "^8.3.6"
