@@ -43,7 +43,7 @@
     "eslint-plugin-unicorn": "35.0.0",
     "husky": "7.0.2",
     "lint-staged": "11.1.2",
-    "postcss": "8.3.6",
+    "postcss": "8.3.7",
     "prettier": "2.4.1",
     "rollup-plugin-istanbul": "3.0.0",
     "start-server-and-test": "1.14.0",
