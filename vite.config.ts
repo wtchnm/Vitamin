@@ -10,6 +10,7 @@ export default defineConfig(({ mode }) => ({
     reactRefresh(),
     VitePWA({
       registerType: "autoUpdate",
+      includeAssets: ["favicon.png", "robots.txt", "apple-touch-icon.png"],
       manifest: {
         theme_color: "#BD34FE",
         icons: [
