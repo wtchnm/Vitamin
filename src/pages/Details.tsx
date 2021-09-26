@@ -54,10 +54,7 @@ export default function DetailsPage({
 						<span className='ml-4 text-xl'>Back</span>
 					</Link>
 
-					<h1
-						data-cy='FruitName'
-						className='mt-2 sm:mt-8 text-6xl font-extrabold'
-					>
+					<h1 data-cy='FruitName' className='mt-2 sm:mt-8 text-6xl font-bold'>
 						{fruit.name}
 					</h1>
 					<h2 className='mt-3 text-xl text-gray-500 dark:text-gray-400'>
