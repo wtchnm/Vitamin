@@ -1,6 +1,6 @@
 {
-  "baseUrl": "http://localhost:5000/",
-  "fileServerFolder": "dist",
-  "fixturesFolder": false,
-  "video": false
+	"baseUrl": "http://localhost:5000/",
+	"fileServerFolder": "dist",
+	"fixturesFolder": false,
+	"video": false
 }

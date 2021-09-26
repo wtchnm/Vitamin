@@ -1,22 +1,23 @@
 {
-  "css.validate": false,
-  "editor.codeActionsOnSave": [
-    "source.addMissingImports",
-    "source.fixAll",
-    "source.organizeImports"
-  ],
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "files.exclude": {
-    "**/.eslintcache": true,
-    "**/.gitignore": true,
-    "**/.nyc_output": true,
-    "**/.vscode": true,
-    "**/dist": true,
-    "**/node_modules": true,
-    "**/yarn.lock": true
-  },
-  "git.enableCommitSigning": true,
-  "stylelint.validate": ["css"],
-  "typescript.tsdk": "node_modules/typescript/lib"
+	"css.validate": false,
+	"editor.codeActionsOnSave": [
+		"source.addMissingImports",
+		"source.fixAll",
+		"source.organizeImports"
+	],
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.formatOnSave": true,
+	"files.exclude": {
+		"**/.eslintcache": true,
+		"**/.gitignore": true,
+		"**/.nyc_output": true,
+		"**/.vscode": true,
+		"**/dist": true,
+		"**/node_modules": true,
+		"**/yarn.lock": true
+	},
+	"git.enableCommitSigning": true,
+	"stylelint.validate": ["css"],
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"editor.tabSize": 2
 }

@@ -1,17 +1,17 @@
-import React, { ReactElement } from "react";
+import React, { ReactElement } from 'react'
 
 interface Properties {
-  error?: Error;
+	error?: Error
 }
 export default function LoadingOrError({ error }: Properties): ReactElement {
-  return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-xl" data-cy="LoadingOrError">
-        {error ? error.message : "Loading..."}
-      </h1>
-    </div>
-  );
+	return (
+		<div className='min-h-screen flex items-center justify-center'>
+			<h1 className='text-xl' data-cy='LoadingOrError'>
+				{error ? error.message : 'Loading...'}
+			</h1>
+		</div>
+	)
 }
 LoadingOrError.defaultProps = {
-  error: undefined,
-};
+	error: undefined
+}
