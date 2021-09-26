@@ -1,26 +1,35 @@
-import { KeyboardEvent, ReactElement } from 'react'
+import type { KeyboardEvent, ReactElement } from 'react'
 import { useHistory } from 'react-router-dom'
-import { IFruit } from 'types'
+import type { IFruit } from 'types'
 import ImageAttribution from './ImageAttribution'
 
 interface Properties {
 	fruit: IFruit
 }
+
+const PREFERRED_IMAGE_WIDTH = 384
+const MOBILE_PADDING = 16
+const ASPECT_RATIO_WIDTH = 16
+const ASPECT_RATIO_HEIGHT = 9
+
 export default function Fruit({ fruit }: Properties): ReactElement {
 	const history = useHistory()
-	function onClick() {
+	function onClick(): void {
 		window.scrollTo(0, 0)
 		history.push(fruit.name.toLowerCase())
 	}
 
-	function onKeyDown(event: KeyboardEvent<HTMLElement>) {
+	function onKeyDown(event: KeyboardEvent<HTMLElement>): void {
 		if (event.key === 'Enter') {
 			onClick()
 		}
 	}
 
-	const imageWidth = Math.min(384, window.innerWidth - 16)
-	const imageHeight = imageWidth / (16 / 9)
+	const imageWidth = Math.min(
+		PREFERRED_IMAGE_WIDTH,
+		window.innerWidth - MOBILE_PADDING
+	)
+	const imageHeight = imageWidth / (ASPECT_RATIO_WIDTH / ASPECT_RATIO_HEIGHT)
 
 	return (
 		<div

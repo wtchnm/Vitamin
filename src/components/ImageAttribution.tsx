@@ -1,11 +1,11 @@
-import { MouseEvent, ReactElement } from 'react'
-import { IFruit } from 'types'
+import type { MouseEvent, ReactElement } from 'react'
+import type { IFruit } from 'types'
 
 interface Properties {
 	author: IFruit['image']['author']
 }
 
-function stopPropagation(event: MouseEvent<HTMLAnchorElement>) {
+function onClick(event: MouseEvent<HTMLAnchorElement>): void {
 	event.stopPropagation()
 }
 
@@ -21,7 +21,7 @@ export default function ImageAttribution({ author }: Properties): ReactElement {
 					target='_blank'
 					rel='noreferrer noopener'
 					className='underline'
-					onClick={stopPropagation}
+					onClick={onClick}
 				>
 					{author.name}
 				</a>
@@ -31,7 +31,7 @@ export default function ImageAttribution({ author }: Properties): ReactElement {
 					target='_blank'
 					rel='noreferrer noopener'
 					className='underline'
-					onClick={stopPropagation}
+					onClick={onClick}
 				>
 					Unsplash
 				</a>

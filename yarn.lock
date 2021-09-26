@@ -3444,6 +3444,11 @@ eslint-plugin-react-hooks@4.2.0:
   resolved "https://registry.yarnpkg.com/eslint-plugin-react-hooks/-/eslint-plugin-react-hooks-4.2.0.tgz#8c229c268d468956334c943bb45fc860280f5556"
   integrity sha512-623WEiZJqxR7VdxFCKLI6d6LLpwJkGPYKODnkH3D7WpOG5KM8yWueBd8TLsNAetEJNF5iJmolaAKO3F8yzyVBQ==
 
+eslint-plugin-react-prefer-function-component@0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-react-prefer-function-component/-/eslint-plugin-react-prefer-function-component-0.0.7.tgz#0624c90d83b1aca9cd165f5d37f0104745055d5b"
+  integrity sha512-W4npdWHC5xdKFmuQ41wwqlFvqrk8euMp5nbv5obvFbsWit7c9gSmEEwde/nE+yQpHUsP1gObN+JsEtB+4bBrMQ==
+
 eslint-plugin-react@7.26.0:
   version "7.26.0"
   resolved "https://registry.yarnpkg.com/eslint-plugin-react/-/eslint-plugin-react-7.26.0.tgz#3ae019a35d542b98e5af9e2f96b89c232c74b55b"

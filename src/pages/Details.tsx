@@ -3,9 +3,13 @@ import BackIcon from 'components/BackIcon'
 import Head from 'components/Head'
 import ImageAttribution from 'components/ImageAttribution'
 import LoadingOrError from 'components/LoadingOrError'
-import { ReactElement } from 'react'
+import type { ReactElement } from 'react'
 import { useQuery } from 'react-query'
-import { Link, Redirect, RouteComponentProps } from 'react-router-dom'
+import type { RouteComponentProps } from 'react-router-dom'
+import { Link, Redirect } from 'react-router-dom'
+
+const DESKTOP_IMAGE_WIDTH_PERCENTAGE = 0.4
+const MOBILE_IMAGE_HEIGHT_PERCENTAGE = 0.3
 
 export default function DetailsPage({
 	match
@@ -25,10 +29,13 @@ export default function DetailsPage({
 
 	const isMobile = window.matchMedia('(min-width: 640px)').matches
 	const imageWidth =
-		(isMobile ? window.innerWidth * 0.4 : window.innerWidth) *
-		window.devicePixelRatio
+		(isMobile
+			? window.innerWidth * DESKTOP_IMAGE_WIDTH_PERCENTAGE
+			: window.innerWidth) * window.devicePixelRatio
 	const imageHeight =
-		(isMobile ? window.innerHeight : window.innerHeight * 0.3) *
+		(isMobile
+			? window.innerHeight
+			: window.innerHeight * MOBILE_IMAGE_HEIGHT_PERCENTAGE) *
 		window.devicePixelRatio
 
 	return (

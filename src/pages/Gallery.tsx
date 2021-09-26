@@ -2,7 +2,7 @@ import getFruits from 'api/getFruits'
 import Fruit from 'components/Fruit'
 import Head from 'components/Head'
 import LoadingOrError from 'components/LoadingOrError'
-import { ReactElement } from 'react'
+import type { ReactElement } from 'react'
 import { useQuery } from 'react-query'
 
 export default function GalleryPage(): ReactElement {

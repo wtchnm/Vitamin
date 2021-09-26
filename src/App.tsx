@@ -1,9 +1,10 @@
 import LoadingOrError from 'components/LoadingOrError'
-import { lazy, ReactElement, Suspense } from 'react'
+import type { ReactElement } from 'react'
+import { lazy, Suspense } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-const Gallery = lazy(() => import('pages/Gallery'))
-const Details = lazy(() => import('pages/Details'))
+const Gallery = lazy(async () => import('pages/Gallery'))
+const Details = lazy(async () => import('pages/Details'))
 
 export default function App(): ReactElement {
 	return (
