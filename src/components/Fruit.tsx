@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import { KeyboardEvent, ReactElement } from 'react'
 import { useHistory } from 'react-router-dom'
 import { IFruit } from 'types'
 import ImageAttribution from './ImageAttribution'
@@ -13,7 +13,7 @@ export default function Fruit({ fruit }: Properties): ReactElement {
 		history.push(fruit.name.toLowerCase())
 	}
 
-	function onKeyDown(event: React.KeyboardEvent<HTMLElement>) {
+	function onKeyDown(event: KeyboardEvent<HTMLElement>) {
 		if (event.key === 'Enter') {
 			onClick()
 		}

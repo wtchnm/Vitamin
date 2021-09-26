@@ -1,5 +1,5 @@
 import LoadingOrError from 'components/LoadingOrError'
-import React, { lazy, ReactElement, Suspense } from 'react'
+import { lazy, ReactElement, Suspense } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 const Gallery = lazy(() => import('pages/Gallery'))

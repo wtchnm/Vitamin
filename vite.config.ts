@@ -1,4 +1,4 @@
-import reactRefresh from '@vitejs/plugin-react-refresh'
+import react from '@vitejs/plugin-react'
 import istanbul from 'rollup-plugin-istanbul'
 import { defineConfig } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -7,7 +7,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 export default defineConfig(({ mode }) => ({
 	plugins: [
 		tsconfigPaths(),
-		reactRefresh(),
+		react(),
 		VitePWA({
 			registerType: 'autoUpdate',
 			includeAssets: ['favicon.png', 'robots.txt', 'apple-touch-icon.png'],

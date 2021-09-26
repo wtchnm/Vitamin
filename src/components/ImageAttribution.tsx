@@ -1,11 +1,11 @@
-import React, { ReactElement } from 'react'
+import { MouseEvent, ReactElement } from 'react'
 import { IFruit } from 'types'
 
 interface Properties {
 	author: IFruit['image']['author']
 }
 
-function stopPropagation(event: React.MouseEvent<HTMLAnchorElement>) {
+function stopPropagation(event: MouseEvent<HTMLAnchorElement>) {
 	event.stopPropagation()
 }
 

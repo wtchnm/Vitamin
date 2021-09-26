@@ -34,6 +34,7 @@
 				"plugin:@typescript-eslint/recommended-requiring-type-checking",
 				"airbnb-typescript",
 				"airbnb/hooks",
+				"plugin:react/jsx-runtime",
 				"plugin:unicorn/recommended",
 				"prettier"
 			],
