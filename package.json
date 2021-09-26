@@ -56,7 +56,13 @@
 		"vite-plugin-pwa": "0.11.2",
 		"vite-tsconfig-paths": "3.3.14"
 	},
-	"browserslist": "Edge >= 18, Firefox >= 60, Chrome >= 61, Safari >= 11, Opera >= 48",
+	"browserslist": {
+		"production": "Edge >= 18, Firefox >= 60, Chrome >= 61, Safari >= 11, Opera >= 48",
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version"
+		]
+	},
 	"config": {
 		"commitizen": {
 			"path": "./node_modules/cz-conventional-changelog"
