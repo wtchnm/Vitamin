@@ -29,7 +29,7 @@
 		"@typescript-eslint/parser": "4.31.2",
 		"@vitejs/plugin-react": "1.0.1",
 		"autoprefixer": "10.3.6",
-		"cypress": "8.4.1",
+		"cypress": "8.5.0",
 		"cz-conventional-changelog": "3.3.0",
 		"eslint": "7.32.0",
 		"eslint-config-airbnb": "18.2.1",
