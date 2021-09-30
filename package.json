@@ -12,7 +12,7 @@
 		"serve:test": "start-server-and-test 'yarn serve' http://localhost:5000",
 		"test": "yarn serve:test 'cypress open'",
 		"test:headless": "yarn serve:test 'cypress run'",
-		"format": "prettier -w --ignore-path .gitignore .",
+		"format": "prettier -uw --ignore-path .gitignore .",
 		"run-tsc": "tsc",
 		"run-eslint": "eslint --cache --fix --ignore-path .gitignore --ext .js,.ts,.tsx",
 		"run-stylelint": "stylelint --cache --fix --ignore-path .gitignore '**/*.css'",
@@ -77,8 +77,8 @@
 		}
 	},
 	"lint-staged": {
+		"*": "prettier -uw",
 		"*.css": "stylelint --cache --fix",
-		"*.{html,js,ts,tsx,css,md,json}": "prettier --write",
 		"*.{js,ts,tsx}": "eslint --cache --fix"
 	}
 }
