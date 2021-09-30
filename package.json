@@ -11,7 +11,8 @@
 		"serve": "vite preview",
 		"serve:test": "start-server-and-test 'yarn serve' http://localhost:5000",
 		"test": "yarn serve:test 'cypress open'",
-		"test:headless": "yarn serve:test 'cypress run'"
+		"test:headless": "yarn serve:test 'cypress run'",
+		"format": "prettier -w --ignore-path .gitignore ."
 	},
 	"dependencies": {
 		"react": "17.0.2",
