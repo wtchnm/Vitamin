@@ -44,6 +44,7 @@ export default function Fruit({ fruit }: Properties): ReactElement {
 				<img
 					data-cy='FruitCardImage'
 					loading='lazy'
+					decoding='async'
 					width={imageWidth}
 					height={imageHeight}
 					style={{
