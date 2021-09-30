@@ -12,6 +12,7 @@
 	"editor.tabSize": 2,
 	"eslint.packageManager": "yarn",
 	"files.exclude": {
+		"**/.stylelintcache": true,
 		"**/.eslintcache": true,
 		"**/.gitignore": true,
 		"**/.nyc_output": true,
