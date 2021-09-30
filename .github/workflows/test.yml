@@ -22,7 +22,7 @@ jobs:
           runTests: false
 
       - name: Lint
-      - run: yarn lint
+        run: yarn lint
 
       - name: Run e2e tests
         uses: cypress-io/github-action@v2
