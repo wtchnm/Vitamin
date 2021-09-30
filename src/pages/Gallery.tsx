@@ -15,8 +15,8 @@ export default function GalleryPage(): ReactElement {
 		<>
 			<Head title='Vitamin' />
 			<div className='m-2 md:m-0 min-h-screen grid gap-2 place-content-center grid-cols-[minmax(0,384px)] md:grid-cols-[repeat(2,minmax(0,384px))] xl:grid-cols-[repeat(3,384px)]'>
-				{data?.map(fruit => (
-					<Fruit key={`FruitCard-${fruit.name}`} fruit={fruit} />
+				{data?.map((fruit, index) => (
+					<Fruit key={`FruitCard-${fruit.name}`} fruit={fruit} index={index} />
 				))}
 			</div>
 		</>

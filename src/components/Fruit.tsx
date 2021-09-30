@@ -3,16 +3,18 @@ import { useHistory } from 'react-router-dom'
 import type { IFruit } from 'types'
 import ImageAttribution from './ImageAttribution'
 
-interface Properties {
-	fruit: IFruit
-}
-
 const PREFERRED_IMAGE_WIDTH = 384
 const MOBILE_PADDING = 16
 const ASPECT_RATIO_WIDTH = 16
 const ASPECT_RATIO_HEIGHT = 9
+const IMAGE_INDEX_BELOW_THE_FOLD = 4
 
-export default function Fruit({ fruit }: Properties): ReactElement {
+interface Properties {
+	fruit: IFruit
+	index: number
+}
+
+export default function Fruit({ fruit, index }: Properties): ReactElement {
 	const history = useHistory()
 	function onClick(): void {
 		window.scrollTo(0, 0)
@@ -31,6 +33,8 @@ export default function Fruit({ fruit }: Properties): ReactElement {
 	)
 	const imageHeight = imageWidth / (ASPECT_RATIO_WIDTH / ASPECT_RATIO_HEIGHT)
 
+	const isMobile = window.matchMedia('(min-width: 640px)').matches
+
 	return (
 		<div
 			data-cy='FruitCard'
@@ -43,8 +47,12 @@ export default function Fruit({ fruit }: Properties): ReactElement {
 			<div className='relative'>
 				<img
 					data-cy='FruitCardImage'
-					loading='lazy'
-					decoding='async'
+					loading={
+						isMobile && index >= IMAGE_INDEX_BELOW_THE_FOLD ? 'lazy' : 'eager'
+					}
+					decoding={
+						isMobile && index >= IMAGE_INDEX_BELOW_THE_FOLD ? 'async' : 'sync'
+					}
 					width={imageWidth}
 					height={imageHeight}
 					style={{
