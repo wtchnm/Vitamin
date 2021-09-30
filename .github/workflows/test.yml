@@ -31,8 +31,6 @@ jobs:
           command: yarn test:headless
           # we have already installed all dependencies above
           install: false
-          # Cypress tests and config file are in "e2e" folder
-          working-directory: e2e
 
       - name: Upload coverage
         uses: codecov/codecov-action@v2
