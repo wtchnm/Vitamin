@@ -1,13 +1,14 @@
 import type { KeyboardEvent, ReactElement } from 'react'
 import { useHistory } from 'react-router-dom'
 import type { IFruit } from 'types'
+import { useMediaQuery } from 'utils'
 import ImageAttribution from './ImageAttribution'
 
 const PREFERRED_IMAGE_WIDTH = 384
 const MOBILE_PADDING = 16
 const ASPECT_RATIO_WIDTH = 16
 const ASPECT_RATIO_HEIGHT = 9
-const IMAGE_INDEX_BELOW_THE_FOLD = 4
+const IMAGE_INDEX_BELOW_THE_FOLD = 3
 
 interface Properties {
 	fruit: IFruit
@@ -15,6 +16,8 @@ interface Properties {
 }
 
 export default function Fruit({ fruit, index }: Properties): ReactElement {
+	const isTabletAndUp = useMediaQuery('(min-width: 600px)')
+
 	const history = useHistory()
 	function onClick(): void {
 		window.scrollTo(0, 0)
@@ -33,8 +36,6 @@ export default function Fruit({ fruit, index }: Properties): ReactElement {
 	)
 	const imageHeight = imageWidth / (ASPECT_RATIO_WIDTH / ASPECT_RATIO_HEIGHT)
 
-	const isMobile = window.matchMedia('(min-width: 640px)').matches
-
 	return (
 		<div
 			data-cy='FruitCard'
@@ -48,10 +49,14 @@ export default function Fruit({ fruit, index }: Properties): ReactElement {
 				<img
 					data-cy='FruitCardImage'
 					loading={
-						isMobile && index >= IMAGE_INDEX_BELOW_THE_FOLD ? 'lazy' : 'eager'
+						!isTabletAndUp && index >= IMAGE_INDEX_BELOW_THE_FOLD
+							? 'lazy'
+							: 'eager'
 					}
 					decoding={
-						isMobile && index >= IMAGE_INDEX_BELOW_THE_FOLD ? 'async' : 'sync'
+						!isTabletAndUp && index >= IMAGE_INDEX_BELOW_THE_FOLD
+							? 'async'
+							: 'sync'
 					}
 					width={imageWidth}
 					height={imageHeight}

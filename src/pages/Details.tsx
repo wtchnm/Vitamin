@@ -7,6 +7,7 @@ import type { ReactElement } from 'react'
 import { useQuery } from 'react-query'
 import type { RouteComponentProps } from 'react-router-dom'
 import { Link, Redirect } from 'react-router-dom'
+import { useMediaQuery } from 'utils'
 
 const DESKTOP_IMAGE_WIDTH_PERCENTAGE = 0.4
 const MOBILE_IMAGE_HEIGHT_PERCENTAGE = 0.3
@@ -14,6 +15,8 @@ const MOBILE_IMAGE_HEIGHT_PERCENTAGE = 0.3
 export default function DetailsPage({
 	match
 }: RouteComponentProps<{ fruitName: string }>): ReactElement {
+	const isTabletAndUp = useMediaQuery('(min-width: 600px)')
+
 	const { isLoading, isError, error, data } = useQuery('fruits', getFruits)
 	if (isLoading || isError) {
 		return <LoadingOrError error={error as Error} />
@@ -27,13 +30,12 @@ export default function DetailsPage({
 		return <Redirect to='/' />
 	}
 
-	const isMobile = window.matchMedia('(min-width: 640px)').matches
 	const imageWidth =
-		(isMobile
+		(isTabletAndUp
 			? window.innerWidth * DESKTOP_IMAGE_WIDTH_PERCENTAGE
 			: window.innerWidth) * window.devicePixelRatio
 	const imageHeight =
-		(isMobile
+		(isTabletAndUp
 			? window.innerHeight
 			: window.innerHeight * MOBILE_IMAGE_HEIGHT_PERCENTAGE) *
 		window.devicePixelRatio
