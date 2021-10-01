@@ -1,3 +1,4 @@
+import eslintPlugin from '@nabla/vite-plugin-eslint'
 import react from '@vitejs/plugin-react'
 import istanbul from 'rollup-plugin-istanbul'
 import { defineConfig } from 'vite'
@@ -8,6 +9,7 @@ export default defineConfig(({ mode }) => ({
 	plugins: [
 		tsconfigPaths(),
 		react(),
+		eslintPlugin(),
 		VitePWA({
 			registerType: 'autoUpdate',
 			includeAssets: ['favicon.png', 'robots.txt', 'apple-touch-icon.png'],
