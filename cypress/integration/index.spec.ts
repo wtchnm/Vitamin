@@ -1,18 +1,9 @@
-import fruits from '../../public/fruits.json'
-
-const [
-	{
-		name: fruitName,
-		image: {
-			author: { name: authorName, url: authorURL },
-			url: fruitImage
-		}
-	}
-] = fruits
-
-function get(id: string) {
+function get(id: string): ReturnType<typeof cy.get> {
 	return cy.get(`[data-cy="${id}"]`)
 }
+
+const IMAGE_URL = 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6'
+const AUTHOR_URL = 'https://unsplash.com/@cenali'
 
 describe('Basic flow', () => {
 	beforeEach(() => {
@@ -23,22 +14,22 @@ describe('Basic flow', () => {
 		cy.visit('/')
 		cy.location('pathname').should('eq', '/')
 
-		get('FruitCard').should('have.length', fruits.length)
+		get('FruitCard').should('have.length', 6)
 		get('FruitCardImage')
 			.first()
 			.should('have.attr', 'src')
-			.and('contain', fruitImage)
+			.and('contain', IMAGE_URL)
 		get('FruitImageAuthor')
 			.first()
-			.should('have.text', authorName)
-			.and('have.attr', 'href', authorURL)
+			.should('have.text', 'Matheus Cenali')
+			.and('have.attr', 'href', AUTHOR_URL)
 			.click()
-		get('FruitCardName').first().should('have.text', fruitName)
+		get('FruitCardName').first().should('have.text', 'Apple')
 	})
 
 	it('Should navigate to the details page on click', () => {
 		get('FruitCardName').first().click()
-		cy.location('pathname').should('eq', `/${fruitName.toLowerCase()}`)
+		cy.location('pathname').should('eq', `/apple`)
 	})
 
 	it('Should go back to gallery on back button click', () => {
@@ -48,17 +39,17 @@ describe('Basic flow', () => {
 
 	it('Should navigate to the details page on enter', () => {
 		get('FruitCard').first().focus().type('{enter}')
-		cy.location('pathname').should('eq', `/${fruitName.toLowerCase()}`)
+		cy.location('pathname').should('eq', `/apple`)
 	})
 
 	it('Should render the fruit details correctly', () => {
-		get('FruitImage').should('have.attr', 'src').and('contain', fruitImage)
-		get('FruitName').should('have.text', fruitName)
+		get('FruitImage').should('have.attr', 'src').and('contain', IMAGE_URL)
+		get('FruitName').should('have.text', 'Apple')
 	})
 
 	it('Should render a error message', () => {
 		cy.viewport('iphone-xr')
-		cy.intercept('/fruits.json', request => request.destroy()).as('getFruits')
+		cy.intercept('/fruits', request => request.destroy()).as('getFruits')
 		cy.reload()
 		cy.wait('@getFruits')
 		get('LoadingOrError').should('have.text', 'Failed to fetch')
