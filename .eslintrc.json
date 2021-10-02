@@ -82,7 +82,11 @@
 		"import/no-extraneous-dependencies": [
 			"error",
 			{
-				"devDependencies": ["vite.config.ts", "**/__tests__/*.{ts,tsx}"]
+				"devDependencies": [
+					"vite.config.ts",
+					"jestSetup.ts",
+					"**/__tests__/*.{ts,tsx}"
+				]
 			}
 		],
 

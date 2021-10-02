@@ -15,5 +15,5 @@
 		"target": "ESNext",
 		"useUnknownInCatchVariables": true
 	},
-	"include": ["src", "vite.config.ts", "global.d.ts"]
+	"include": ["src", "vite.config.ts", "global.d.ts", "jestSetup.ts"]
 }
