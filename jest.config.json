@@ -4,7 +4,7 @@
 	"collectCoverageFrom": ["<rootDir>/src/**/*.{ts,tsx}"],
 	"coverageDirectory": "jest-coverage",
 	"coverageReporters": ["html", "text-summary"],
-	"modulePaths": ["<rootDir>/src"],
+	"moduleDirectories": ["node_modules", "src"],
 	"testEnvironment": "jsdom",
 	"testMatch": ["<rootDir>/src/**/__tests__/*.{ts,tsx}"]
 }
