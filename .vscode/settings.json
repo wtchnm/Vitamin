@@ -19,7 +19,9 @@
 		"**/.vscode": true,
 		"**/dist": true,
 		"**/node_modules": true,
-		"**/yarn.lock": true
+		"**/yarn.lock": true,
+		"**/coverage": true,
+		"**/jest-coverage": true
 	},
 	"files.watcherExclude": {
 		"**/dist": true
