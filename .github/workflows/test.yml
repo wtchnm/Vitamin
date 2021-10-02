@@ -28,7 +28,7 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           build: yarn build --mode test
-          command: yarn test:headless
+          command: yarn test:e2e:ci
           # we have already installed all dependencies above
           install: false
 
