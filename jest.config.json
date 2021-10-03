@@ -13,7 +13,7 @@
 	"coverageDirectory": "jest-coverage",
 	"coverageReporters": ["html", "text-summary"],
 	"moduleDirectories": ["node_modules", "src"],
-	"setupFilesAfterEnv": ["<rootDir>/jestSetup.ts"],
+	"setupFilesAfterEnv": ["@testing-library/jest-dom"],
 	"testEnvironment": "jsdom",
 	"testMatch": ["<rootDir>/src/**/__tests__/*.{ts,tsx}"],
 	"watchPlugins": [
