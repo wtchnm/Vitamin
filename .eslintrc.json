@@ -162,9 +162,35 @@
 	},
 	"overrides": [
 		{
-			"files": ["*.ts", "*.tsx"],
+			"files": ["*.ts?(x)"],
 			"parserOptions": {
 				"project": ["./tsconfig.json"]
+			}
+		},
+		{
+			"files": ["**/__tests__/**/*.ts?(x)"],
+			"env": {
+				"jest": true
+			},
+			"extends": [
+				"plugin:jest/all",
+				"plugin:jest-dom/recommended",
+				"plugin:testing-library/react"
+			],
+			"rules": {
+				"jest/no-hooks": "off",
+				"jest/prefer-expect-assertions": "off",
+				"testing-library/no-await-sync-events": "error",
+				"testing-library/no-manual-cleanup": "error",
+				"testing-library/no-unnecessary-act": "error",
+				"testing-library/no-wait-for-multiple-assertions": "error",
+				"testing-library/no-wait-for-side-effects": "error",
+				"testing-library/no-wait-for-snapshot": "error",
+				"testing-library/prefer-explicit-assert": "error",
+				"testing-library/prefer-presence-queries": "error",
+				"testing-library/prefer-query-by-disappearance": "error",
+				"testing-library/prefer-user-event": "error",
+				"testing-library/prefer-wait-for": "error"
 			}
 		}
 	]
