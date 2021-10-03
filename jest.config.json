@@ -15,5 +15,9 @@
 	"moduleDirectories": ["node_modules", "src"],
 	"setupFilesAfterEnv": ["<rootDir>/jestSetup.ts"],
 	"testEnvironment": "jsdom",
-	"testMatch": ["<rootDir>/src/**/__tests__/*.{ts,tsx}"]
+	"testMatch": ["<rootDir>/src/**/__tests__/*.{ts,tsx}"],
+	"watchPlugins": [
+		"jest-watch-typeahead/filename",
+		"jest-watch-typeahead/testname"
+	]
 }
