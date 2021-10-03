@@ -2,6 +2,14 @@
 	"bail": true,
 	"collectCoverage": true,
 	"collectCoverageFrom": ["<rootDir>/src/**/*.{ts,tsx}"],
+	"coverageThreshold": {
+		"global": {
+			"branches": 0,
+			"functions": 8,
+			"lines": 5,
+			"statements": 4
+		}
+	},
 	"coverageDirectory": "jest-coverage",
 	"coverageReporters": ["html", "text-summary"],
 	"moduleDirectories": ["node_modules", "src"],
