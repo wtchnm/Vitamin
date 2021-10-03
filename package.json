@@ -96,6 +96,9 @@
 	"lint-staged": {
 		"*": "prettier -uw",
 		"*.css": "stylelint --cache --fix",
-		"*.{js,ts,tsx}": "eslint --cache --fix"
+		"*.{js,ts,tsx}": [
+			"eslint --cache --fix",
+			"jest --findRelatedTests"
+		]
 	}
 }
