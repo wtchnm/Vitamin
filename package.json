@@ -67,6 +67,7 @@
 		"jest": "27.2.4",
 		"jest-watch-typeahead": "1.0.0",
 		"lint-staged": "11.2.6",
+		"msw": "0.35.0",
 		"npm-run-all": "4.1.5",
 		"postcss": "8.3.11",
 		"prettier": "2.4.1",
@@ -82,7 +83,8 @@
 		"vite-plugin-pwa": "0.11.3",
 		"vite-tsconfig-paths": "3.3.17",
 		"workbox-build": "6.3.0",
-		"workbox-window": "6.3.0"
+		"workbox-window": "6.3.0",
+		"whatwg-fetch": "3.6.2"
 	},
 	"browserslist": {
 		"production": "Edge >= 18, Firefox >= 60, Chrome >= 61, Safari >= 11, Opera >= 48",
