@@ -14,7 +14,7 @@
 	"coverageDirectory": "jest-coverage",
 	"coverageReporters": ["html", "text-summary"],
 	"moduleDirectories": ["node_modules", "src"],
-	"setupFilesAfterEnv": ["@testing-library/jest-dom"],
+	"setupFilesAfterEnv": ["<rootDir>/src/setupTests.ts"],
 	"testEnvironment": "jsdom",
 	"testMatch": ["<rootDir>/src/**/__tests__/*.{ts,tsx}"],
 	"watchPlugins": [
