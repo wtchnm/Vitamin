@@ -8564,10 +8564,10 @@ vite-plugin-pwa@0.11.3:
     workbox-build "^6.3.0"
     workbox-window "^6.3.0"
 
-vite-tsconfig-paths@3.3.15:
-  version "3.3.15"
-  resolved "https://registry.yarnpkg.com/vite-tsconfig-paths/-/vite-tsconfig-paths-3.3.15.tgz#ec9f812e5a5ca5f4f22910d6aa6a407fb757343d"
-  integrity sha512-SFPj6Y5HWB2Vy6eZZSA2VF06Lkg74kkTtMYfs47QJ2z8Fm3qFNggKHWsGDH/gesW56Ly9xmDGr1IBC8o77G+mw==
+vite-tsconfig-paths@3.3.17:
+  version "3.3.17"
+  resolved "https://registry.yarnpkg.com/vite-tsconfig-paths/-/vite-tsconfig-paths-3.3.17.tgz#b1421c4a01e6b446b78cc1dd12d45f302bc3a27b"
+  integrity sha512-wx+rfC53moVLxMBj2EApJZgY6HtvWUFVZ4dBxNGYBxSSqU6UaHdKlcOxrfGDxyTGtYEr9beWCryHn18C4EtZkg==
   dependencies:
     debug "^4.1.1"
     globrex "^0.1.2"
