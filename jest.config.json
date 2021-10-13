@@ -5,10 +5,10 @@
 	"collectCoverageFrom": ["<rootDir>/src/**/*.{ts,tsx}"],
 	"coverageThreshold": {
 		"global": {
-			"branches": 0,
-			"functions": 8,
-			"lines": 5,
-			"statements": 4
+			"branches": 65,
+			"functions": 88,
+			"lines": 84,
+			"statements": 85
 		}
 	},
 	"coverageDirectory": "jest-coverage",
