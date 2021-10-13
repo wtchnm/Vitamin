@@ -13,8 +13,8 @@
 		"global": {
 			"branches": 65,
 			"functions": 88,
-			"lines": 84,
-			"statements": 85
+			"lines": 90,
+			"statements": 90
 		}
 	},
 	"moduleDirectories": ["node_modules", "src"],
