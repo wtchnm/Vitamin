@@ -3,6 +3,12 @@
 	"clearMocks": true,
 	"collectCoverage": true,
 	"collectCoverageFrom": ["<rootDir>/src/**/*.{ts,tsx}"],
+	"coverageDirectory": "jest-coverage",
+	"coveragePathIgnorePatterns": [
+		"<rootDir>/node_modules/",
+		"<rootDir>/src/main.tsx"
+	],
+	"coverageReporters": ["html", "text-summary"],
 	"coverageThreshold": {
 		"global": {
 			"branches": 65,
@@ -11,8 +17,6 @@
 			"statements": 85
 		}
 	},
-	"coverageDirectory": "jest-coverage",
-	"coverageReporters": ["html", "text-summary"],
 	"moduleDirectories": ["node_modules", "src"],
 	"setupFilesAfterEnv": ["<rootDir>/src/setupTests.ts"],
 	"testEnvironment": "jsdom",
