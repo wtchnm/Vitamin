@@ -11,6 +11,10 @@ beforeAll(() => {
 			removeEventListener: jest.fn()
 		}))
 	})
+	Object.defineProperty(window, 'scrollTo', {
+		writable: true,
+		value: jest.fn()
+	})
 
 	server.listen({ onUnhandledRequest: 'error' })
 })
