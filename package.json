@@ -13,13 +13,13 @@
 		"test": "jest --watch",
 		"test:ci": "jest --ci",
 		"test:e2e": "yarn serve:test 'cypress open'",
-		"test:e2e:ci": "yarn serve:test 'cypress run'",
+		"test:e2e:ci": "vite build --mode test && yarn serve:test 'cypress run'",
 		"format": "prettier -uw --ignore-path .gitignore .",
 		"run-tsc": "tsc",
 		"run-eslint": "eslint --cache --fix --ignore-path .gitignore --ext .ts,.tsx src",
 		"run-stylelint": "stylelint --cache --fix --ignore-path .gitignore '**/*.css'",
-		"lint": "npm-run-all --parallel run-tsc run-stylelint run-eslint",
-		"validate": "yarn lint && yarn build --mode test && yarn test:e2e:ci"
+		"lint": "run-p run-tsc run-stylelint run-eslint",
+		"validate": "run-p lint test:ci test:e2e:ci"
 	},
 	"dependencies": {
 		"react": "17.0.2",
