@@ -109,5 +109,11 @@
 			"eslint --cache --fix",
 			"jest --findRelatedTests --coverage=false"
 		]
+	},
+	"nyc": {
+		"report-dir": "coverage/cypress",
+		"reporter": [
+			"lcov"
+		]
 	}
 }
