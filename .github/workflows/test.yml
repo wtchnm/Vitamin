@@ -7,30 +7,22 @@ on:
     branches: [main]
 
 jobs:
-  Cypress:
+  Test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'yarn'
 
       - name: Install dependencies
-        uses: cypress-io/github-action@v2
-        with:
-          install-command: yarn --frozen-lockfile --silent
-          # just perform install
-          runTests: false
+        run: yarn --frozen-lockfile --silent
 
-      - name: Lint
-        run: yarn lint
-
-      - name: Run e2e tests
-        uses: cypress-io/github-action@v2
-        with:
-          build: yarn build --mode test
-          command: yarn test:e2e:ci
-          # we have already installed all dependencies above
-          install: false
+      - name: Validate
+        run: yarn validate
 
       - name: Upload coverage
         uses: codecov/codecov-action@v2
