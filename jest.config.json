@@ -3,12 +3,12 @@
 	"clearMocks": true,
 	"collectCoverage": true,
 	"collectCoverageFrom": ["<rootDir>/src/**/*.{ts,tsx}"],
-	"coverageDirectory": "jest-coverage",
+	"coverageDirectory": "coverage/jest",
 	"coveragePathIgnorePatterns": [
 		"<rootDir>/node_modules/",
 		"<rootDir>/src/main.tsx"
 	],
-	"coverageReporters": ["html", "text-summary"],
+	"coverageReporters": ["lcov", "text-summary"],
 	"coverageThreshold": {
 		"global": {
 			"branches": 57,
