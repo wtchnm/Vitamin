@@ -1,5 +1,4 @@
 import getFruits from 'api/getFruits'
-import BackIcon from 'components/BackIcon'
 import Head from 'components/Head'
 import ImageAttribution from 'components/ImageAttribution'
 import LoadingOrError from 'components/LoadingOrError'
@@ -59,7 +58,7 @@ export default function DetailsPage({
 				</div>
 				<div className='my-8 sm:my-0 sm:ml-16'>
 					<Link data-cy='BackLink' to='/' className='flex items-center'>
-						<BackIcon />
+						<img src='/icons/arrow-left.svg' alt='' className='h-5 w-5' />
 						<span className='ml-4 text-xl'>Back</span>
 					</Link>
 
