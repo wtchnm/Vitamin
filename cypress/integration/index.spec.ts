@@ -1,5 +1,5 @@
 function get(id: string): ReturnType<typeof cy.get> {
-	return cy.get(`[data-cy="${id}"]`)
+	return cy.get(`[data-testid="${id}"]`)
 }
 
 const IMAGE_URL = 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6'
