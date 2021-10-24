@@ -45,7 +45,7 @@ export default function DetailsPage({
 			<div className='min-h-screen flex flex-col sm:flex-row items-center'>
 				<div className='relative'>
 					<img
-						data-cy='FruitImage'
+						data-testid='FruitImage'
 						width={imageWidth}
 						height={imageHeight}
 						style={{
@@ -57,12 +57,15 @@ export default function DetailsPage({
 					<ImageAttribution author={fruit.image.author} />
 				</div>
 				<div className='my-8 sm:my-0 sm:ml-16'>
-					<Link data-cy='BackLink' to='/' className='flex items-center'>
+					<Link data-testid='BackLink' to='/' className='flex items-center'>
 						<img src='/icons/arrow-left.svg' alt='' className='h-5 w-5' />
 						<span className='ml-4 text-xl'>Back</span>
 					</Link>
 
-					<h1 data-cy='FruitName' className='mt-2 sm:mt-8 text-6xl font-bold'>
+					<h1
+						data-testid='FruitName'
+						className='mt-2 sm:mt-8 text-6xl font-bold'
+					>
 						{fruit.name}
 					</h1>
 					<h2 className='mt-3 text-xl text-gray-500 dark:text-gray-400'>

@@ -8,10 +8,8 @@ export interface IFruit {
 		color: string
 		url: string
 	}
-	metadata: [
-		{
-			name: string
-			value: string
-		}
-	]
+	metadata: {
+		name: string
+		value: string
+	}[]
 }
