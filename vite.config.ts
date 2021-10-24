@@ -1,11 +1,10 @@
 import eslintPlugin from '@nabla/vite-plugin-eslint'
 import react from '@vitejs/plugin-react'
-import istanbul from 'rollup-plugin-istanbul'
 import { defineConfig } from 'vite'
 import { VitePWA } from 'vite-plugin-pwa'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
-export default defineConfig(({ mode }) => ({
+export default defineConfig({
 	plugins: [
 		tsconfigPaths(),
 		react(),
@@ -35,10 +34,6 @@ export default defineConfig(({ mode }) => ({
 					}
 				]
 			}
-		}),
-		mode === 'test' &&
-			istanbul({
-				include: ['src/**/*.tsx']
-			})
+		})
 	]
-}))
+})
