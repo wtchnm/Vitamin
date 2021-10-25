@@ -34,7 +34,7 @@
 		"@types/react-router-dom": "5.3.1",
 		"@typescript-eslint/eslint-plugin": "4.33.0",
 		"@typescript-eslint/parser": "4.33.0",
-		"@vitejs/plugin-react": "1.0.5",
+		"@vitejs/plugin-react": "1.0.6",
 		"autoprefixer": "10.3.7",
 		"cypress": "8.6.0",
 		"cz-conventional-changelog": "3.3.0",
