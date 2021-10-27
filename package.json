@@ -62,7 +62,7 @@
 		"stylelint-config-standard": "23.0.0",
 		"tailwindcss": "2.2.17",
 		"typescript": "4.4.4",
-		"vite": "2.6.12",
+		"vite": "2.6.13",
 		"vite-plugin-pwa": "0.11.3",
 		"vite-tsconfig-paths": "3.3.17",
 		"workbox-build": "6.3.0",
