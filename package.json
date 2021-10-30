@@ -14,7 +14,7 @@
 		"test:headless": "yarn serve:test 'cypress run'",
 		"format": "prettier -uw --ignore-path .gitignore .",
 		"run-tsc": "tsc",
-		"run-eslint": "eslint --cache --fix --ignore-path .gitignore --ext .js,.ts,.tsx",
+		"run-eslint": "eslint --cache --fix --ignore-path .gitignore --ext .ts,.tsx src",
 		"run-stylelint": "stylelint --cache --fix --ignore-path .gitignore '**/*.css'",
 		"lint": "npm-run-all --parallel run-tsc run-stylelint run-eslint",
 		"validate": "yarn lint && yarn build --mode test && yarn test:headless"
