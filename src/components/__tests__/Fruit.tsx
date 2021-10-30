@@ -12,13 +12,14 @@ jest.mock('react-router-dom', () => ({
 	})
 }))
 
-describe('<Fruit />', () => {
-	beforeEach(() => {
-		render(<Fruit fruit={fruits[0]} index={0} />)
-	})
+function renderFruit(): void {
+	render(<Fruit fruit={fruits[0]} index={0} />)
+}
 
+describe('<Fruit />', () => {
 	it('renders', () => {
-		// <ImageAttribution />
+		renderFruit()
+
 		expect(screen.getByText('Photo by')).toBeInTheDocument()
 		expect(
 			screen.getByRole('link', { name: 'Matheus Cenali' })
@@ -29,6 +30,8 @@ describe('<Fruit />', () => {
 		expect(screen.getByText('Apple')).toBeInTheDocument()
 	})
 	it('redirect to fruit details page on enter', () => {
+		renderFruit()
+
 		screen.getByTestId('FruitCard').focus()
 		// No action should be performed
 		userEvent.keyboard('a')
@@ -39,6 +42,8 @@ describe('<Fruit />', () => {
 		expect(mockHistoryPush).toHaveBeenCalledWith('apple')
 	})
 	it('redirect to photographer profile page on image attribute link click', () => {
+		renderFruit()
+
 		userEvent.click(screen.getByRole('link', { name: 'Matheus Cenali' }))
 
 		expect(mockHistoryPush).toHaveBeenCalledTimes(0)
