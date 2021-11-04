@@ -1361,10 +1361,10 @@
     outvariant "^1.2.0"
     strict-event-emitter "^0.2.0"
 
-"@nabla/vite-plugin-eslint@1.3.2":
-  version "1.3.2"
-  resolved "https://registry.yarnpkg.com/@nabla/vite-plugin-eslint/-/vite-plugin-eslint-1.3.2.tgz#1cb4c6817282909ec27cf1d15e3e9f81c6c4eea9"
-  integrity sha512-gfYsXu1A+uHsO24Q9P2LF5OloGH8sfg2oc2oS70PKdfIADVEgwo1C314nniJs+a68jM+O2ZnP0SBdCRJbIkFtg==
+"@nabla/vite-plugin-eslint@1.3.3":
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/@nabla/vite-plugin-eslint/-/vite-plugin-eslint-1.3.3.tgz#36fef7c8f110dba46c3b54d1abf60bcd8bd9027b"
+  integrity sha512-Ai7urEIfXqD2FfqUWvt5qXtjC5Qv41YBcIgG44VWlcXFE8t4psn5xDy6bb70eL3oLHVqbnTWDu4ZewEfeR4NZg==
   dependencies:
     "@types/eslint" "*"
     chalk "*"

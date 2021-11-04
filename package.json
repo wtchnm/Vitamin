@@ -32,7 +32,7 @@
 		"@babel/preset-env": "7.16.0",
 		"@babel/preset-react": "7.16.0",
 		"@babel/preset-typescript": "7.16.0",
-		"@nabla/vite-plugin-eslint": "1.3.2",
+		"@nabla/vite-plugin-eslint": "1.3.3",
 		"@tailwindcss/forms": "0.3.4",
 		"@testing-library/dom": "8.11.0",
 		"@testing-library/jest-dom": "5.15.0",
