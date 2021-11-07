@@ -22,7 +22,7 @@ jobs:
         run: yarn --frozen-lockfile --silent
 
       - name: Validate
-        run: yarn validate
+        run: yarn run-p lint test:ci test:e2e:ci
 
       - name: Upload coverage
         uses: codecov/codecov-action@v2
