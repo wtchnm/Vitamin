@@ -13,7 +13,7 @@
 		"test": "jest --watch",
 		"test:ci": "jest --ci",
 		"test:e2e": "yarn serve:test 'cypress open'",
-		"test:e2e:ci": "vite build && yarn serve:test 'cypress run'",
+		"test:e2e:ci": "vite build && yarn serve:test 'cypress run --record --key 55ab6c33-4a4b-4aaf-8dd0-cd99155efe65'",
 		"format": "prettier -uw --ignore-path .gitignore .",
 		"run-tsc": "tsc",
 		"run-eslint": "eslint --cache --fix --ignore-path .gitignore --ext .ts,.tsx src",
