@@ -7001,7 +7001,7 @@ rollup-plugin-terser@^7.0.0:
     serialize-javascript "^4.0.0"
     terser "^5.0.0"
 
-rollup@2.60.0, rollup@^2.43.1, rollup@^2.57.0, rollup@^2.58.0:
+rollup@2.60.0, rollup@^2.43.1, rollup@^2.57.0, rollup@^2.60.0:
   version "2.60.0"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-2.60.0.tgz#4ee60ab7bdd0356763f87d7099f413e5460fc193"
   integrity sha512-cHdv9GWd58v58rdseC8e8XIaPUo8a9cgZpnCMMDGZFDZKEODOiPPEQFXLriWr/TjXzhPPmG5bkAztPsOARIcGQ==
@@ -8068,18 +8068,18 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
-vite-plugin-pwa@0.11.3:
-  version "0.11.3"
-  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.11.3.tgz#274c6472dfd94860639b8b65359bbe5fb9c2a3e6"
-  integrity sha512-KAuv7aAX1VTkaR7DakpmUG7LypNXlf+M/x4y2xYrYgQHoqk2Y2mKKR0dAG5cGBekqcev56QsABusTBScPm50mw==
+vite-plugin-pwa@0.11.5:
+  version "0.11.5"
+  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.11.5.tgz#dfa6541dbd8938303b737541bdad57b6d26234ec"
+  integrity sha512-qn79L7008ZMn9GS0ClxypOBRA3Ft8/a8saIQ03SC2R1QndbZVW+YQVHTlFno33Wp6fu5UJacoHWuZYCuKZKaOA==
   dependencies:
     chalk "^4.1.2"
     debug "^4.3.2"
     fast-glob "^3.2.7"
     pretty-bytes "^5.6.0"
-    rollup "^2.58.0"
-    workbox-build "^6.3.0"
-    workbox-window "^6.3.0"
+    rollup "^2.60.0"
+    workbox-build "^6.4.0"
+    workbox-window "^6.4.0"
 
 vite-tsconfig-paths@3.3.17:
   version "3.3.17"
@@ -8250,7 +8250,7 @@ workbox-broadcast-update@6.4.1:
   dependencies:
     workbox-core "6.4.1"
 
-workbox-build@6.4.1, workbox-build@^6.3.0:
+workbox-build@6.4.1, workbox-build@^6.4.0:
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/workbox-build/-/workbox-build-6.4.1.tgz#bc9243b814becb0b63f19beaf9827eb218782c17"
   integrity sha512-cvH74tEO8SrziFrCntZ/35B0uaMZFKG+gnk3vZmKLSUTab/6MlhL+UwYXf1sMV5SD/W/v7pnFKZbdAOAg5Ne2w==
@@ -8386,7 +8386,7 @@ workbox-sw@6.4.1:
   resolved "https://registry.yarnpkg.com/workbox-sw/-/workbox-sw-6.4.1.tgz#1434e58114c2086d01c476235c11416b582101c9"
   integrity sha512-IJNYcNbjugMB9v+Yx7uswohjOaYoimw5dI0Gcaj2zrJHKjV0bom+BPRCdijmttN/3uVbX57jhNe8SMzWMj7fHw==
 
-workbox-window@6.4.1, workbox-window@^6.3.0:
+workbox-window@6.4.1, workbox-window@^6.4.0:
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/workbox-window/-/workbox-window-6.4.1.tgz#4d78285e57f98c3f0b98934812648c386ae433a9"
   integrity sha512-v5G1U+NN0sHErvE9fzHRA75FrfRFj/0dihFnvno5yqHZZIb9G4U2AarodSDRBC3t6CsnLO68l1Bj1gsHqsM9Qw==
