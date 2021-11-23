@@ -51,7 +51,7 @@
 		"autoprefixer": "10.4.0",
 		"babel-jest": "27.3.1",
 		"css-mediaquery": "0.1.2",
-		"cypress": "9.0.0",
+		"cypress": "9.1.0",
 		"cz-conventional-changelog": "3.3.0",
 		"eslint": "8.3.0",
 		"eslint-config-airbnb": "19.0.1",
