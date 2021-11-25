@@ -1,5 +1,5 @@
 function get(id: string): ReturnType<typeof cy.get> {
-	return cy.get(`[data-testid="${id}"]`)
+	return cy.findByTestId(id)
 }
 
 const IMAGE_URL = 'https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6'
@@ -12,23 +12,22 @@ describe('Basic flow', () => {
 
 	it('Should render the fruit gallery correctly', () => {
 		cy.visit('/')
-		cy.location('pathname').should('eq', '/')
 
-		get('FruitCard').should('have.length', 6)
-		get('FruitCardImage')
+		cy.findAllByTestId('FruitCard').should('have.length', 6)
+		cy.findAllByTestId('FruitCardImage')
 			.first()
 			.should('have.attr', 'src')
 			.and('contain', IMAGE_URL)
-		get('FruitImageAuthor')
+		cy.findAllByTestId('FruitImageAuthor')
 			.first()
 			.should('have.text', 'Matheus Cenali')
 			.and('have.attr', 'href', AUTHOR_URL)
 			.click()
-		get('FruitCardName').first().should('have.text', 'Apple')
+		cy.findAllByTestId('FruitCardName').first().should('have.text', 'Apple')
 	})
 
 	it('Should navigate to the details page on click', () => {
-		get('FruitCardName').first().click()
+		cy.findAllByTestId('FruitCardName').first().click()
 		cy.location('pathname').should('eq', `/apple`)
 	})
 
@@ -38,7 +37,7 @@ describe('Basic flow', () => {
 	})
 
 	it('Should navigate to the details page on enter', () => {
-		get('FruitCard').first().focus().type('{enter}')
+		cy.findAllByTestId('FruitCard').first().focus().type('{enter}')
 		cy.location('pathname').should('eq', `/apple`)
 	})
 
@@ -52,7 +51,7 @@ describe('Basic flow', () => {
 		cy.intercept('/fruits', request => request.destroy()).as('getFruits')
 		cy.reload()
 		cy.wait('@getFruits')
-		get('LoadingOrError').should('have.text', 'Failed to fetch')
+		get('LoadingOrError').should('not.have.text', 'Loading')
 	})
 
 	it('Should redirect to gallery when trying to access a invalid fruit', () => {

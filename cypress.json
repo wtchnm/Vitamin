@@ -2,7 +2,6 @@
 	"baseUrl": "http://localhost:5000/",
 	"fileServerFolder": "dist",
 	"fixturesFolder": false,
-	"pluginsFile": false,
 	"projectId": "etow1b",
-	"supportFile": false
+	"integrationFolder": "cypress/e2e"
 }
