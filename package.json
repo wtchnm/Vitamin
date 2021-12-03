@@ -90,7 +90,7 @@
 		"vite-plugin-pwa": "0.11.9",
 		"vite-tsconfig-paths": "3.3.17",
 		"whatwg-fetch": "3.6.2",
-		"workbox-build": "6.4.1",
+		"workbox-build": "6.4.2",
 		"workbox-window": "6.4.2"
 	},
 	"browserslist": {
