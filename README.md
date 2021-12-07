@@ -12,7 +12,7 @@ Opinionated Vite starter template.
 - [PWA](https://github.com/antfu/vite-plugin-pwa) with [17/17 Lighthouse score](https://web.dev/pwa-checklist/).
 - Write unit and integration tests with [Jest](https://jestjs.io/) and [Testing Library](https://testing-library.com/).
 - Write e2e tests with [Cypress](https://www.cypress.io).
-- GitHub Actions for automatic [dependency updates](https://dependabot.com), [CodeQL Analysis](https://securitylab.github.com/tools/codeql), running tests and code coverage with [Codecov](https://about.codecov.io/).
+- GitHub Actions for automatic [dependency updates](https://renovatebot.com/), [CodeQL Analysis](https://securitylab.github.com/tools/codeql), running tests and code coverage with [Codecov](https://about.codecov.io/).
 - Deploy to [Vercel](vercel.com) with pre-configured [SPA fallback](https://vercel.com/docs/configuration#routes/advanced/spa-fallback).
 
 ## Getting started
