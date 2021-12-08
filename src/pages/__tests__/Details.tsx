@@ -1,4 +1,4 @@
-import { screen, waitForElementToBeRemoved } from '@testing-library/react'
+import { screen } from '@testing-library/react'
 import { Route } from 'react-router-dom'
 import renderWithProviders, {
 	MOBILE_RESOLUTION_HEIGHT,
@@ -9,8 +9,6 @@ import Details from '../Details'
 async function renderDetailsPage(route = '/apple'): Promise<void> {
 	window.history.pushState({}, '', route)
 	renderWithProviders(<Route path='/:fruitName' component={Details} />)
-
-	await waitForElementToBeRemoved(screen.queryByText('Loading...'))
 }
 
 describe('<Details />', () => {

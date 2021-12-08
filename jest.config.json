@@ -18,8 +18,11 @@
 		}
 	},
 	"moduleDirectories": ["node_modules", "src"],
-	"setupFilesAfterEnv": ["<rootDir>/src/setupTests.ts"],
-	"testEnvironment": "jsdom",
+	"setupFilesAfterEnv": [
+		"@testing-library/react/dont-cleanup-after-each",
+		"<rootDir>/src/setupTests.ts"
+	],
+	"testEnvironment": "@happy-dom/jest-environment",
 	"testMatch": ["<rootDir>/src/**/__tests__/*.{ts,tsx}"],
 	"watchPlugins": [
 		"jest-watch-typeahead/filename",
