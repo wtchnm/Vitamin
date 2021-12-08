@@ -26,7 +26,7 @@ npx degit wtchnm/Vitamin#main my-app
 Then, install the dependencies:
 
 ```
-yarn install
+pnpm install
 ```
 
 ### Before you start coding
@@ -42,13 +42,13 @@ yarn install
 
 ## Scripts
 
-- `yarn dev` - start a development server with hot reload.
-- `yarn build` - build for production. The generated files will be on the `dist` folder.
-- `yarn serve` - locally preview the production build.
-- `yarn test` - run unit and integration tests related to changed files based on git.
-- `yarn test:ci` - run all unit and integration tests in CI mode.
-- `yarn test:e2e` - run all e2e tests with the Cypress Test Runner.
-- `yarn test:e2e:headless` - run all e2e tests headlessly.
-- `yarn format` - format all files with Prettier.
-- `yarn lint` - runs TypeScript, ESLint and Stylelint.
-- `yarn validate` - runs `lint`, `test:ci` and `test:e2e:ci`.
+- `pnpm dev` - start a development server with hot reload.
+- `pnpm build` - build for production. The generated files will be on the `dist` folder.
+- `pnpm serve` - locally preview the production build.
+- `pnpm test` - run unit and integration tests related to changed files based on git.
+- `pnpm test:ci` - run all unit and integration tests in CI mode.
+- `pnpm test:e2e` - run all e2e tests with the Cypress Test Runner.
+- `pnpm test:e2e:headless` - run all e2e tests headlessly.
+- `pnpm format` - format all files with Prettier.
+- `pnpm lint` - runs TypeScript, ESLint and Stylelint.
+- `pnpm validate` - runs `lint`, `test:ci` and `test:e2e:ci`.

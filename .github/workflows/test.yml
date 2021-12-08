@@ -13,16 +13,20 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: pnpm/action-setup@v2.0.1
+        with:
+          version: 6.23.6
+
       - uses: actions/setup-node@v2
         with:
           node-version: '16'
-          cache: 'yarn'
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile --silent
+        run: pnpm i -s
 
       - name: Validate
-        run: yarn run-p lint test:ci test:e2e:ci
+        run: pnpm run-p lint test:ci test:e2e:ci
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
 
