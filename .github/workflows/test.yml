@@ -23,7 +23,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm i -s
+        run: pnpm i
 
       - name: Validate
         run: pnpm run-p lint test:ci test:e2e:ci
