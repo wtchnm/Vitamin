@@ -46,7 +46,7 @@ specifiers:
   jest: 27.4.3
   jest-watch-typeahead: 1.0.0
   lint-staged: 12.1.2
-  msw: 0.36.2
+  msw: 0.36.3
   npm-run-all: 4.1.5
   postcss: 8.4.4
   prettier: 2.5.1
@@ -121,7 +121,7 @@ devDependencies:
   jest: 27.4.3
   jest-watch-typeahead: 1.0.0_jest@27.4.3
   lint-staged: 12.1.2
-  msw: 0.36.2
+  msw: 0.36.3
   npm-run-all: 4.1.5
   postcss: 8.4.4
   prettier: 2.5.1
@@ -7331,8 +7331,8 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw/0.36.2:
-    resolution: {integrity: sha512-rFx3NVFv4fgwbOo6yD9E8gEUm/LbM8wI9v9rZGF4L2PKCLogBUfyOro//XVieVf5HjOulAlicoXO+8SnNl0Wdw==}
+  /msw/0.36.3:
+    resolution: {integrity: sha512-Itzp/QhKaleZoslXDrNik3ramW9ynqzOdbwydX2ehBSSaZd5QoiAl/bHYcV33R6CEZcJgIX1N4s+G6XkF/bhkA==}
     hasBin: true
     requiresBuild: true
     dependencies:
