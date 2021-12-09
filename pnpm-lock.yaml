@@ -63,7 +63,7 @@ specifiers:
   tailwindcss: 2.2.19
   typescript: 4.5.2
   vite: 2.7.1
-  vite-plugin-pwa: 0.11.10
+  vite-plugin-pwa: 0.11.11
   vite-tsconfig-paths: 3.3.17
   whatwg-fetch: 3.6.2
   workbox-build: 6.4.2
@@ -134,7 +134,7 @@ devDependencies:
   tailwindcss: 2.2.19_6b4e3d148bdcb715d5f821ed0a9c268b
   typescript: 4.5.2
   vite: 2.7.1
-  vite-plugin-pwa: 0.11.10_vite@2.7.1
+  vite-plugin-pwa: 0.11.11_vite@2.7.1
   vite-tsconfig-paths: 3.3.17_vite@2.7.1
   whatwg-fetch: 3.6.2
   workbox-build: 6.4.2
@@ -9796,12 +9796,11 @@ packages:
       extsprintf: 1.3.0
     dev: true
 
-  /vite-plugin-pwa/0.11.10_vite@2.7.1:
-    resolution: {integrity: sha512-H2iIe6XVN8it0jkrpZcdmBaGarZxeA657y+9WeDKtxjRJmwIL8qixhiE9FZr0SFS2OHyzkumJvE7FOaemt1/SQ==}
+  /vite-plugin-pwa/0.11.11_vite@2.7.1:
+    resolution: {integrity: sha512-/nSLS7VfGN5UrL4a1ALGEQAyga/H0hYZjEkwPehiEFW1PM1DTi1A8GkPCsmevKwR6vt10P+5wS1wrvSgwQemzw==}
     peerDependencies:
       vite: ^2.0.0
     dependencies:
-      chalk: 4.1.2
       debug: 4.3.3
       fast-glob: 3.2.7
       pretty-bytes: 5.6.0
