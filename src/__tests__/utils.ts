@@ -1,5 +1,4 @@
-import { renderHook } from '@testing-library/react-hooks'
-import { act } from 'react-dom/test-utils'
+import { act, renderHook } from '@testing-library/react-hooks'
 import { useMediaQuery } from 'utils'
 
 const BELOW_MIN_WIDTH = 599
