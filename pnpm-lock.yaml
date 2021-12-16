@@ -60,7 +60,7 @@ specifiers:
   stylelint: 14.1.0
   stylelint-config-prettier: 9.0.3
   stylelint-config-standard: 24.0.0
-  tailwindcss: 3.0.5
+  tailwindcss: 3.0.6
   typescript: 4.5.4
   vite: 2.7.3
   vite-plugin-pwa: 0.11.12
@@ -82,7 +82,7 @@ devDependencies:
   '@babel/preset-typescript': 7.16.5_@babel+core@7.16.5
   '@cypress/code-coverage': 3.9.12_cypress@9.1.1
   '@nabla/vite-plugin-eslint': 1.3.5_eslint@8.4.1+vite@2.7.3
-  '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.5
+  '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.6
   '@testing-library/cypress': 8.0.2_cypress@9.1.1
   '@testing-library/dom': 8.11.1
   '@testing-library/jest-dom': 5.16.1
@@ -131,7 +131,7 @@ devDependencies:
   stylelint: 14.1.0
   stylelint-config-prettier: 9.0.3_stylelint@14.1.0
   stylelint-config-standard: 24.0.0_stylelint@14.1.0
-  tailwindcss: 3.0.5_16a290f6d0e3717bf6d2667234aebd30
+  tailwindcss: 3.0.6_16a290f6d0e3717bf6d2667234aebd30
   typescript: 4.5.4
   vite: 2.7.3
   vite-plugin-pwa: 0.11.12_vite@2.7.3
@@ -2103,13 +2103,13 @@ packages:
       string.prototype.matchall: 4.0.6
     dev: true
 
-  /@tailwindcss/forms/0.4.0_tailwindcss@3.0.5:
+  /@tailwindcss/forms/0.4.0_tailwindcss@3.0.6:
     resolution: {integrity: sha512-DeaQBx6EgEeuZPQACvC+mKneJsD8am1uiJugjgQK1+/Vt+Ai0GpFBC2T2fqnUad71WgOxyrZPE6BG1VaI6YqfQ==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.3
-      tailwindcss: 3.0.5_16a290f6d0e3717bf6d2667234aebd30
+      tailwindcss: 3.0.6_16a290f6d0e3717bf6d2667234aebd30
     dev: true
 
   /@testing-library/cypress/8.0.2_cypress@9.1.1:
@@ -8027,7 +8027,7 @@ packages:
       postcss: ^8.2.14
     dependencies:
       postcss: 8.4.5
-      postcss-selector-parser: 6.0.6
+      postcss-selector-parser: 6.0.7
     dev: true
 
   /postcss-resolve-nested-selector/0.1.1:
@@ -8045,6 +8045,14 @@ packages:
 
   /postcss-selector-parser/6.0.6:
     resolution: {integrity: sha512-9LXrvaaX3+mcv5xkg5kFwqSzSH1JIObIx51PrndZwlmznwXRfxMddDvo9gve3gVR8ZTKgoFDdWkbRFmEhT4PMg==}
+    engines: {node: '>=4'}
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
+    dev: true
+
+  /postcss-selector-parser/6.0.7:
+    resolution: {integrity: sha512-U+b/Deoi4I/UmE6KOVPpnhS7I7AYdKbhGcat+qTQ27gycvaACvNEw11ba6RrkwVmDVRW7sigWgLj4/KbbJjeDA==}
     engines: {node: '>=4'}
     dependencies:
       cssesc: 3.0.0
@@ -9329,8 +9337,8 @@ packages:
       strip-ansi: 6.0.1
     dev: true
 
-  /tailwindcss/3.0.5_16a290f6d0e3717bf6d2667234aebd30:
-    resolution: {integrity: sha512-59pNgzx2o+wkAk7IZGIH7H9eNS53gzZGrO3+NPyOEWHDbquHgiLL/c993T5t1vPSAeBxox4X5OgZwNuRvXVf+g==}
+  /tailwindcss/3.0.6_16a290f6d0e3717bf6d2667234aebd30:
+    resolution: {integrity: sha512-+CA2f09rbHFDsdQ1iDvsOGbF1tZFmyPoRhUeaF9/5FRT5GYObtp+UjTSCdmeDcu6T90bx4WAaOkddYFPBkjbAA==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
@@ -9355,7 +9363,7 @@ packages:
       postcss-js: 3.0.3
       postcss-load-config: 3.1.0
       postcss-nested: 5.0.6_postcss@8.4.5
-      postcss-selector-parser: 6.0.6
+      postcss-selector-parser: 6.0.7
       postcss-value-parser: 4.2.0
       quick-lru: 5.1.1
       resolve: 1.20.0
