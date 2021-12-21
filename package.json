@@ -10,8 +10,8 @@
 		"prepare": "husky install",
 		"serve": "vite preview",
 		"serve:test": "start-server-and-test serve http://localhost:5000",
-		"test": "jest --watch",
-		"test:ci": "jest --ci",
+		"test": "vitest",
+		"test:ci": "vitest run --coverage",
 		"test:e2e": "pnpm serve:test 'cypress open'",
 		"test:e2e:headless": "pnpm serve:test 'cypress run'",
 		"test:e2e:ci": "vite build && pnpm serve:test 'cypress run --record'",
@@ -25,12 +25,12 @@
 	"dependencies": {
 		"react": "17.0.2",
 		"react-dom": "17.0.2",
-		"react-query": "3.34.11",
+		"react-query": "3.34.12",
 		"react-router-dom": "5.3.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.16.7",
-		"@babel/preset-env": "7.16.8",
+		"@babel/core": "7.16.12",
+		"@babel/preset-env": "7.16.11",
 		"@babel/preset-react": "7.16.7",
 		"@babel/preset-typescript": "7.16.7",
 		"@cypress/code-coverage": "3.9.12",
@@ -43,27 +43,24 @@
 		"@testing-library/react-hooks": "7.0.2",
 		"@testing-library/user-event": "13.5.0",
 		"@types/css-mediaquery": "0.1.1",
-		"@types/jest": "27.4.0",
 		"@types/react": "17.0.38",
 		"@types/react-dom": "17.0.11",
 		"@types/react-router-dom": "5.3.3",
-		"@typescript-eslint/eslint-plugin": "5.10.0",
-		"@typescript-eslint/parser": "5.10.0",
+		"@typescript-eslint/eslint-plugin": "5.10.1",
+		"@typescript-eslint/parser": "5.10.1",
 		"@vitejs/plugin-react": "1.1.4",
 		"autoprefixer": "10.4.2",
-		"babel-jest": "27.4.6",
+		"c8": "7.11.0",
 		"css-mediaquery": "0.1.2",
 		"cypress": "9.3.1",
 		"cz-conventional-changelog": "3.3.0",
-		"eslint": "8.6.0",
+		"eslint": "8.7.0",
 		"eslint-config-airbnb": "19.0.4",
 		"eslint-config-airbnb-base": "15.0.0",
 		"eslint-config-airbnb-typescript": "16.1.0",
 		"eslint-config-prettier": "8.3.0",
 		"eslint-plugin-cypress": "2.12.1",
 		"eslint-plugin-import": "2.25.4",
-		"eslint-plugin-jest": "25.7.0",
-		"eslint-plugin-jest-dom": "4.0.1",
 		"eslint-plugin-jsx-a11y": "6.5.1",
 		"eslint-plugin-react": "7.28.0",
 		"eslint-plugin-react-hooks": "4.3.0",
@@ -71,24 +68,23 @@
 		"eslint-plugin-testing-library": "5.0.4",
 		"eslint-plugin-unicorn": "40.1.0",
 		"husky": "7.0.4",
-		"jest": "27.4.7",
-		"jest-watch-typeahead": "1.0.0",
-		"lint-staged": "12.2.2",
+		"jsdom": "19.0.0",
+		"lint-staged": "12.3.1",
 		"msw": "0.36.7",
 		"npm-run-all": "4.1.5",
 		"postcss": "8.4.5",
 		"prettier": "2.5.1",
-		"rollup": "2.65.0",
-		"rollup-plugin-istanbul": "3.0.0",
+		"rollup": "2.66.0",
 		"start-server-and-test": "1.14.0",
-		"stylelint": "14.2.0",
+		"stylelint": "14.3.0",
 		"stylelint-config-prettier": "9.0.3",
 		"stylelint-config-standard": "24.0.0",
-		"tailwindcss": "3.0.15",
+		"tailwindcss": "3.0.16",
 		"typescript": "4.5.5",
 		"vite": "2.7.13",
 		"vite-plugin-pwa": "0.11.13",
 		"vite-tsconfig-paths": "3.3.17",
+		"vitest": "0.2.1",
 		"whatwg-fetch": "3.6.2",
 		"workbox-build": "6.4.2",
 		"workbox-window": "6.4.2"
@@ -100,17 +96,11 @@
 			"last 1 firefox version"
 		]
 	},
-	"config": {
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
-	},
 	"lint-staged": {
 		"*": "prettier -uw",
 		"*.css": "stylelint --cache --fix",
 		"*.{ts,tsx}": [
-			"eslint --cache --fix",
-			"jest --findRelatedTests --coverage=false"
+			"eslint --cache --fix"
 		]
 	},
 	"nyc": {
