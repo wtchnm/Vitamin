@@ -6,21 +6,21 @@ import renderWithProviders, {
 } from 'testUtils'
 import Details from '../Details'
 
-async function renderDetailsPage(route = '/apple'): Promise<void> {
+function renderDetailsPage(route = '/apple'): void {
 	window.history.pushState({}, '', route)
 	renderWithProviders(<Route path='/:fruitName' component={Details} />)
 }
 
 describe('<Details />', () => {
 	it('redirect to home screen if fruit is not found', async () => {
-		await renderDetailsPage('/potato')
+		renderDetailsPage('/potato')
 
 		expect(
 			screen.queryByText('Vitamins per 100 g (3.5 oz)')
 		).not.toBeInTheDocument()
 	})
 	it('renders', async () => {
-		await renderDetailsPage()
+		renderDetailsPage()
 
 		expect(
 			await screen.findByRole('link', { name: 'Back' })
@@ -40,7 +40,7 @@ describe('<Details />', () => {
 	})
 	it('renders with mobile resolution', async () => {
 		window.resizeTo(MOBILE_RESOLUTION_WIDTH, MOBILE_RESOLUTION_HEIGHT)
-		await renderDetailsPage()
+		renderDetailsPage()
 
 		const image = await screen.findByRole('img', { name: 'Apple' })
 		expect(image).toHaveAttribute('width', '414')
