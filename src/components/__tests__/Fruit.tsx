@@ -1,16 +1,20 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import fruits from 'mocks/data/fruits.json'
-import type { useHistory } from 'react-router'
+import * as ReactRouterDOM from 'react-router-dom'
+import type { JestMockCompat } from 'vitest'
 import Fruit from '../Fruit'
 
-const mockHistoryPush = jest.fn()
-jest.mock('react-router-dom', () => ({
-	...jest.requireActual('react-router-dom'),
-	useHistory: (): Partial<ReturnType<typeof useHistory>> => ({
-		push: mockHistoryPush
-	})
-}))
+const mockHistoryPush = vi.fn()
+
+;(
+	vi.spyOn(ReactRouterDOM, 'useHistory') as JestMockCompat<
+		never,
+		Partial<ReturnType<typeof ReactRouterDOM.useHistory>>
+	>
+).mockReturnValue({
+	push: mockHistoryPush
+})
 
 function renderFruit(): void {
 	render(<Fruit fruit={fruits[0]} index={0} />)

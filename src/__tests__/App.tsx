@@ -9,12 +9,12 @@ describe('<App />', () => {
 		renderWithProviders(<App />)
 
 		expect(screen.getByText('Loading...')).toBeInTheDocument()
-		await expect(screen.findByText('Apple')).resolves.toBeInTheDocument()
+		expect(await screen.findByText('Apple')).toBeInTheDocument()
 		userEvent.click(screen.getByText('Apple'))
 
 		expect(screen.getByText('Loading...')).toBeInTheDocument()
-		await expect(
-			screen.findByText('Vitamins per 100 g (3.5 oz)')
-		).resolves.toBeInTheDocument()
+		expect(
+			await screen.findByText('Vitamins per 100 g (3.5 oz)')
+		).toBeInTheDocument()
 	})
 })

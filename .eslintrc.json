@@ -168,26 +168,6 @@
 			"parserOptions": {
 				"project": ["./tsconfig.json"]
 			}
-		},
-		{
-			"files": ["**/__tests__/**/*.ts?(x)"],
-			"env": {
-				"jest": true
-			},
-			"extends": [
-				"plugin:jest/all",
-				"plugin:jest-dom/recommended",
-				"plugin:testing-library/react"
-			],
-			"rules": {
-				"jest/no-hooks": "off",
-				"jest/prefer-expect-assertions": "off",
-				"testing-library/no-await-sync-events": "error",
-				"testing-library/no-manual-cleanup": "error",
-				"testing-library/prefer-explicit-assert": "error",
-				"testing-library/prefer-user-event": "error",
-				"testing-library/prefer-wait-for": "error"
-			}
 		}
 	]
 }
