@@ -1,10 +1,6 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@babel/core': 7.16.12
-  '@babel/preset-env': 7.16.11
-  '@babel/preset-react': 7.16.7
-  '@babel/preset-typescript': 7.16.7
   '@cypress/code-coverage': 3.9.12
   '@nabla/vite-plugin-eslint': 1.3.5
   '@tailwindcss/forms': 0.4.0
@@ -72,10 +68,6 @@ dependencies:
   react-router-dom: 5.3.0_react@17.0.2
 
 devDependencies:
-  '@babel/core': 7.16.12
-  '@babel/preset-env': 7.16.11_@babel+core@7.16.12
-  '@babel/preset-react': 7.16.7_@babel+core@7.16.12
-  '@babel/preset-typescript': 7.16.7_@babel+core@7.16.12
   '@cypress/code-coverage': 3.9.12_cypress@9.3.1
   '@nabla/vite-plugin-eslint': 1.3.5_eslint@8.7.0+vite@2.7.13
   '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.16
@@ -781,16 +773,6 @@ packages:
       '@babel/helper-plugin-utils': 7.16.7
     dev: true
 
-  /@babel/plugin-syntax-typescript/7.16.7_@babel+core@7.16.12:
-    resolution: {integrity: sha512-YhUIJHHGkqPgEcMYkPCKTyGUdoGKWtopIycQyjJH8OjvRgOYsXsaKehLVPScKJWAULPxMa4N1vCe6szREFlZ7A==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.16.12
-      '@babel/helper-plugin-utils': 7.16.7
-    dev: true
-
   /@babel/plugin-transform-arrow-functions/7.16.7_@babel+core@7.16.12:
     resolution: {integrity: sha512-9ffkFFMbvzTvv+7dTp/66xvZAWASuPD5Tl9LK3Z9vhOmANo6j94rik+5YMBt4CwHVMWLWpMsriIc2zsa3WW3xQ==}
     engines: {node: '>=6.9.0'}
@@ -1212,20 +1194,6 @@ packages:
       '@babel/helper-plugin-utils': 7.16.7
     dev: true
 
-  /@babel/plugin-transform-typescript/7.16.8_@babel+core@7.16.12:
-    resolution: {integrity: sha512-bHdQ9k7YpBDO2d0NVfkj51DpQcvwIzIusJ7mEUaMlbZq3Kt/U47j24inXZHQ5MDiYpCs+oZiwnXyKedE8+q7AQ==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.16.12
-      '@babel/helper-create-class-features-plugin': 7.16.10_@babel+core@7.16.12
-      '@babel/helper-plugin-utils': 7.16.7
-      '@babel/plugin-syntax-typescript': 7.16.7_@babel+core@7.16.12
-    transitivePeerDependencies:
-      - supports-color
-    dev: true
-
   /@babel/plugin-transform-unicode-escapes/7.16.7_@babel+core@7.16.12:
     resolution: {integrity: sha512-TAV5IGahIz3yZ9/Hfv35TV2xEm+kaBDaZQCn2S/hG9/CZ0DktxJv9eKfPc7yYCvOYR4JGx1h8C+jcSOvgaaI/Q==}
     engines: {node: '>=6.9.0'}
@@ -1358,20 +1326,6 @@ packages:
       '@babel/plugin-transform-react-jsx': 7.16.7_@babel+core@7.16.12
       '@babel/plugin-transform-react-jsx-development': 7.16.7_@babel+core@7.16.12
       '@babel/plugin-transform-react-pure-annotations': 7.16.7_@babel+core@7.16.12
-    dev: true
-
-  /@babel/preset-typescript/7.16.7_@babel+core@7.16.12:
-    resolution: {integrity: sha512-WbVEmgXdIyvzB77AQjGBEyYPZx+8tTsO50XtfozQrkW8QB2rLJpH2lgx0TRw5EJrBxOZQ+wCcyPVQvS8tjEHpQ==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-    dependencies:
-      '@babel/core': 7.16.12
-      '@babel/helper-plugin-utils': 7.16.7
-      '@babel/helper-validator-option': 7.16.7
-      '@babel/plugin-transform-typescript': 7.16.8_@babel+core@7.16.12
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /@babel/runtime-corejs3/7.16.8:
