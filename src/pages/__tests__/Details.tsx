@@ -1,4 +1,4 @@
-import { screen, waitForElementToBeRemoved } from '@testing-library/react'
+import { screen } from '@testing-library/react'
 import { Route } from 'react-router-dom'
 import renderWithProviders, {
 	MOBILE_RESOLUTION_HEIGHT,
@@ -9,8 +9,6 @@ import Details from '../Details'
 async function renderDetailsPage(route = '/apple'): Promise<void> {
 	window.history.pushState({}, '', route)
 	renderWithProviders(<Route path='/:fruitName' component={Details} />)
-
-	await waitForElementToBeRemoved(screen.queryByText('Loading...'))
 }
 
 describe('<Details />', () => {
@@ -24,7 +22,9 @@ describe('<Details />', () => {
 	it('renders', async () => {
 		await renderDetailsPage()
 
-		expect(screen.getByRole('link', { name: 'Back' })).toBeInTheDocument()
+		expect(
+			await screen.findByRole('link', { name: 'Back' })
+		).toBeInTheDocument()
 		expect(screen.getByText('Apple')).toBeInTheDocument()
 		expect(screen.getByText('Vitamins per 100 g (3.5 oz)')).toBeInTheDocument()
 		expect(screen.getByText('Vitamin')).toBeInTheDocument()
@@ -42,7 +42,7 @@ describe('<Details />', () => {
 		window.resizeTo(MOBILE_RESOLUTION_WIDTH, MOBILE_RESOLUTION_HEIGHT)
 		await renderDetailsPage()
 
-		const image = screen.getByRole('img', { name: 'Apple' })
+		const image = await screen.findByRole('img', { name: 'Apple' })
 		expect(image).toHaveAttribute('width', '414')
 		expect(image).toHaveAttribute('height', '268.8')
 	})
