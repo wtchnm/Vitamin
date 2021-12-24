@@ -2,14 +2,14 @@ import { render, screen } from '@testing-library/react'
 import LoadingOrError from '../LoadingOrError'
 
 describe('<LoadingOrError />', () => {
-	it('renders', async () => {
+	it('renders', () => {
 		render(<LoadingOrError />)
 
-		expect(await screen.findByText('Loading...')).toBeInTheDocument()
+		expect(screen.getByText('Loading...')).toBeInTheDocument()
 	})
-	it('renders with an error message', async () => {
+	it('renders with an error message', () => {
 		render(<LoadingOrError error={new Error('Failed to fetch')} />)
 
-		expect(await screen.findByText('Failed to fetch')).toBeInTheDocument()
+		expect(screen.getByText('Failed to fetch')).toBeInTheDocument()
 	})
 })
