@@ -6,7 +6,8 @@
 	"coverageDirectory": "coverage/jest",
 	"coveragePathIgnorePatterns": [
 		"<rootDir>/node_modules/",
-		"<rootDir>/src/main.tsx"
+		"<rootDir>/src/main.tsx",
+		".stories.tsx"
 	],
 	"coverageReporters": ["lcov", "text-summary"],
 	"coverageThreshold": {

@@ -20,6 +20,8 @@
 		"plugin:react/jsx-runtime",
 		"plugin:unicorn/all",
 		"plugin:react-prefer-function-component/recommended",
+		"plugin:storybook/recommended",
+		"plugin:storybook/csf-strict",
 		"prettier"
 	],
 	"rules": {
@@ -187,6 +189,18 @@
 				"testing-library/prefer-explicit-assert": "error",
 				"testing-library/prefer-user-event": "error",
 				"testing-library/prefer-wait-for": "error"
+			}
+		},
+		{
+			"files": ["**/*.stories.tsx"],
+			"rules": {
+				"react/function-component-definition": [
+					"error",
+					{
+						"namedComponents": "arrow-function"
+					}
+				],
+				"react/jsx-props-no-spreading": "off"
 			}
 		}
 	]

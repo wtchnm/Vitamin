@@ -1,5 +1,4 @@
 import type { KeyboardEvent, ReactElement } from 'react'
-import { useHistory } from 'react-router-dom'
 import type { IFruit } from 'types'
 import { useMediaQuery } from 'utils'
 import ImageAttribution from './ImageAttribution'
@@ -11,22 +10,21 @@ const ASPECT_RATIO_HEIGHT = 9
 const IMAGE_INDEX_BELOW_THE_FOLD = 3
 
 interface Properties {
-	fruit: IFruit
 	index: number
+	fruit: IFruit
+	onClick: (fruit: IFruit) => void
 }
 
-export default function Fruit({ fruit, index }: Properties): ReactElement {
+export default function Fruit({
+	index,
+	fruit,
+	onClick
+}: Properties): ReactElement {
 	const isTabletAndUp = useMediaQuery('(min-width: 600px)')
-
-	const history = useHistory()
-	function onClick(): void {
-		window.scrollTo(0, 0)
-		history.push(fruit.name.toLowerCase())
-	}
 
 	function onKeyDown(event: KeyboardEvent<HTMLElement>): void {
 		if (event.key === 'Enter') {
-			onClick()
+			onClick(fruit)
 		}
 	}
 
@@ -39,10 +37,10 @@ export default function Fruit({ fruit, index }: Properties): ReactElement {
 	return (
 		<div
 			data-testid='FruitCard'
-			className='select-none focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-gray-500 focus:border-gray-300 cursor-pointer overflow-hidden shadow-lg dark:shadow-2xl rounded-lg'
+			className='overflow-hidden rounded-lg shadow-lg cursor-pointer select-none focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-gray-500 focus:border-gray-300 dark:shadow-2xl'
 			role='button'
 			tabIndex={0}
-			onClick={onClick}
+			onClick={(): void => onClick(fruit)}
 			onKeyDown={onKeyDown}
 		>
 			<div className='relative'>
@@ -70,7 +68,7 @@ export default function Fruit({ fruit, index }: Properties): ReactElement {
 				/>
 				<ImageAttribution author={fruit.image.author} />
 			</div>
-			<h3 data-testid='FruitCardName' className='p-6 font-bold text-xl'>
+			<h3 data-testid='FruitCardName' className='p-6 text-xl font-bold'>
 				{fruit.name}
 			</h3>
 		</div>
