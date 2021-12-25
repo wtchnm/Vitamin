@@ -28,7 +28,7 @@ specifiers:
   cypress: 9.2.0
   cz-conventional-changelog: 3.3.0
   eslint: 8.5.0
-  eslint-config-airbnb: 19.0.2
+  eslint-config-airbnb: 19.0.4
   eslint-config-airbnb-base: 15.0.0
   eslint-config-airbnb-typescript: 16.1.0
   eslint-config-prettier: 8.3.0
@@ -103,7 +103,7 @@ devDependencies:
   cypress: 9.2.0
   cz-conventional-changelog: 3.3.0
   eslint: 8.5.0
-  eslint-config-airbnb: 19.0.2_c257eae710a4ec05d9c07c610d784dbf
+  eslint-config-airbnb: 19.0.4_c257eae710a4ec05d9c07c610d784dbf
   eslint-config-airbnb-base: 15.0.0_f385d671d5f1c72a868db745a891bc1f
   eslint-config-airbnb-typescript: 16.1.0_2ee6e877dc843a55db9ecc16135c7eab
   eslint-config-prettier: 8.3.0_eslint@8.5.0
@@ -4668,14 +4668,14 @@ packages:
       - eslint-plugin-import
     dev: true
 
-  /eslint-config-airbnb/19.0.2_c257eae710a4ec05d9c07c610d784dbf:
-    resolution: {integrity: sha512-4v5DEMVSl043LaCT+gsxPcoiIk0iYG5zxJKKjIy80H/D//2E0vtuOBWkb0CBDxjF+y26yQzspIXYuY6wMmt9Cw==}
+  /eslint-config-airbnb/19.0.4_c257eae710a4ec05d9c07c610d784dbf:
+    resolution: {integrity: sha512-T75QYQVQX57jiNgpF9r1KegMICE94VYwoFQyMGhrvc+lB8YF2E/M/PYDaQe1AJcWaEgqLE+ErXV1Og/+6Vyzew==}
     engines: {node: ^10.12.0 || ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^7.32.0 || ^8.2.0
       eslint-plugin-import: ^2.25.3
       eslint-plugin-jsx-a11y: ^6.5.1
-      eslint-plugin-react: ^7.27.1
+      eslint-plugin-react: ^7.28.0
       eslint-plugin-react-hooks: ^4.3.0
     dependencies:
       eslint: 8.5.0
