@@ -35,7 +35,7 @@ specifiers:
   eslint-plugin-cypress: 2.12.1
   eslint-plugin-import: 2.25.3
   eslint-plugin-jest: 25.3.0
-  eslint-plugin-jest-dom: 3.9.2
+  eslint-plugin-jest-dom: 3.9.4
   eslint-plugin-jsx-a11y: 6.5.1
   eslint-plugin-react: 7.28.0
   eslint-plugin-react-hooks: 4.3.0
@@ -110,7 +110,7 @@ devDependencies:
   eslint-plugin-cypress: 2.12.1_eslint@8.5.0
   eslint-plugin-import: 2.25.3_eslint@8.5.0
   eslint-plugin-jest: 25.3.0_34c4e4618752fce91afd36a6294661ac
-  eslint-plugin-jest-dom: 3.9.2_eslint@8.5.0
+  eslint-plugin-jest-dom: 3.9.4_eslint@8.5.0
   eslint-plugin-jsx-a11y: 6.5.1_eslint@8.5.0
   eslint-plugin-react: 7.28.0_eslint@8.5.0
   eslint-plugin-react-hooks: 4.3.0_eslint@8.5.0
@@ -4744,8 +4744,8 @@ packages:
       tsconfig-paths: 3.12.0
     dev: true
 
-  /eslint-plugin-jest-dom/3.9.2_eslint@8.5.0:
-    resolution: {integrity: sha512-DKNW6nxYkBvwv36WcYFxapCalGjOGSWUu5PREpDVuXGbEns3S5jhr+mZ5W2N6MxbOWw/2U61C1JVLH31gwVjOQ==}
+  /eslint-plugin-jest-dom/3.9.4_eslint@8.5.0:
+    resolution: {integrity: sha512-VRkaALGIhyxinnewZFHe2WJsRWp3TONpXysVXK1IUNJHCpJAIM9yRrI7fQ8i5F6UYE7+DAnvNhSSJZesLTonug==}
     engines: {node: ^10.12.0 || >=12.0.0, npm: '>=6', yarn: '>=1'}
     peerDependencies:
       eslint: '>=6.8'
