@@ -11,7 +11,7 @@
 		"serve": "vite preview",
 		"serve:test": "start-server-and-test serve http://localhost:5000",
 		"test": "vitest",
-		"test:ci": "vitest run --coverage",
+		"test:ci": "vitest run",
 		"test:e2e": "pnpm serve:test 'cypress open'",
 		"test:e2e:headless": "pnpm serve:test 'cypress run'",
 		"test:e2e:ci": "vite build && pnpm serve:test 'cypress run --record'",
