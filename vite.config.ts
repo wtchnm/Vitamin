@@ -11,7 +11,13 @@ export default defineConfig(({ mode }) => ({
 		environment: 'jsdom',
 		setupFiles: ['src/setupTests.ts'],
 		deps: {
-			inline: ['whatwg-fetch', '@testing-library/user-event']
+			inline: ['whatwg-fetch']
+		},
+		coverage: {
+			enabled: true,
+			reporter: ['lcov', 'text'],
+			include: ['src'],
+			reportsDirectory: 'coverage/jest'
 		}
 	},
 	plugins: [

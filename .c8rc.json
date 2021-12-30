@@ -1,5 +1,0 @@
-{
-	"reporter": ["lcov", "text-summary"],
-	"include": "src",
-	"100": true
-}
