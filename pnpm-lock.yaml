@@ -60,7 +60,7 @@ specifiers:
   stylelint: 14.2.0
   stylelint-config-prettier: 9.0.3
   stylelint-config-standard: 24.0.0
-  tailwindcss: 3.0.9
+  tailwindcss: 3.0.10
   typescript: 4.5.4
   vite: 2.7.10
   vite-plugin-pwa: 0.11.12
@@ -82,7 +82,7 @@ devDependencies:
   '@babel/preset-typescript': 7.16.7_@babel+core@7.16.7
   '@cypress/code-coverage': 3.9.12_cypress@9.2.0
   '@nabla/vite-plugin-eslint': 1.3.5_eslint@8.6.0+vite@2.7.10
-  '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.9
+  '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.10
   '@testing-library/cypress': 8.0.2_cypress@9.2.0
   '@testing-library/dom': 8.11.1
   '@testing-library/jest-dom': 5.16.1
@@ -131,7 +131,7 @@ devDependencies:
   stylelint: 14.2.0
   stylelint-config-prettier: 9.0.3_stylelint@14.2.0
   stylelint-config-standard: 24.0.0_stylelint@14.2.0
-  tailwindcss: 3.0.9_cefe482e8d38053bbf3d5815e0c551b3
+  tailwindcss: 3.0.10_cefe482e8d38053bbf3d5815e0c551b3
   typescript: 4.5.4
   vite: 2.7.10
   vite-plugin-pwa: 0.11.12_vite@2.7.10
@@ -2075,13 +2075,13 @@ packages:
       string.prototype.matchall: 4.0.6
     dev: true
 
-  /@tailwindcss/forms/0.4.0_tailwindcss@3.0.9:
+  /@tailwindcss/forms/0.4.0_tailwindcss@3.0.10:
     resolution: {integrity: sha512-DeaQBx6EgEeuZPQACvC+mKneJsD8am1uiJugjgQK1+/Vt+Ai0GpFBC2T2fqnUad71WgOxyrZPE6BG1VaI6YqfQ==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.3
-      tailwindcss: 3.0.9_cefe482e8d38053bbf3d5815e0c551b3
+      tailwindcss: 3.0.10_cefe482e8d38053bbf3d5815e0c551b3
     dev: true
 
   /@testing-library/cypress/8.0.2_cypress@9.2.0:
@@ -9401,8 +9401,8 @@ packages:
       strip-ansi: 6.0.1
     dev: true
 
-  /tailwindcss/3.0.9_cefe482e8d38053bbf3d5815e0c551b3:
-    resolution: {integrity: sha512-X8TVifxDWfiNXInOeBofTteXAtZ5f0HnLs/uV4jDQNShc33Jb7qjYbk4VwI365rWAzcqYTks+9kesf3xH7Y35A==}
+  /tailwindcss/3.0.10_cefe482e8d38053bbf3d5815e0c551b3:
+    resolution: {integrity: sha512-dSKGNqI6hyzY8CPX0GsYTZ9yTxGesHrNFPIANTBe8bQWNHGTsAd7PoZQ+HTaIQb/we3zaZfa4F487WCCvhBGbw==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     peerDependencies:
