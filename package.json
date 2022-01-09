@@ -50,7 +50,7 @@
 		"@typescript-eslint/eslint-plugin": "5.9.0",
 		"@typescript-eslint/parser": "5.9.0",
 		"@vitejs/plugin-react": "1.1.4",
-		"autoprefixer": "10.4.1",
+		"autoprefixer": "10.4.2",
 		"babel-jest": "27.4.6",
 		"css-mediaquery": "0.1.2",
 		"cypress": "9.2.0",
