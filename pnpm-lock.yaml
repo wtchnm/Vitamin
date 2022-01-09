@@ -22,7 +22,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': 5.9.0
   '@typescript-eslint/parser': 5.9.0
   '@vitejs/plugin-react': 1.1.4
-  autoprefixer: 10.4.1
+  autoprefixer: 10.4.2
   babel-jest: 27.4.6
   css-mediaquery: 0.1.2
   cypress: 9.2.0
@@ -97,7 +97,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.9.0_bd2fd93dbcc607ad2f21b784bccfe0c8
   '@typescript-eslint/parser': 5.9.0_eslint@8.6.0+typescript@4.5.4
   '@vitejs/plugin-react': 1.1.4
-  autoprefixer: 10.4.1_postcss@8.4.5
+  autoprefixer: 10.4.2_postcss@8.4.5
   babel-jest: 27.4.6_@babel+core@7.16.7
   css-mediaquery: 0.1.2
   cypress: 9.2.0
@@ -131,7 +131,7 @@ devDependencies:
   stylelint: 14.2.0
   stylelint-config-prettier: 9.0.3_stylelint@14.2.0
   stylelint-config-standard: 24.0.0_stylelint@14.2.0
-  tailwindcss: 3.0.12_cefe482e8d38053bbf3d5815e0c551b3
+  tailwindcss: 3.0.12_ef48b3b8837f8a23677bffe8f9cd866d
   typescript: 4.5.4
   vite: 2.7.10
   vite-plugin-pwa: 0.11.12_vite@2.7.10
@@ -2080,7 +2080,7 @@ packages:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
       mini-svg-data-uri: 1.4.3
-      tailwindcss: 3.0.12_cefe482e8d38053bbf3d5815e0c551b3
+      tailwindcss: 3.0.12_ef48b3b8837f8a23677bffe8f9cd866d
     dev: true
 
   /@testing-library/cypress/8.0.2_cypress@9.2.0:
@@ -2914,15 +2914,15 @@ packages:
     hasBin: true
     dev: true
 
-  /autoprefixer/10.4.1_postcss@8.4.5:
-    resolution: {integrity: sha512-B3ZEG7wtzXDRCEFsan7HmR2AeNsxdJB0+sEC0Hc5/c2NbhJqPwuZm+tn233GBVw82L+6CtD6IPSfVruwKjfV3A==}
+  /autoprefixer/10.4.2_postcss@8.4.5:
+    resolution: {integrity: sha512-9fOPpHKuDW1w/0EKfRmVnxTDt8166MAnLI3mgZ1JCnhNtYWxcJ6Ud5CO/AVOZi/AvFa8DY9RTy3h3+tFBlrrdQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.19.1
-      caniuse-lite: 1.0.30001294
+      caniuse-lite: 1.0.30001298
       fraction.js: 4.1.2
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -3361,7 +3361,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001294
+      caniuse-lite: 1.0.30001298
       electron-to-chromium: 1.4.29
       escalade: 3.1.1
       node-releases: 2.0.1
@@ -3469,8 +3469,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /caniuse-lite/1.0.30001294:
-    resolution: {integrity: sha512-LiMlrs1nSKZ8qkNhpUf5KD0Al1KCBE3zaT7OLOwEkagXMEDij98SiOovn9wxVGQpklk9vVC/pUSqgYmkmKOS8g==}
+  /caniuse-lite/1.0.30001298:
+    resolution: {integrity: sha512-AcKqikjMLlvghZL/vfTHorlQsLDhGRalYf1+GmWCf5SCMziSGjRYQW/JEksj14NaYHIR6KIhrFAy0HV5C25UzQ==}
     dev: true
 
   /caseless/0.12.0:
@@ -9348,7 +9348,7 @@ packages:
       strip-ansi: 6.0.1
     dev: true
 
-  /tailwindcss/3.0.12_cefe482e8d38053bbf3d5815e0c551b3:
+  /tailwindcss/3.0.12_ef48b3b8837f8a23677bffe8f9cd866d:
     resolution: {integrity: sha512-VqhF86z2c34sJyS5ZS8Q2nYuN0KzqZw1GGsuQQO9kJ3mY1oG7Fsag0vICkxUVXk6P+1sUkTkjMjKWCjEF0hNHw==}
     engines: {node: '>=12.13.0'}
     hasBin: true
@@ -9357,7 +9357,7 @@ packages:
       postcss: ^8.0.9
     dependencies:
       arg: 5.0.1
-      autoprefixer: 10.4.1_postcss@8.4.5
+      autoprefixer: 10.4.2_postcss@8.4.5
       chalk: 4.1.2
       chokidar: 3.5.2
       color-name: 1.1.4
