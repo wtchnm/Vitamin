@@ -9,7 +9,7 @@ specifiers:
   '@nabla/vite-plugin-eslint': 1.3.5
   '@tailwindcss/forms': 0.4.0
   '@testing-library/cypress': 8.0.2
-  '@testing-library/dom': 8.11.1
+  '@testing-library/dom': 8.11.2
   '@testing-library/jest-dom': 5.16.1
   '@testing-library/react': 12.1.2
   '@testing-library/react-hooks': 7.0.2
@@ -84,11 +84,11 @@ devDependencies:
   '@nabla/vite-plugin-eslint': 1.3.5_eslint@8.6.0+vite@2.7.12
   '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.15
   '@testing-library/cypress': 8.0.2_cypress@9.2.1
-  '@testing-library/dom': 8.11.1
+  '@testing-library/dom': 8.11.2
   '@testing-library/jest-dom': 5.16.1
   '@testing-library/react': 12.1.2_react-dom@17.0.2+react@17.0.2
   '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
-  '@testing-library/user-event': 13.5.0_@testing-library+dom@8.11.1
+  '@testing-library/user-event': 13.5.0_@testing-library+dom@8.11.2
   '@types/css-mediaquery': 0.1.1
   '@types/jest': 27.4.0
   '@types/react': 17.0.38
@@ -152,13 +152,6 @@ packages:
       json-schema: 0.4.0
       jsonpointer: 5.0.0
       leven: 3.1.0
-    dev: true
-
-  /@babel/code-frame/7.16.0:
-    resolution: {integrity: sha512-IF4EOMEV+bfYwOmNxGzSnjR2EmQod7f1UXOpZM3l4i4o4QNwzjtJAu/HxdjHq0aYBvdqMuQEY1eg0nqW9ZPORA==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/highlight': 7.16.0
     dev: true
 
   /@babel/code-frame/7.16.7:
@@ -468,15 +461,6 @@ packages:
       '@babel/types': 7.16.8
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@babel/highlight/7.16.0:
-    resolution: {integrity: sha512-t8MH41kUQylBtu2+4IQA3atqevA2lRgqA2wyVB/YiWmsDSuylZZuXOUy9ric30hfzauEFfdsuk/eXTRrGrfd0g==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/helper-validator-identifier': 7.16.7
-      chalk: 2.4.2
-      js-tokens: 4.0.0
     dev: true
 
   /@babel/highlight/7.16.7:
@@ -2136,22 +2120,22 @@ packages:
       cypress: ^2.1.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
     dependencies:
       '@babel/runtime': 7.16.3
-      '@testing-library/dom': 8.11.1
+      '@testing-library/dom': 8.11.2
       cypress: 9.2.1
     dev: true
 
-  /@testing-library/dom/8.11.1:
-    resolution: {integrity: sha512-3KQDyx9r0RKYailW2MiYrSSKEfH0GTkI51UGEvJenvcoDoeRYs0PZpi2SXqtnMClQvCqdtTTpOfFETDTVADpAg==}
+  /@testing-library/dom/8.11.2:
+    resolution: {integrity: sha512-idsS/cqbYudXcVWngc1PuWNmXs416oBy2g/7Q8QAUREt5Z3MUkAL2XJD7xazLJ6esDfqRDi/ZBxk+OPPXitHRw==}
     engines: {node: '>=12'}
     dependencies:
-      '@babel/code-frame': 7.16.0
+      '@babel/code-frame': 7.16.7
       '@babel/runtime': 7.16.3
       '@types/aria-query': 4.2.2
       aria-query: 5.0.0
       chalk: 4.1.2
       dom-accessibility-api: 0.5.10
       lz-string: 1.4.4
-      pretty-format: 27.4.2
+      pretty-format: 27.4.6
     dev: true
 
   /@testing-library/jest-dom/5.16.1:
@@ -2199,19 +2183,19 @@ packages:
       react-dom: '*'
     dependencies:
       '@babel/runtime': 7.16.3
-      '@testing-library/dom': 8.11.1
+      '@testing-library/dom': 8.11.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: true
 
-  /@testing-library/user-event/13.5.0_@testing-library+dom@8.11.1:
+  /@testing-library/user-event/13.5.0_@testing-library+dom@8.11.2:
     resolution: {integrity: sha512-5Kwtbo3Y/NowpkbRuSepbyMFkZmHgD+vPzYB/RJ4oxt5Gj/avFFBYjhw27cqSVPVw/3a67NK1PbiIr9k4Gwmdg==}
     engines: {node: '>=10', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
     dependencies:
       '@babel/runtime': 7.16.3
-      '@testing-library/dom': 8.11.1
+      '@testing-library/dom': 8.11.2
     dev: true
 
   /@tootallnate/once/1.1.2:
@@ -4838,7 +4822,7 @@ packages:
       eslint: '>=6.8'
     dependencies:
       '@babel/runtime': 7.16.3
-      '@testing-library/dom': 8.11.1
+      '@testing-library/dom': 8.11.2
       eslint: 8.6.0
       requireindex: 1.2.0
     dev: true
@@ -6498,7 +6482,7 @@ packages:
       chalk: 4.1.2
       diff-sequences: 27.4.0
       jest-get-type: 27.4.0
-      pretty-format: 27.4.2
+      pretty-format: 27.4.6
     dev: true
 
   /jest-diff/27.4.6:
