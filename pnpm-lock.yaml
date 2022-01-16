@@ -41,7 +41,7 @@ specifiers:
   eslint-plugin-react-hooks: 4.3.0
   eslint-plugin-react-prefer-function-component: 0.0.7
   eslint-plugin-testing-library: 5.0.3
-  eslint-plugin-unicorn: 40.0.0
+  eslint-plugin-unicorn: 40.1.0
   husky: 7.0.4
   jest: 27.4.7
   jest-watch-typeahead: 1.0.0
@@ -116,7 +116,7 @@ devDependencies:
   eslint-plugin-react-hooks: 4.3.0_eslint@8.6.0
   eslint-plugin-react-prefer-function-component: 0.0.7
   eslint-plugin-testing-library: 5.0.3_eslint@8.6.0+typescript@4.5.4
-  eslint-plugin-unicorn: 40.0.0_eslint@8.6.0
+  eslint-plugin-unicorn: 40.1.0_eslint@8.6.0
   husky: 7.0.4
   jest: 27.4.7
   jest-watch-typeahead: 1.0.0_jest@27.4.7
@@ -409,11 +409,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       '@babel/types': 7.16.8
-    dev: true
-
-  /@babel/helper-validator-identifier/7.15.7:
-    resolution: {integrity: sha512-K4JvCtQqad9OY2+yTU8w+E82ywk/fe+ELNlt1G8z3bVGlZfn/hOcQQsUhGhW/N+tb3fxK800wLtKOE/aM0m72w==}
-    engines: {node: '>=6.9.0'}
     dev: true
 
   /@babel/helper-validator-identifier/7.16.7:
@@ -4905,8 +4900,8 @@ packages:
       - typescript
     dev: true
 
-  /eslint-plugin-unicorn/40.0.0_eslint@8.6.0:
-    resolution: {integrity: sha512-5GRXISfBk8jMmYk1eeNDw8zSRnWTxBjWkzx2Prre6E2/yLu2twozZ3EomLWCBu9nWms/ZE361BItyMQwfnG1qA==}
+  /eslint-plugin-unicorn/40.1.0_eslint@8.6.0:
+    resolution: {integrity: sha512-y5doK2DF9Sr5AqKEHbHxjFllJ167nKDRU01HDcWyv4Tnmaoe9iNxMrBnaybZvWZUaE3OC5Unu0lNIevYamloig==}
     engines: {node: '>=12'}
     peerDependencies:
       eslint: '>=7.32.0'
