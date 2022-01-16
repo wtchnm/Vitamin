@@ -69,7 +69,7 @@
 		"eslint-plugin-react-hooks": "4.3.0",
 		"eslint-plugin-react-prefer-function-component": "0.0.7",
 		"eslint-plugin-testing-library": "5.0.3",
-		"eslint-plugin-unicorn": "40.0.0",
+		"eslint-plugin-unicorn": "40.1.0",
 		"husky": "7.0.4",
 		"jest": "27.4.7",
 		"jest-watch-typeahead": "1.0.0",
