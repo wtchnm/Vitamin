@@ -62,7 +62,7 @@ specifiers:
   stylelint-config-standard: 24.0.0
   tailwindcss: 3.0.15
   typescript: 4.5.4
-  vite: 2.7.12
+  vite: 2.7.13
   vite-plugin-pwa: 0.11.13
   vite-tsconfig-paths: 3.3.17
   whatwg-fetch: 3.6.2
@@ -81,7 +81,7 @@ devDependencies:
   '@babel/preset-react': 7.16.7_@babel+core@7.16.7
   '@babel/preset-typescript': 7.16.7_@babel+core@7.16.7
   '@cypress/code-coverage': 3.9.12_cypress@9.3.1
-  '@nabla/vite-plugin-eslint': 1.3.5_eslint@8.6.0+vite@2.7.12
+  '@nabla/vite-plugin-eslint': 1.3.5_eslint@8.6.0+vite@2.7.13
   '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.15
   '@testing-library/cypress': 8.0.2_cypress@9.3.1
   '@testing-library/dom': 8.11.2
@@ -133,9 +133,9 @@ devDependencies:
   stylelint-config-standard: 24.0.0_stylelint@14.2.0
   tailwindcss: 3.0.15_ef48b3b8837f8a23677bffe8f9cd866d
   typescript: 4.5.4
-  vite: 2.7.12
-  vite-plugin-pwa: 0.11.13_vite@2.7.12
-  vite-tsconfig-paths: 3.3.17_vite@2.7.12
+  vite: 2.7.13
+  vite-plugin-pwa: 0.11.13_vite@2.7.13
+  vite-tsconfig-paths: 3.3.17_vite@2.7.13
   whatwg-fetch: 3.6.2
   workbox-build: 6.4.2
   workbox-window: 6.4.2
@@ -1943,7 +1943,7 @@ packages:
       - supports-color
     dev: true
 
-  /@nabla/vite-plugin-eslint/1.3.5_eslint@8.6.0+vite@2.7.12:
+  /@nabla/vite-plugin-eslint/1.3.5_eslint@8.6.0+vite@2.7.13:
     resolution: {integrity: sha512-JFtwkGh0b/vMIAXGmkZJAVLol6UiqK0e5zRJKyIiIEzGlcHfEHGZEaJHV8kfuMhc17294h7TqjJNpNzIDSx3/A==}
     peerDependencies:
       eslint: '*'
@@ -1952,7 +1952,7 @@ packages:
       '@types/eslint': 8.2.1
       chalk: 4.1.2
       eslint: 8.6.0
-      vite: 2.7.12
+      vite: 2.7.13
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -9916,7 +9916,7 @@ packages:
       extsprintf: 1.3.0
     dev: true
 
-  /vite-plugin-pwa/0.11.13_vite@2.7.12:
+  /vite-plugin-pwa/0.11.13_vite@2.7.13:
     resolution: {integrity: sha512-Ssj14m3TRVLfkFEAWSMcFE2d1cSdEZyrVTzfY2lSL+umHYvcIFHVDAY143sygtBCb44OPczsAOmWwBTxwOvh7g==}
     peerDependencies:
       vite: ^2.0.0
@@ -9925,7 +9925,7 @@ packages:
       fast-glob: 3.2.7
       pretty-bytes: 5.6.0
       rollup: 2.64.0
-      vite: 2.7.12
+      vite: 2.7.13
       workbox-build: 6.4.2
       workbox-window: 6.4.2
     transitivePeerDependencies:
@@ -9934,7 +9934,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite-tsconfig-paths/3.3.17_vite@2.7.12:
+  /vite-tsconfig-paths/3.3.17_vite@2.7.13:
     resolution: {integrity: sha512-wx+rfC53moVLxMBj2EApJZgY6HtvWUFVZ4dBxNGYBxSSqU6UaHdKlcOxrfGDxyTGtYEr9beWCryHn18C4EtZkg==}
     peerDependencies:
       vite: '>2.0.0-0'
@@ -9943,13 +9943,13 @@ packages:
       globrex: 0.1.2
       recrawl-sync: 2.2.1
       tsconfig-paths: 3.12.0
-      vite: 2.7.12
+      vite: 2.7.13
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/2.7.12:
-    resolution: {integrity: sha512-KvPYToRQWhRfBeVkyhkZ5hASuHQkqZUUdUcE3xyYtq5oYEPIJ0h9LWiWTO6v990glmSac2cEPeYeXzpX5Z6qKQ==}
+  /vite/2.7.13:
+    resolution: {integrity: sha512-Mq8et7f3aK0SgSxjDNfOAimZGW9XryfHRa/uV0jseQSilg+KhYDSoNb9h1rknOy6SuMkvNDLKCYAYYUMCE+IgQ==}
     engines: {node: '>=12.2.0'}
     hasBin: true
     peerDependencies:
