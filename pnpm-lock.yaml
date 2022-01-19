@@ -45,7 +45,7 @@ specifiers:
   husky: 7.0.4
   jest: 27.4.7
   jest-watch-typeahead: 1.0.0
-  lint-staged: 12.2.0
+  lint-staged: 12.2.1
   msw: 0.36.5
   npm-run-all: 4.1.5
   postcss: 8.4.5
@@ -120,7 +120,7 @@ devDependencies:
   husky: 7.0.4
   jest: 27.4.7
   jest-watch-typeahead: 1.0.0_jest@27.4.7
-  lint-staged: 12.2.0
+  lint-staged: 12.2.1
   msw: 0.36.5
   npm-run-all: 4.1.5
   postcss: 8.4.5
@@ -7103,8 +7103,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/12.2.0:
-    resolution: {integrity: sha512-TnNciMBhmEqzqM+RvzqqdvrG4TsI8wCDMX1Vg9+rj2Y9uY70Nq84Mb1WOIiwxW9l5tUlCOqtY5La71RM2fSgfA==}
+  /lint-staged/12.2.1:
+    resolution: {integrity: sha512-VCVcA9C2Vt5HHxSR4EZVZFJcQRJH984CGBeY+cJ/xed4mBd+JidbM/xbKcCq5ASaygAV0iITtdsCTnID7h/1OQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
