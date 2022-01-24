@@ -97,7 +97,8 @@
 		"*": "prettier -uw",
 		"*.css": "stylelint --cache --fix",
 		"*.{ts,tsx}": [
-			"eslint --cache --fix"
+			"eslint --cache --fix",
+			"vitest related --coverage=false"
 		]
 	},
 	"nyc": {

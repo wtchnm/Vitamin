@@ -22,9 +22,9 @@ describe('<Details />', () => {
 	it('renders', async () => {
 		renderDetailsPage()
 
-		expect(
-			await screen.findByRole('link', { name: 'Back' })
-		).toBeInTheDocument()
+		await expect(
+			screen.findByRole('link', { name: 'Back' })
+		).resolves.toBeInTheDocument()
 		expect(screen.getByText('Apple')).toBeInTheDocument()
 		expect(screen.getByText('Vitamins per 100 g (3.5 oz)')).toBeInTheDocument()
 		expect(screen.getByText('Vitamin')).toBeInTheDocument()

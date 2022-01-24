@@ -13,19 +13,17 @@ describe('<Gallery />', () => {
 	it('renders', async () => {
 		await renderGalleryPage()
 
-		expect(await screen.findByRole('img', { name: 'Apple' })).toHaveAttribute(
-			'loading',
-			'eager'
-		)
+		await expect(
+			screen.findByRole('img', { name: 'Apple' })
+		).resolves.toHaveAttribute('loading', 'eager')
 		expect(screen.getByText('Banana')).toBeInTheDocument()
 	})
 	it('renders with mobile resolution', async () => {
 		window.resizeTo(MOBILE_RESOLUTION_WIDTH, MOBILE_RESOLUTION_HEIGHT)
 		await renderGalleryPage()
 
-		expect(await screen.findByRole('img', { name: 'Grape' })).toHaveAttribute(
-			'loading',
-			'lazy'
-		)
+		await expect(
+			screen.findByRole('img', { name: 'Grape' })
+		).resolves.toHaveAttribute('loading', 'lazy')
 	})
 })
