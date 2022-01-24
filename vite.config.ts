@@ -9,7 +9,7 @@ import tsconfigPaths from 'vite-tsconfig-paths'
 export default defineConfig(({ mode }) => ({
 	test: {
 		include: ['src/**/__tests__/*'],
-		global: true,
+		globals: true,
 		environment: 'jsdom',
 		setupFiles: ['src/setupTests.ts'],
 		deps: {
