@@ -46,7 +46,7 @@ specifiers:
   jest: 27.4.7
   jest-watch-typeahead: 1.0.0
   lint-staged: 12.2.2
-  msw: 0.36.5
+  msw: 0.36.7
   npm-run-all: 4.1.5
   postcss: 8.4.5
   prettier: 2.5.1
@@ -121,7 +121,7 @@ devDependencies:
   jest: 27.4.7
   jest-watch-typeahead: 1.0.0_jest@27.4.7
   lint-staged: 12.2.2
-  msw: 0.36.5
+  msw: 0.36.7
   npm-run-all: 4.1.5
   postcss: 8.4.5
   prettier: 2.5.1
@@ -1923,8 +1923,8 @@ packages:
       chalk: 4.1.2
     dev: true
 
-  /@mswjs/cookies/0.1.6:
-    resolution: {integrity: sha512-A53XD5TOfwhpqAmwKdPtg1dva5wrng2gH5xMvklzbd9WLTSVU953eCRa8rtrrm6G7Cy60BOGsBRN89YQK0mlKA==}
+  /@mswjs/cookies/0.1.7:
+    resolution: {integrity: sha512-bDg1ReMBx+PYDB4Pk7y1Q07Zz1iKIEUWQpkEXiA2lEWg9gvOZ8UBmGXilCEUvyYoRFlmr/9iXTRR69TrgSwX/Q==}
     dependencies:
       '@types/set-cookie-parser': 2.4.1
       set-cookie-parser: 2.4.8
@@ -7436,12 +7436,12 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw/0.36.5:
-    resolution: {integrity: sha512-GlSrkQ6rdfARan5V96oF2hWW3PRzW+3CHqk7CD1k5/auoIy2GZpRdt6rf7wHs3iVRcxYm41qKuHly6AlAm2AYA==}
+  /msw/0.36.7:
+    resolution: {integrity: sha512-D991x0e+nuX9ebdSMSo4hESzY/wIkcwLxlc769B6aLUMqUe1CaIdTyV9+yBIRH/RAiXmnQRaGrFyjSaKV2KNFA==}
     hasBin: true
     requiresBuild: true
     dependencies:
-      '@mswjs/cookies': 0.1.6
+      '@mswjs/cookies': 0.1.7
       '@mswjs/interceptors': 0.12.7
       '@open-draft/until': 1.0.3
       '@types/cookie': 0.4.1
@@ -7455,13 +7455,14 @@ packages:
       inquirer: 8.2.0
       is-node-process: 1.0.1
       js-levenshtein: 1.1.6
-      node-fetch: 2.6.6
+      node-fetch: 2.6.7
       path-to-regexp: 6.2.0
       statuses: 2.0.1
       strict-event-emitter: 0.2.0
       type-fest: 1.4.0
       yargs: 17.3.0
     transitivePeerDependencies:
+      - encoding
       - supports-color
     dev: true
 
@@ -7493,9 +7494,14 @@ packages:
     resolution: {integrity: sha512-1nh45deeb5olNY7eX82BkPO7SSxR5SSYJiPTrTdFUVYwAl8CKMA5N9PjTYkHiRjisVcxcQ1HXdLhx2qxxJzLNQ==}
     dev: true
 
-  /node-fetch/2.6.6:
-    resolution: {integrity: sha512-Z8/6vRlTUChSdIgMa51jxQ4lrw/Jy5SOW10ObaA47/RElsAN2c5Pn8bTgFGWn/ibwzXTE8qwr1Yzx28vsecXEA==}
+  /node-fetch/2.6.7:
+    resolution: {integrity: sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==}
     engines: {node: 4.x || >=6.0.0}
+    peerDependencies:
+      encoding: ^0.1.0
+    peerDependenciesMeta:
+      encoding:
+        optional: true
     dependencies:
       whatwg-url: 5.0.0
     dev: true
