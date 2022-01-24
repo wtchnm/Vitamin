@@ -1,2 +1,2 @@
 /// <reference types="vite/client" />
-/// <reference types="vitest/global" />
+/// <reference types="vitest/globals" />

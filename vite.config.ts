@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import eslintPlugin from '@nabla/vite-plugin-eslint'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
