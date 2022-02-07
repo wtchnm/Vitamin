@@ -5,12 +5,10 @@ import type * as ReactRouterDOM from 'react-router-dom'
 import Fruit from '../Fruit'
 
 const mockHistoryPush = vi.fn()
-
 vi.mock('react-router-dom', async () => {
 	const router = await vi.importActual<typeof ReactRouterDOM>(
 		'react-router-dom'
 	)
-
 	return {
 		...router,
 		useHistory: (): Partial<typeof ReactRouterDOM.useHistory> => ({
