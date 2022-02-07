@@ -39,7 +39,7 @@ export default function Fruit({ fruit, index }: Properties): ReactElement {
 	return (
 		<div
 			data-testid='FruitCard'
-			className='select-none focus:outline-none focus:ring focus:ring-opacity-50 focus:ring-gray-500 focus:border-gray-300 cursor-pointer overflow-hidden shadow-lg dark:shadow-2xl rounded-lg'
+			className='cursor-pointer select-none overflow-hidden rounded-lg shadow-lg focus:border-gray-300 focus:outline-none focus:ring focus:ring-gray-500 focus:ring-opacity-50 dark:shadow-2xl'
 			role='button'
 			tabIndex={0}
 			onClick={onClick}
@@ -70,7 +70,7 @@ export default function Fruit({ fruit, index }: Properties): ReactElement {
 				/>
 				<ImageAttribution author={fruit.image.author} />
 			</div>
-			<h3 data-testid='FruitCardName' className='p-6 font-bold text-xl'>
+			<h3 data-testid='FruitCardName' className='p-6 text-xl font-bold'>
 				{fruit.name}
 			</h3>
 		</div>

@@ -42,7 +42,7 @@ export default function DetailsPage({
 	return (
 		<>
 			<Head title={fruit.name} />
-			<div className='min-h-screen flex flex-col sm:flex-row items-center'>
+			<div className='flex min-h-screen flex-col items-center sm:flex-row'>
 				<div className='relative'>
 					<img
 						data-testid='FruitImage'
@@ -64,7 +64,7 @@ export default function DetailsPage({
 
 					<h1
 						data-testid='FruitName'
-						className='mt-2 sm:mt-8 text-6xl font-bold'
+						className='mt-2 text-6xl font-bold sm:mt-8'
 					>
 						{fruit.name}
 					</h1>

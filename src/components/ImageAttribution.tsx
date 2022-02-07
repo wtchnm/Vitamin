@@ -12,8 +12,8 @@ function onClick(event: MouseEvent<HTMLAnchorElement>): void {
 export default function ImageAttribution({ author }: Properties): ReactElement {
 	return (
 		<>
-			<div className='w-full h-full absolute top-0 bg-gradient-to-b from-transparent via-transparent text-opacity-50 text-black to-current' />
-			<div className='absolute bottom-1 right-1 text-xs text-white px-1'>
+			<div className='absolute top-0 h-full w-full bg-gradient-to-b from-transparent via-transparent to-current text-black text-opacity-50' />
+			<div className='absolute bottom-1 right-1 px-1 text-xs text-white'>
 				<span>Photo by </span>
 				<a
 					data-testid='FruitImageAuthor'
