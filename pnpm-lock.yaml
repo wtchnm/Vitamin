@@ -59,7 +59,7 @@ specifiers:
   rollup: 2.67.2
   rollup-plugin-istanbul: 3.0.0
   start-server-and-test: 1.14.0
-  stylelint: 14.4.0
+  stylelint: 14.5.0
   stylelint-config-prettier: 9.0.3
   stylelint-config-standard: 24.0.0
   tailwindcss: 3.0.22
@@ -132,9 +132,9 @@ devDependencies:
   rollup: 2.67.2
   rollup-plugin-istanbul: 3.0.0_rollup@2.67.2
   start-server-and-test: 1.14.0
-  stylelint: 14.4.0
-  stylelint-config-prettier: 9.0.3_stylelint@14.4.0
-  stylelint-config-standard: 24.0.0_stylelint@14.4.0
+  stylelint: 14.5.0
+  stylelint-config-prettier: 9.0.3_stylelint@14.5.0
+  stylelint-config-standard: 24.0.0_stylelint@14.5.0
   tailwindcss: 3.0.22_autoprefixer@10.4.2
   typescript: 4.5.5
   vite: 2.7.13
@@ -9203,35 +9203,35 @@ packages:
     resolution: {integrity: sha1-eVjHk+R+MuB9K1yv5cC/jhLneQI=}
     dev: true
 
-  /stylelint-config-prettier/9.0.3_stylelint@14.4.0:
+  /stylelint-config-prettier/9.0.3_stylelint@14.5.0:
     resolution: {integrity: sha512-5n9gUDp/n5tTMCq1GLqSpA30w2sqWITSSEiAWQlpxkKGAUbjcemQ0nbkRvRUa0B1LgD3+hCvdL7B1eTxy1QHJg==}
     engines: {node: '>= 12'}
     hasBin: true
     peerDependencies:
       stylelint: '>=11.0.0'
     dependencies:
-      stylelint: 14.4.0
+      stylelint: 14.5.0
     dev: true
 
-  /stylelint-config-recommended/6.0.0_stylelint@14.4.0:
+  /stylelint-config-recommended/6.0.0_stylelint@14.5.0:
     resolution: {integrity: sha512-ZorSSdyMcxWpROYUvLEMm0vSZud2uB7tX1hzBZwvVY9SV/uly4AvvJPPhCcymZL3fcQhEQG5AELmrxWqtmzacw==}
     peerDependencies:
       stylelint: ^14.0.0
     dependencies:
-      stylelint: 14.4.0
+      stylelint: 14.5.0
     dev: true
 
-  /stylelint-config-standard/24.0.0_stylelint@14.4.0:
+  /stylelint-config-standard/24.0.0_stylelint@14.5.0:
     resolution: {integrity: sha512-+RtU7fbNT+VlNbdXJvnjc3USNPZRiRVp/d2DxOF/vBDDTi0kH5RX2Ny6errdtZJH3boO+bmqIYEllEmok4jiuw==}
     peerDependencies:
       stylelint: ^14.0.0
     dependencies:
-      stylelint: 14.4.0
-      stylelint-config-recommended: 6.0.0_stylelint@14.4.0
+      stylelint: 14.5.0
+      stylelint-config-recommended: 6.0.0_stylelint@14.5.0
     dev: true
 
-  /stylelint/14.4.0:
-    resolution: {integrity: sha512-F6H2frcmdpB5ZXPjvHKSZRmszuYz7bsbl2NXyE+Pn+1P6PMD3dYMKjXci6yEzj9+Yf2ZinxBMaXYvSzYjaHtog==}
+  /stylelint/14.5.0:
+    resolution: {integrity: sha512-4dvQjrhAz2njLoE1OvUEZpryNWcmx2w5Lq5jlibxFv6b5W6O8/vob12M2ZzhX3Ndzs5f67F+BEYmhnQXOwfVYQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
