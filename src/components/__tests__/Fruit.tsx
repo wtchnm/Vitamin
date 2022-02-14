@@ -1,15 +1,13 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import fruits from 'mocks/data/fruits.json'
-import type { useHistory } from 'react-router'
+import type { useNavigate } from 'react-router-dom'
 import Fruit from '../Fruit'
 
-const mockHistoryPush = jest.fn()
+const mockNavigate = jest.fn()
 jest.mock('react-router-dom', () => ({
 	...jest.requireActual('react-router-dom'),
-	useHistory: (): Partial<ReturnType<typeof useHistory>> => ({
-		push: mockHistoryPush
-	})
+	useNavigate: (): ReturnType<typeof useNavigate> => mockNavigate
 }))
 
 function renderFruit(): void {
@@ -38,14 +36,14 @@ describe('<Fruit />', () => {
 		userEvent.keyboard('[Enter]')
 
 		// eslint-disable-next-line @typescript-eslint/no-magic-numbers
-		expect(mockHistoryPush).toHaveBeenCalledTimes(1)
-		expect(mockHistoryPush).toHaveBeenCalledWith('apple')
+		expect(mockNavigate).toHaveBeenCalledTimes(1)
+		expect(mockNavigate).toHaveBeenCalledWith('apple')
 	})
 	it('redirect to photographer profile page on image attribute link click', () => {
 		renderFruit()
 
 		userEvent.click(screen.getByRole('link', { name: 'Matheus Cenali' }))
 
-		expect(mockHistoryPush).toHaveBeenCalledTimes(0)
+		expect(mockNavigate).toHaveBeenCalledTimes(0)
 	})
 })

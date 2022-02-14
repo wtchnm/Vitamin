@@ -1,21 +1,27 @@
 import { screen, waitForElementToBeRemoved } from '@testing-library/react'
-import { Route } from 'react-router-dom'
+import Gallery from 'pages/Gallery'
+import { Route, Routes } from 'react-router-dom'
 import renderWithProviders, {
 	MOBILE_RESOLUTION_HEIGHT,
 	MOBILE_RESOLUTION_WIDTH
 } from 'testUtils'
 import Details from '../Details'
 
-async function renderDetailsPage(route = '/apple'): Promise<void> {
+async function renderDetailsPage(route = 'apple'): Promise<void> {
 	window.history.pushState({}, '', route)
-	renderWithProviders(<Route path='/:fruitName' component={Details} />)
+	renderWithProviders(
+		<Routes>
+			<Route path='/' element={<Gallery />} />
+			<Route path=':fruitName' element={<Details />} />
+		</Routes>
+	)
 
 	await waitForElementToBeRemoved(screen.queryByText('Loading...'))
 }
 
 describe('<Details />', () => {
 	it('redirect to home screen if fruit is not found', async () => {
-		await renderDetailsPage('/potato')
+		await renderDetailsPage('potato')
 
 		expect(
 			screen.queryByText('Vitamins per 100 g (3.5 oz)')

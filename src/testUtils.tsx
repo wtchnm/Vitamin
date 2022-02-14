@@ -11,13 +11,6 @@ const queryClient = new QueryClient({
 		}
 	}
 })
-function Wrapper({ children }: PropsWithChildren<unknown>): ReactElement {
-	return (
-		<QueryClientProvider client={queryClient}>
-			<BrowserRouter>{children}</BrowserRouter>
-		</QueryClientProvider>
-	)
-}
 
 export const DESKTOP_RESOLUTION_WIDTH = 1280
 export const DESKTOP_RESOLUTION_HEIGHT = 800
@@ -25,8 +18,15 @@ export const DESKTOP_RESOLUTION_HEIGHT = 800
 export const MOBILE_RESOLUTION_WIDTH = 414
 export const MOBILE_RESOLUTION_HEIGHT = 896
 
-export default function renderWithProviders(ui: ReactElement): void {
+export default function renderWithProviders(
+	ui: ReactElement,
+	includeRouter = true
+): void {
 	render(ui, {
-		wrapper: Wrapper
+		wrapper: ({ children }: PropsWithChildren<unknown>): ReactElement => (
+			<QueryClientProvider client={queryClient}>
+				{includeRouter ? <BrowserRouter>{children}</BrowserRouter> : children}
+			</QueryClientProvider>
+		)
 	})
 }

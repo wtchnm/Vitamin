@@ -1,5 +1,5 @@
 import type { KeyboardEvent, ReactElement } from 'react'
-import { useHistory } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import type { IFruit } from 'types'
 import { useMediaQuery } from 'utils'
 import ImageAttribution from './ImageAttribution'
@@ -18,10 +18,10 @@ interface Properties {
 export default function Fruit({ fruit, index }: Properties): ReactElement {
 	const isTabletAndUp = useMediaQuery('(min-width: 600px)')
 
-	const history = useHistory()
+	const navigate = useNavigate()
 	function onClick(): void {
 		window.scrollTo(0, 0)
-		history.push(fruit.name.toLowerCase())
+		navigate(fruit.name.toLowerCase())
 	}
 
 	function onKeyDown(event: KeyboardEvent<HTMLElement>): void {
