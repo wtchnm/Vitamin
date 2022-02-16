@@ -5,7 +5,7 @@ interface Properties {
 	author: IFruit['image']['author']
 }
 
-function onClick(event: MouseEvent<HTMLAnchorElement>): void {
+function onClick(event: MouseEvent): void {
 	event.stopPropagation()
 }
 

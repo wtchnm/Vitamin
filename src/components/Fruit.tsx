@@ -24,7 +24,7 @@ export default function Fruit({ fruit, index }: Properties): ReactElement {
 		navigate(fruit.name.toLowerCase())
 	}
 
-	function onKeyDown(event: KeyboardEvent<HTMLElement>): void {
+	function onKeyDown(event: KeyboardEvent): void {
 		if (event.key === 'Enter') {
 			onClick()
 		}
