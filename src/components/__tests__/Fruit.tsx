@@ -4,9 +4,9 @@ import fruits from 'mocks/data/fruits.json'
 import type { useNavigate } from 'react-router-dom'
 import Fruit from '../Fruit'
 
-const mockNavigate = jest.fn()
-jest.mock('react-router-dom', () => ({
-	...jest.requireActual('react-router-dom'),
+const mockNavigate = vi.fn()
+vi.mock('react-router-dom', () => ({
+	...vi.importActual('react-router-dom'),
 	useNavigate: (): ReturnType<typeof useNavigate> => mockNavigate
 }))
 

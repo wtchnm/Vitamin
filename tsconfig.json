@@ -13,7 +13,8 @@
 		"skipLibCheck": true,
 		"strict": true,
 		"target": "ESNext",
-		"useUnknownInCatchVariables": true
+		"types": ["vite/client", "vitest/globals", "vite-plugin-pwa/client"]
 	},
-	"include": ["src", "vite.config.ts", "global.d.ts"]
+	"include": ["src"],
+	"references": [{ "path": "./tsconfig.node.json" }]
 }

@@ -2,12 +2,15 @@ import '@testing-library/jest-dom'
 import mediaQuery from 'css-mediaquery'
 import server from 'mocks/server'
 import { DESKTOP_RESOLUTION_HEIGHT, DESKTOP_RESOLUTION_WIDTH } from 'testUtils'
+import { afterAll } from 'vitest'
 import 'whatwg-fetch'
 
 beforeAll(() => {
+	server.listen({ onUnhandledRequest: 'error' })
+
 	Object.defineProperty(window, 'matchMedia', {
 		writable: true,
-		value: jest.fn((query: string) => {
+		value: (query: string) => {
 			function matchQuery(): boolean {
 				return mediaQuery.match(query, {
 					width: window.innerWidth,
@@ -38,31 +41,29 @@ beforeAll(() => {
 			})
 
 			return instance
-		})
+		}
 	})
 	Object.defineProperty(window, 'scrollTo', {
 		writable: true,
-		value: jest.fn()
+		value: () => {}
 	})
 	Object.defineProperty(window, 'resizeTo', {
 		writable: true,
-		value: jest.fn((width: number, height: number) => {
+		value: (width: number, height: number) => {
 			Object.assign(window, {
 				innerWidth: width,
 				innerHeight: height
-			}).dispatchEvent(new Event('resize'))
-		})
+			}).dispatchEvent(new window.Event('resize'))
+		}
 	})
-
-	server.listen({ onUnhandledRequest: 'error' })
-})
-
-afterEach(() => {
-	server.resetHandlers()
 })
 
 beforeEach(() => {
 	window.resizeTo(DESKTOP_RESOLUTION_WIDTH, DESKTOP_RESOLUTION_HEIGHT)
+})
+
+afterEach(() => {
+	server.resetHandlers()
 })
 
 afterAll(() => {

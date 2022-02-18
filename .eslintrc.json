@@ -92,7 +92,6 @@
 			}
 		],
 
-		// React classes should not be used
 		"react/no-did-update-set-state": "off",
 		"react/no-find-dom-node": "off",
 		"react/no-is-mounted": "off",
@@ -164,24 +163,21 @@
 	},
 	"overrides": [
 		{
-			"files": ["*.ts?(x)"],
+			"files": ["src/**/*.ts?(x)"],
 			"parserOptions": {
 				"project": ["./tsconfig.json"]
 			}
 		},
 		{
+			"files": ["vite.config.ts"],
+			"parserOptions": {
+				"project": ["./tsconfig.node.json"]
+			}
+		},
+		{
 			"files": ["**/__tests__/**/*.ts?(x)"],
-			"env": {
-				"jest": true
-			},
-			"extends": [
-				"plugin:jest/all",
-				"plugin:jest-dom/recommended",
-				"plugin:testing-library/react"
-			],
+			"extends": ["plugin:testing-library/react"],
 			"rules": {
-				"jest/no-hooks": "off",
-				"jest/prefer-expect-assertions": "off",
 				"testing-library/no-await-sync-events": "error",
 				"testing-library/no-manual-cleanup": "error",
 				"testing-library/prefer-explicit-assert": "error",
