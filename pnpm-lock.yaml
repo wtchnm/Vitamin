@@ -27,7 +27,7 @@ specifiers:
   eslint-config-airbnb: 19.0.4
   eslint-config-airbnb-base: 15.0.0
   eslint-config-airbnb-typescript: 16.1.0
-  eslint-config-prettier: 8.3.0
+  eslint-config-prettier: 8.4.0
   eslint-plugin-cypress: 2.12.1
   eslint-plugin-import: 2.25.4
   eslint-plugin-jsx-a11y: 6.5.1
@@ -97,7 +97,7 @@ devDependencies:
   eslint-config-airbnb: 19.0.4_cded826960a6a3d1bba2e72d77d93106
   eslint-config-airbnb-base: 15.0.0_1326372bbd2fe519ed5ba5fca843a914
   eslint-config-airbnb-typescript: 16.1.0_f9b0c49af310072bbdee65353413f68f
-  eslint-config-prettier: 8.3.0_eslint@8.9.0
+  eslint-config-prettier: 8.4.0_eslint@8.9.0
   eslint-plugin-cypress: 2.12.1_eslint@8.9.0
   eslint-plugin-import: 2.25.4_eslint@8.9.0
   eslint-plugin-jsx-a11y: 6.5.1_eslint@8.9.0
@@ -4245,8 +4245,8 @@ packages:
       object.entries: 1.1.5
     dev: true
 
-  /eslint-config-prettier/8.3.0_eslint@8.9.0:
-    resolution: {integrity: sha512-BgZuLUSeKzvlL/VUjx/Yb787VQ26RU3gGjA3iiFvdsp/2bMfVIWUVP7tjxtjS0e+HP409cPlPvNkQloz8C91ew==}
+  /eslint-config-prettier/8.4.0_eslint@8.9.0:
+    resolution: {integrity: sha512-CFotdUcMY18nGRo5KGsnNxpznzhkopOcOo0InID+sgQssPrzjvsyKZPvOgymTFeHrFuC3Tzdf2YndhXtULK9Iw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
