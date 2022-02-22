@@ -58,7 +58,7 @@ specifiers:
   typescript: 4.5.5
   vite: 2.8.4
   vite-plugin-pwa: 0.11.13
-  vite-tsconfig-paths: 3.4.0
+  vite-tsconfig-paths: 3.4.1
   vitest: 0.5.3
   whatwg-fetch: 3.6.2
   workbox-build: 6.4.2
@@ -124,7 +124,7 @@ devDependencies:
   typescript: 4.5.5
   vite: 2.8.4
   vite-plugin-pwa: 0.11.13_vite@2.8.4
-  vite-tsconfig-paths: 3.4.0_vite@2.8.4
+  vite-tsconfig-paths: 3.4.1_vite@2.8.4
   vitest: 0.5.3_c8@7.11.0+jsdom@19.0.0
   whatwg-fetch: 3.6.2
   workbox-build: 6.4.2
@@ -8822,8 +8822,8 @@ packages:
       - supports-color
     dev: true
 
-  /vite-tsconfig-paths/3.4.0_vite@2.8.4:
-    resolution: {integrity: sha512-os+oAdJxkZvNLmisVQ76eDdCWC3aH4bKTy3EXI5oJi//zQ0G+qJfUeFR6Need4iyzL/Xus9R7AECF/YfGS0ZEw==}
+  /vite-tsconfig-paths/3.4.1_vite@2.8.4:
+    resolution: {integrity: sha512-SgK3/pnTuJ3i+gMSAWLR6VCPSw26bnxawrmXGvCDjJgk8MAQgmbCrFrAzfwbwZBXSqSuvWEuX04Wt73qJKx8fQ==}
     peerDependencies:
       vite: '>2.0.0-0'
     dependencies:
