@@ -72,7 +72,7 @@
 		"postcss": "8.4.7",
 		"prettier": "2.5.1",
 		"prettier-plugin-tailwindcss": "0.1.8",
-		"rollup": "2.68.0",
+		"rollup": "2.69.0",
 		"rollup-plugin-istanbul": "3.0.0",
 		"start-server-and-test": "1.14.0",
 		"stylelint": "14.5.3",
