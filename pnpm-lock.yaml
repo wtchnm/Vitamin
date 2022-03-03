@@ -39,7 +39,7 @@ specifiers:
   husky: 7.0.4
   jsdom: 19.0.0
   lint-staged: 12.3.4
-  msw: 0.38.1
+  msw: 0.38.2
   npm-run-all: 4.1.5
   postcss: 8.4.7
   prettier: 2.5.1
@@ -109,7 +109,7 @@ devDependencies:
   husky: 7.0.4
   jsdom: 19.0.0
   lint-staged: 12.3.4
-  msw: 0.38.1
+  msw: 0.38.2
   npm-run-all: 4.1.5
   postcss: 8.4.7
   prettier: 2.5.1
@@ -1627,14 +1627,14 @@ packages:
       set-cookie-parser: 2.4.8
     dev: true
 
-  /@mswjs/interceptors/0.13.3:
-    resolution: {integrity: sha512-YGC25Rp7ugywBL1bqvy1fJ9HHvQJ9yEJcYLbHdsQCiQ89zmnY0b0ZfJAMqXHhTOHV6oKaunN7y0fdWkRlfuTIg==}
+  /@mswjs/interceptors/0.13.6:
+    resolution: {integrity: sha512-28FzF44Q84h9vxQ0XBpEz940KC/q3fzlo+TtaIyfilnJ7+HeIcnVfRM4hkp0/q2Uh466PmgpD4BH7A0F0kCBbQ==}
     engines: {node: '>=12.x'}
     dependencies:
       '@open-draft/until': 1.0.3
       '@xmldom/xmldom': 0.7.5
       debug: 4.3.3
-      headers-polyfill: 3.0.3
+      headers-polyfill: 3.0.4
       outvariant: 1.2.1
       strict-event-emitter: 0.2.0
     transitivePeerDependencies:
@@ -5216,8 +5216,8 @@ packages:
       type-fest: 0.8.1
     dev: true
 
-  /headers-polyfill/3.0.3:
-    resolution: {integrity: sha512-Ak5m549Y+5vBtWNnIUcyARJjF0tQpINuy3+vOqG8tK/qjF0itYhAPgrzJc0zsZJh7AX8PalzICMPuWIqHpZlEA==}
+  /headers-polyfill/3.0.4:
+    resolution: {integrity: sha512-I1DOM1EdWYntdrnCvqQtcKwSSuiTzoqOExy4v1mdcFixFZABlWP4IPHdmoLtPda0abMHqDOY4H9svhQ10DFR4w==}
     dev: true
 
   /history/5.2.0:
@@ -6469,13 +6469,13 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw/0.38.1:
-    resolution: {integrity: sha512-4BMEc54nX12UzOAxw6cB31tEytuxfTPwmGoBrItCHoD9Aj9ZLO9aoBaZjCA1W0wfiYcd7sjekLpnT0lE/uR0qA==}
+  /msw/0.38.2:
+    resolution: {integrity: sha512-gD2vkV/ol3+zaC6AHKlPxB4zvl5mTV1uzhcv+0H6kwlbaiTZe/vVwiEGPeE9mQroAFvh0c8uJmltDebEys28qA==}
     hasBin: true
     requiresBuild: true
     dependencies:
       '@mswjs/cookies': 0.1.7
-      '@mswjs/interceptors': 0.13.3
+      '@mswjs/interceptors': 0.13.6
       '@open-draft/until': 1.0.3
       '@types/cookie': 0.4.1
       '@types/js-levenshtein': 1.1.1
@@ -6483,7 +6483,7 @@ packages:
       chokidar: 3.5.3
       cookie: 0.4.2
       graphql: 16.3.0
-      headers-polyfill: 3.0.3
+      headers-polyfill: 3.0.4
       inquirer: 8.2.0
       is-node-process: 1.0.1
       js-levenshtein: 1.1.6
