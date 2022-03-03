@@ -49,7 +49,7 @@
 		"c8": "7.11.0",
 		"commitizen": "4.2.4",
 		"css-mediaquery": "0.1.2",
-		"cypress": "9.5.0",
+		"cypress": "9.5.1",
 		"cz-conventional-changelog": "3.3.0",
 		"eslint": "8.10.0",
 		"eslint-config-airbnb": "19.0.4",
