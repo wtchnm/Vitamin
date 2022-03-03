@@ -47,7 +47,7 @@ specifiers:
   react: 17.0.2
   react-dom: 17.0.2
   react-query: 3.34.16
-  react-router-dom: 6.2.1
+  react-router-dom: 6.2.2
   rollup: 2.68.0
   rollup-plugin-istanbul: 3.0.0
   start-server-and-test: 1.14.0
@@ -68,7 +68,7 @@ dependencies:
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-query: 3.34.16_react-dom@17.0.2+react@17.0.2
-  react-router-dom: 6.2.1_react-dom@17.0.2+react@17.0.2
+  react-router-dom: 6.2.2_react-dom@17.0.2+react@17.0.2
 
 devDependencies:
   '@cypress/code-coverage': 3.9.12_cypress@9.5.1
@@ -7322,8 +7322,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-router-dom/6.2.1_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-I6Zax+/TH/cZMDpj3/4Fl2eaNdcvoxxHoH1tYOREsQ22OKDYofGebrNm6CTPUcvLvZm63NL/vzCYdjf9CUhqmA==}
+  /react-router-dom/6.2.2_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-AtYEsAST7bDD4dLSQHDnk/qxWLJdad5t1HFa1qJyUrCeGgEuCSw0VB/27ARbF9Fi/W5598ujvJOm3ujUCVzuYQ==}
     peerDependencies:
       react: '>=16.8'
       react-dom: '>=16.8'
@@ -7331,11 +7331,11 @@ packages:
       history: 5.2.0
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
-      react-router: 6.2.1_react@17.0.2
+      react-router: 6.2.2_react@17.0.2
     dev: false
 
-  /react-router/6.2.1_react@17.0.2:
-    resolution: {integrity: sha512-2fG0udBtxou9lXtK97eJeET2ki5//UWfQSl1rlJ7quwe6jrktK9FCCc8dQb5QY6jAv3jua8bBQRhhDOM/kVRsg==}
+  /react-router/6.2.2_react@17.0.2:
+    resolution: {integrity: sha512-/MbxyLzd7Q7amp4gDOGaYvXwhEojkJD5BtExkuKmj39VEE0m3l/zipf6h2WIB2jyAO0lI6NGETh4RDcktRm4AQ==}
     peerDependencies:
       react: '>=16.8'
     dependencies:
