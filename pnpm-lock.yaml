@@ -31,7 +31,7 @@ specifiers:
   eslint-plugin-cypress: 2.12.1
   eslint-plugin-import: 2.25.4
   eslint-plugin-jsx-a11y: 6.5.1
-  eslint-plugin-react: 7.29.2
+  eslint-plugin-react: 7.29.3
   eslint-plugin-react-hooks: 4.3.0
   eslint-plugin-react-prefer-function-component: 1.0.0
   eslint-plugin-testing-library: 5.0.6
@@ -94,14 +94,14 @@ devDependencies:
   cypress: 9.5.1
   cz-conventional-changelog: 3.3.0
   eslint: 8.10.0
-  eslint-config-airbnb: 19.0.4_9a5616da51bd2cb5ecdb57c59dec5c01
+  eslint-config-airbnb: 19.0.4_c7d04ecf5eaa64250a4220a14895c52e
   eslint-config-airbnb-base: 15.0.0_8b406960a2a06af75ddac353adbd0cfd
   eslint-config-airbnb-typescript: 16.1.0_5813502aeaebe415d30f406ae0c00e3b
   eslint-config-prettier: 8.5.0_eslint@8.10.0
   eslint-plugin-cypress: 2.12.1_eslint@8.10.0
   eslint-plugin-import: 2.25.4_eslint@8.10.0
   eslint-plugin-jsx-a11y: 6.5.1_eslint@8.10.0
-  eslint-plugin-react: 7.29.2_eslint@8.10.0
+  eslint-plugin-react: 7.29.3_eslint@8.10.0
   eslint-plugin-react-hooks: 4.3.0_eslint@8.10.0
   eslint-plugin-react-prefer-function-component: 1.0.0
   eslint-plugin-testing-library: 5.0.6_eslint@8.10.0+typescript@4.6.2
@@ -4225,7 +4225,7 @@ packages:
       - eslint-plugin-import
     dev: true
 
-  /eslint-config-airbnb/19.0.4_9a5616da51bd2cb5ecdb57c59dec5c01:
+  /eslint-config-airbnb/19.0.4_c7d04ecf5eaa64250a4220a14895c52e:
     resolution: {integrity: sha512-T75QYQVQX57jiNgpF9r1KegMICE94VYwoFQyMGhrvc+lB8YF2E/M/PYDaQe1AJcWaEgqLE+ErXV1Og/+6Vyzew==}
     engines: {node: ^10.12.0 || ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -4239,7 +4239,7 @@ packages:
       eslint-config-airbnb-base: 15.0.0_8b406960a2a06af75ddac353adbd0cfd
       eslint-plugin-import: 2.25.4_eslint@8.10.0
       eslint-plugin-jsx-a11y: 6.5.1_eslint@8.10.0
-      eslint-plugin-react: 7.29.2_eslint@8.10.0
+      eslint-plugin-react: 7.29.3_eslint@8.10.0
       eslint-plugin-react-hooks: 4.3.0_eslint@8.10.0
       object.assign: 4.1.2
       object.entries: 1.1.5
@@ -4334,8 +4334,8 @@ packages:
     resolution: {integrity: sha512-qyYrkofEbc5s7QOHjt0uXY6DqMpZvU0yiVlI3E65DjN+m8PtttivQi+AkWT2TOLYAkOhglH9+YZ9saFuPjqeKw==}
     dev: true
 
-  /eslint-plugin-react/7.29.2_eslint@8.10.0:
-    resolution: {integrity: sha512-ypEBTKOy5liFQXZWMchJ3LN0JX1uPI6n7MN7OPHKacqXAxq5gYC30TdO7wqGYQyxD1OrzpobdHC3hDmlRWDg9w==}
+  /eslint-plugin-react/7.29.3_eslint@8.10.0:
+    resolution: {integrity: sha512-MzW6TuCnDOcta67CkpDyRfRsEVx9FNMDV8wZsDqe1luHPdGTrQIUaUXD27Ja3gHsdOIs/cXzNchWGlqm+qRVRg==}
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
