@@ -39,7 +39,7 @@ specifiers:
   husky: 7.0.4
   jsdom: 19.0.0
   lint-staged: 12.3.5
-  msw: 0.39.0
+  msw: 0.39.1
   npm-run-all: 4.1.5
   postcss: 8.4.8
   prettier: 2.5.1
@@ -109,7 +109,7 @@ devDependencies:
   husky: 7.0.4
   jsdom: 19.0.0
   lint-staged: 12.3.5
-  msw: 0.39.0
+  msw: 0.39.1
   npm-run-all: 4.1.5
   postcss: 8.4.8
   prettier: 2.5.1
@@ -1627,8 +1627,8 @@ packages:
       set-cookie-parser: 2.4.8
     dev: true
 
-  /@mswjs/interceptors/0.14.0:
-    resolution: {integrity: sha512-s0Mz/t2YCNxOcN8pnjJhcmPiOCg5pSoZGPYvDhAQhIrZiBvs6jtxxJnDgkpi5B40fJcvNqUou/K/HPvJudzilw==}
+  /@mswjs/interceptors/0.14.1:
+    resolution: {integrity: sha512-E+0qtLySvVC4cIo5vlqDXn7BAtAgyVJe9hJjGorfbbClvTRNWMym9V70jhNB11y9txcd6ZPXbgxf2dMT73jGmw==}
     engines: {node: '>=16.x'}
     dependencies:
       '@open-draft/until': 1.0.3
@@ -6469,14 +6469,14 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw/0.39.0:
-    resolution: {integrity: sha512-IOfagNGNIhuD46RIZ/7UY3/j3fAJodzeHyCgr4v6JgV2AERf5I499RNUTR+pQKlzn5opJBKIrS7pCZB/oNDnzw==}
+  /msw/0.39.1:
+    resolution: {integrity: sha512-IiM1F94Ecp3iyHUPpbmEIUcxmNB2HHOmUaEOBsbbHNGnfSg+IGgB3VsXjXOEVPHJCgeoeJc2rJywD7u4wEgOTw==}
     engines: {node: '>=16.x'}
     hasBin: true
     requiresBuild: true
     dependencies:
       '@mswjs/cookies': 0.1.7
-      '@mswjs/interceptors': 0.14.0
+      '@mswjs/interceptors': 0.14.1
       '@open-draft/until': 1.0.3
       '@types/cookie': 0.4.1
       '@types/js-levenshtein': 1.1.1
