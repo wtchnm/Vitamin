@@ -15,7 +15,7 @@ specifiers:
   '@types/react-dom': 17.0.13
   '@types/react-router-dom': 5.3.3
   '@typescript-eslint/eslint-plugin': 5.15.0
-  '@typescript-eslint/parser': 5.14.0
+  '@typescript-eslint/parser': 5.15.0
   '@vitejs/plugin-react': 1.2.0
   autoprefixer: 10.4.2
   c8: 7.11.0
@@ -84,8 +84,8 @@ devDependencies:
   '@types/react': 17.0.40
   '@types/react-dom': 17.0.13
   '@types/react-router-dom': 5.3.3
-  '@typescript-eslint/eslint-plugin': 5.15.0_ace6f9e7722b813e21eaf2dc993bc413
-  '@typescript-eslint/parser': 5.14.0_eslint@8.11.0+typescript@4.6.2
+  '@typescript-eslint/eslint-plugin': 5.15.0_f2c49ce7d0e93ebcfdb4b7d25b131b28
+  '@typescript-eslint/parser': 5.15.0_eslint@8.11.0+typescript@4.6.2
   '@vitejs/plugin-react': 1.2.0
   autoprefixer: 10.4.2_postcss@8.4.8
   c8: 7.11.0
@@ -96,7 +96,7 @@ devDependencies:
   eslint: 8.11.0
   eslint-config-airbnb: 19.0.4_35fa392e85ed0dff2335b4a0d11226ab
   eslint-config-airbnb-base: 15.0.0_fe22d862ffeecaee86c93a006d59e41e
-  eslint-config-airbnb-typescript: 16.1.2_134b27637dda80abab1e1d30ad592477
+  eslint-config-airbnb-typescript: 16.1.2_2a7bc34057f0c9a512ab84f1f1b77a56
   eslint-config-prettier: 8.5.0_eslint@8.11.0
   eslint-plugin-cypress: 2.12.1_eslint@8.11.0
   eslint-plugin-import: 2.25.4_eslint@8.11.0
@@ -2048,7 +2048,7 @@ packages:
     dev: true
     optional: true
 
-  /@typescript-eslint/eslint-plugin/5.15.0_ace6f9e7722b813e21eaf2dc993bc413:
+  /@typescript-eslint/eslint-plugin/5.15.0_f2c49ce7d0e93ebcfdb4b7d25b131b28:
     resolution: {integrity: sha512-u6Db5JfF0Esn3tiAKELvoU5TpXVSkOpZ78cEGn/wXtT2RVqs2vkt4ge6N8cRCyw7YVKhmmLDbwI2pg92mlv7cA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -2059,7 +2059,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 5.14.0_eslint@8.11.0+typescript@4.6.2
+      '@typescript-eslint/parser': 5.15.0_eslint@8.11.0+typescript@4.6.2
       '@typescript-eslint/scope-manager': 5.15.0
       '@typescript-eslint/type-utils': 5.15.0_eslint@8.11.0+typescript@4.6.2
       '@typescript-eslint/utils': 5.15.0_eslint@8.11.0+typescript@4.6.2
@@ -2075,8 +2075,8 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/parser/5.14.0_eslint@8.11.0+typescript@4.6.2:
-    resolution: {integrity: sha512-aHJN8/FuIy1Zvqk4U/gcO/fxeMKyoSv/rS46UXMXOJKVsLQ+iYPuXNbpbH7cBLcpSbmyyFbwrniLx5+kutu1pw==}
+  /@typescript-eslint/parser/5.15.0_eslint@8.11.0+typescript@4.6.2:
+    resolution: {integrity: sha512-NGAYP/+RDM2sVfmKiKOCgJYPstAO40vPAgACoWPO/+yoYKSgAXIFaBKsV8P0Cc7fwKgvj27SjRNX4L7f4/jCKQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
@@ -2085,9 +2085,9 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@typescript-eslint/scope-manager': 5.14.0
-      '@typescript-eslint/types': 5.14.0
-      '@typescript-eslint/typescript-estree': 5.14.0_typescript@4.6.2
+      '@typescript-eslint/scope-manager': 5.15.0
+      '@typescript-eslint/types': 5.15.0
+      '@typescript-eslint/typescript-estree': 5.15.0_typescript@4.6.2
       debug: 4.3.3
       eslint: 8.11.0
       typescript: 4.6.2
@@ -4285,7 +4285,7 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-config-airbnb-typescript/16.1.2_134b27637dda80abab1e1d30ad592477:
+  /eslint-config-airbnb-typescript/16.1.2_2a7bc34057f0c9a512ab84f1f1b77a56:
     resolution: {integrity: sha512-IZnWyJXCYGpWvEmGQ9eyxQUnuH/NTmw4E6pI+NNGNxu4weWclZstaDGjzD+lrld81sP4BKshaigLbqFWBB9QPg==}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': ^5.0.0
@@ -4293,8 +4293,8 @@ packages:
       eslint: ^7.32.0 || ^8.2.0
       eslint-plugin-import: ^2.25.3
     dependencies:
-      '@typescript-eslint/eslint-plugin': 5.15.0_ace6f9e7722b813e21eaf2dc993bc413
-      '@typescript-eslint/parser': 5.14.0_eslint@8.11.0+typescript@4.6.2
+      '@typescript-eslint/eslint-plugin': 5.15.0_f2c49ce7d0e93ebcfdb4b7d25b131b28
+      '@typescript-eslint/parser': 5.15.0_eslint@8.11.0+typescript@4.6.2
       eslint: 8.11.0
       eslint-config-airbnb-base: 15.0.0_fe22d862ffeecaee86c93a006d59e41e
       eslint-plugin-import: 2.25.4_eslint@8.11.0
