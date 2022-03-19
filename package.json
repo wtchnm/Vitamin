@@ -83,7 +83,7 @@
 		"vite": "2.8.6",
 		"vite-plugin-pwa": "0.11.13",
 		"vite-tsconfig-paths": "3.4.1",
-		"vitest": "0.6.3",
+		"vitest": "0.7.6",
 		"whatwg-fetch": "3.6.2",
 		"workbox-build": "6.5.1",
 		"workbox-window": "6.5.1"
