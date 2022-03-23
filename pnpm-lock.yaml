@@ -5,7 +5,7 @@ specifiers:
   '@nabla/vite-plugin-eslint': 1.4.0
   '@tailwindcss/forms': 0.5.0
   '@testing-library/cypress': 8.0.2
-  '@testing-library/dom': 8.11.3
+  '@testing-library/dom': 8.11.4
   '@testing-library/jest-dom': 5.16.2
   '@testing-library/react': 12.1.4
   '@testing-library/react-hooks': 7.0.2
@@ -75,11 +75,11 @@ devDependencies:
   '@nabla/vite-plugin-eslint': 1.4.0_eslint@8.11.0+vite@2.8.6
   '@tailwindcss/forms': 0.5.0_tailwindcss@3.0.23
   '@testing-library/cypress': 8.0.2_cypress@9.5.2
-  '@testing-library/dom': 8.11.3
+  '@testing-library/dom': 8.11.4
   '@testing-library/jest-dom': 5.16.2
   '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
   '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
-  '@testing-library/user-event': 13.5.0_@testing-library+dom@8.11.3
+  '@testing-library/user-event': 13.5.0_@testing-library+dom@8.11.4
   '@types/css-mediaquery': 0.1.1
   '@types/react': 17.0.42
   '@types/react-dom': 17.0.14
@@ -1780,12 +1780,12 @@ packages:
       cypress: ^2.1.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0
     dependencies:
       '@babel/runtime': 7.17.2
-      '@testing-library/dom': 8.11.3
+      '@testing-library/dom': 8.11.4
       cypress: 9.5.2
     dev: true
 
-  /@testing-library/dom/8.11.3:
-    resolution: {integrity: sha512-9LId28I+lx70wUiZjLvi1DB/WT2zGOxUh46glrSNMaWVx849kKAluezVzZrXJfTKKoQTmEOutLes/bHg4Bj3aA==}
+  /@testing-library/dom/8.11.4:
+    resolution: {integrity: sha512-7vZ6ZoBEbr6bfEM89W1nzl0vHbuI0g0kRrI0hwSXH3epnuqGO3KulFLQCKfmmW+60t7e4sevAkJPASSMmnNCRw==}
     engines: {node: '>=12'}
     dependencies:
       '@babel/code-frame': 7.16.7
@@ -1843,20 +1843,20 @@ packages:
       react-dom: '*'
     dependencies:
       '@babel/runtime': 7.17.2
-      '@testing-library/dom': 8.11.3
+      '@testing-library/dom': 8.11.4
       '@types/react-dom': 17.0.14
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: true
 
-  /@testing-library/user-event/13.5.0_@testing-library+dom@8.11.3:
+  /@testing-library/user-event/13.5.0_@testing-library+dom@8.11.4:
     resolution: {integrity: sha512-5Kwtbo3Y/NowpkbRuSepbyMFkZmHgD+vPzYB/RJ4oxt5Gj/avFFBYjhw27cqSVPVw/3a67NK1PbiIr9k4Gwmdg==}
     engines: {node: '>=10', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
     dependencies:
       '@babel/runtime': 7.17.2
-      '@testing-library/dom': 8.11.3
+      '@testing-library/dom': 8.11.4
     dev: true
 
   /@tootallnate/once/2.0.0:
