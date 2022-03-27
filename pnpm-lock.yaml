@@ -46,7 +46,7 @@ specifiers:
   prettier-plugin-tailwindcss: 0.1.8
   react: 17.0.2
   react-dom: 17.0.2
-  react-query: 3.34.17
+  react-query: 3.34.19
   react-router-dom: 6.2.2
   rollup: 2.70.1
   rollup-plugin-istanbul: 3.0.0
@@ -67,7 +67,7 @@ specifiers:
 dependencies:
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  react-query: 3.34.17_react-dom@17.0.2+react@17.0.2
+  react-query: 3.34.19_react-dom@17.0.2+react@17.0.2
   react-router-dom: 6.2.2_react-dom@17.0.2+react@17.0.2
 
 devDependencies:
@@ -7352,8 +7352,8 @@ packages:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
     dev: true
 
-  /react-query/3.34.17_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-59aJeYupEIlw7U7iC8EzgpLyrfZ3GpAf3SCyZBnpsskJjaq0WltuLkezAw0gvJud9Qw6/AWtNPr73zryJXWeZA==}
+  /react-query/3.34.19_react-dom@17.0.2+react@17.0.2:
+    resolution: {integrity: sha512-JO0Ymi58WKmvnhgg6bGIrYIeKb64KsKaPWo8JcGnmK2jJxAs2XmMBzlP75ZepSU7CHzcsWtIIyhMrLbX3pb/3w==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0
       react-dom: '*'
