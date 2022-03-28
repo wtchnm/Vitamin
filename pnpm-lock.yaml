@@ -6,7 +6,7 @@ specifiers:
   '@tailwindcss/forms': 0.5.0
   '@testing-library/cypress': 8.0.2
   '@testing-library/dom': 8.11.4
-  '@testing-library/jest-dom': 5.16.2
+  '@testing-library/jest-dom': 5.16.3
   '@testing-library/react': 12.1.4
   '@testing-library/react-hooks': 7.0.2
   '@testing-library/user-event': 13.5.0
@@ -76,7 +76,7 @@ devDependencies:
   '@tailwindcss/forms': 0.5.0_tailwindcss@3.0.23
   '@testing-library/cypress': 8.0.2_cypress@9.5.2
   '@testing-library/dom': 8.11.4
-  '@testing-library/jest-dom': 5.16.2
+  '@testing-library/jest-dom': 5.16.3
   '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
   '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
   '@testing-library/user-event': 13.5.0_@testing-library+dom@8.11.4
@@ -1798,8 +1798,8 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/jest-dom/5.16.2:
-    resolution: {integrity: sha512-6ewxs1MXWwsBFZXIk4nKKskWANelkdUehchEOokHsN8X7c2eKXGw+77aRV63UU8f/DTSVUPLaGxdrj4lN7D/ug==}
+  /@testing-library/jest-dom/5.16.3:
+    resolution: {integrity: sha512-u5DfKj4wfSt6akfndfu1eG06jsdyA/IUrlX2n3pyq5UXgXMhXY+NJb8eNK/7pqPWAhCKsCGWDdDO0zKMKAYkEA==}
     engines: {node: '>=8', npm: '>=6', yarn: '>=1'}
     dependencies:
       '@babel/runtime': 7.17.2
