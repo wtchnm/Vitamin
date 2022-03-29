@@ -2,12 +2,15 @@ import '@testing-library/jest-dom'
 import mediaQuery from 'css-mediaquery'
 import server from 'mocks/server'
 import { DESKTOP_RESOLUTION_HEIGHT, DESKTOP_RESOLUTION_WIDTH } from 'testUtils'
-import { afterAll } from 'vitest'
 import 'whatwg-fetch'
 
 beforeAll(() => {
 	server.listen({ onUnhandledRequest: 'error' })
 
+	Object.defineProperty(window, 'IS_REACT_ACT_ENVIRONMENT', {
+		writable: true,
+		value: true
+	})
 	Object.defineProperty(window, 'matchMedia', {
 		writable: true,
 		value: (query: string) => {
@@ -53,7 +56,7 @@ beforeAll(() => {
 			Object.assign(window, {
 				innerWidth: width,
 				innerHeight: height
-			}).dispatchEvent(new window.Event('resize'))
+			}).dispatchEvent(new Event('resize'))
 		}
 	})
 })
