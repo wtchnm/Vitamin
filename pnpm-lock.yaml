@@ -9,7 +9,7 @@ specifiers:
   '@testing-library/jest-dom': 5.16.3
   '@testing-library/react': 12.1.4
   '@testing-library/react-hooks': 7.0.2
-  '@testing-library/user-event': 13.5.0
+  '@testing-library/user-event': 14.0.0
   '@types/css-mediaquery': 0.1.1
   '@types/react': 17.0.43
   '@types/react-dom': 17.0.14
@@ -79,7 +79,7 @@ devDependencies:
   '@testing-library/jest-dom': 5.16.3
   '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
   '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
-  '@testing-library/user-event': 13.5.0_@testing-library+dom@8.12.0
+  '@testing-library/user-event': 14.0.0_@testing-library+dom@8.12.0
   '@types/css-mediaquery': 0.1.1
   '@types/react': 17.0.43
   '@types/react-dom': 17.0.14
@@ -1849,13 +1849,12 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: true
 
-  /@testing-library/user-event/13.5.0_@testing-library+dom@8.12.0:
-    resolution: {integrity: sha512-5Kwtbo3Y/NowpkbRuSepbyMFkZmHgD+vPzYB/RJ4oxt5Gj/avFFBYjhw27cqSVPVw/3a67NK1PbiIr9k4Gwmdg==}
-    engines: {node: '>=10', npm: '>=6'}
+  /@testing-library/user-event/14.0.0_@testing-library+dom@8.12.0:
+    resolution: {integrity: sha512-hZhjNrle/DMi1ziHwHy8LS0fYJtf+cID7fuG5+4h+Bk83xQaRDQT/DlqfL4hJYw3mxW6KTIxoODrhGnhqJebdQ==}
+    engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
     dependencies:
-      '@babel/runtime': 7.17.8
       '@testing-library/dom': 8.12.0
     dev: true
 
