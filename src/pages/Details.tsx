@@ -3,7 +3,7 @@ import Head from 'components/Head'
 import ImageAttribution from 'components/ImageAttribution'
 import LoadingOrError from 'components/LoadingOrError'
 import type { ReactElement } from 'react'
-import { useQuery } from 'react-query'
+import { useQuery } from '@tanstack/react-query'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useMediaQuery } from 'utils'
 
@@ -14,16 +14,16 @@ export default function DetailsPage(): ReactElement {
 	const isTabletAndUp = useMediaQuery('(min-width: 600px)')
 	const { fruitName } = useParams()
 
-	const { isLoading, isError, error, data } = useQuery('fruits', getFruits)
+	const { isLoading, isError, error, data } = useQuery(['fruits'], getFruits)
 	if (isLoading || isError) {
 		return <LoadingOrError error={error as Error} />
 	}
 
-	const fruit = data?.find(
+	const fruit = data.find(
 		f => f.name.toLowerCase() === fruitName?.toLowerCase()
 	)
 	if (!fruit) {
-		return <Navigate to='/' />
+		return <Navigate to='/' replace />
 	}
 
 	const imageWidth =

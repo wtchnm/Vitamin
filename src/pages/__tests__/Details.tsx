@@ -1,11 +1,17 @@
-import { screen, waitForElementToBeRemoved } from '@testing-library/react'
+import { screen, waitFor } from '@testing-library/react'
 import Gallery from 'pages/Gallery'
-import { Route, Routes } from 'react-router-dom'
+import type ReactRouterDOM from 'react-router-dom'
+import { Navigate, Route, Routes } from 'react-router-dom'
 import renderWithProviders, {
 	MOBILE_RESOLUTION_HEIGHT,
 	MOBILE_RESOLUTION_WIDTH
 } from 'testUtils'
 import Details from '../Details'
+
+vi.mock('react-router-dom', async () => ({
+	...(await vi.importActual<typeof ReactRouterDOM>('react-router-dom')),
+	Navigate: vi.fn()
+}))
 
 async function renderDetailsPage(route = 'apple'): Promise<void> {
 	window.history.pushState({}, '', route)
@@ -15,22 +21,20 @@ async function renderDetailsPage(route = 'apple'): Promise<void> {
 			<Route path=':fruitName' element={<Details />} />
 		</Routes>
 	)
-
-	await waitForElementToBeRemoved(screen.queryByText('Loading...'))
 }
 
 describe('<Details />', () => {
 	it('redirect to home screen if fruit is not found', async () => {
 		await renderDetailsPage('potato')
 
-		expect(
-			screen.queryByText('Vitamins per 100 g (3.5 oz)')
-		).not.toBeInTheDocument()
+		await waitFor(() => expect(Navigate).toHaveBeenCalledTimes(1))
 	})
 	it('renders', async () => {
 		await renderDetailsPage()
 
-		expect(screen.getByRole('link', { name: 'Back' })).toBeInTheDocument()
+		await expect(
+			screen.findByRole('link', { name: 'Back' })
+		).resolves.toBeInTheDocument()
 		expect(screen.getByText('Apple')).toBeInTheDocument()
 		expect(screen.getByText('Vitamins per 100 g (3.5 oz)')).toBeInTheDocument()
 		expect(screen.getByText('Vitamin')).toBeInTheDocument()
@@ -48,7 +52,7 @@ describe('<Details />', () => {
 		window.resizeTo(MOBILE_RESOLUTION_WIDTH, MOBILE_RESOLUTION_HEIGHT)
 		await renderDetailsPage()
 
-		const image = screen.getByRole('img', { name: 'Apple' })
+		const image = await screen.findByRole('img', { name: 'Apple' })
 		expect(image).toHaveAttribute('width', '414')
 		expect(image).toHaveAttribute('height', '268.8')
 	})

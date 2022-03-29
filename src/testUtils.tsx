@@ -1,6 +1,6 @@
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { render } from '@testing-library/react'
 import type { PropsWithChildren, ReactElement } from 'react'
-import { QueryClient, QueryClientProvider } from 'react-query'
 import { BrowserRouter } from 'react-router-dom'
 
 const queryClient = new QueryClient({
@@ -23,7 +23,7 @@ export default function renderWithProviders(
 	includeRouter = true
 ): void {
 	render(ui, {
-		wrapper: ({ children }: PropsWithChildren<unknown>): ReactElement => (
+		wrapper: ({ children }: PropsWithChildren): ReactElement => (
 			<QueryClientProvider client={queryClient}>
 				{includeRouter ? <BrowserRouter>{children}</BrowserRouter> : children}
 			</QueryClientProvider>
