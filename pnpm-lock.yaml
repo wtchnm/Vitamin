@@ -8,7 +8,7 @@ specifiers:
   '@testing-library/dom': 8.13.0
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 12.1.4
-  '@testing-library/react-hooks': 7.0.2
+  '@testing-library/react-hooks': 8.0.0
   '@testing-library/user-event': 13.5.0
   '@types/css-mediaquery': 0.1.1
   '@types/react': 17.0.44
@@ -78,7 +78,7 @@ devDependencies:
   '@testing-library/dom': 8.13.0
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 12.1.4_react-dom@17.0.2+react@17.0.2
-  '@testing-library/react-hooks': 7.0.2_react-dom@17.0.2+react@17.0.2
+  '@testing-library/react-hooks': 8.0.0_b49bddbe4b905ced4713cb857cca91fa
   '@testing-library/user-event': 13.5.0_@testing-library+dom@8.13.0
   '@types/css-mediaquery': 0.1.1
   '@types/react': 17.0.44
@@ -1813,14 +1813,17 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react-hooks/7.0.2_react-dom@17.0.2+react@17.0.2:
-    resolution: {integrity: sha512-dYxpz8u9m4q1TuzfcUApqi8iFfR6R0FaMbr2hjZJy1uC8z+bO/K4v8Gs9eogGKYQop7QsrBTFkv/BCF7MzD2Cg==}
+  /@testing-library/react-hooks/8.0.0_b49bddbe4b905ced4713cb857cca91fa:
+    resolution: {integrity: sha512-uZqcgtcUUtw7Z9N32W13qQhVAD+Xki2hxbTR461MKax8T6Jr8nsUvZB+vcBTkzY2nFvsUet434CsgF0ncW2yFw==}
     engines: {node: '>=12'}
     peerDependencies:
-      react: '>=16.9.0'
-      react-dom: '>=16.9.0'
-      react-test-renderer: '>=16.9.0'
+      '@types/react': ^16.9.0 || ^17.0.0
+      react: ^16.9.0 || ^17.0.0
+      react-dom: ^16.9.0 || ^17.0.0
+      react-test-renderer: ^16.9.0 || ^17.0.0
     peerDependenciesMeta:
+      '@types/react':
+        optional: true
       react-dom:
         optional: true
       react-test-renderer:
@@ -1828,8 +1831,6 @@ packages:
     dependencies:
       '@babel/runtime': 7.17.8
       '@types/react': 17.0.44
-      '@types/react-dom': 17.0.15
-      '@types/react-test-renderer': 17.0.1
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-error-boundary: 3.1.4_react@17.0.2
@@ -1990,12 +1991,6 @@ packages:
     resolution: {integrity: sha512-YYknwy0D0iOwKQgz9v8nOzt2J6l4gouBmDnWqUUznltOTaon+r8US8ky8HvN0tXvc38U9m6z/t2RsVsnd1zM0g==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 17.0.44
-    dev: true
-
-  /@types/react-test-renderer/17.0.1:
-    resolution: {integrity: sha512-3Fi2O6Zzq/f3QR9dRnlnHso9bMl7weKCviFmfF6B4LS1Uat6Hkm15k0ZAQuDz+UBq6B3+g+NM6IT2nr5QgPzCw==}
-    dependencies:
       '@types/react': 17.0.44
     dev: true
 
