@@ -18,7 +18,7 @@
 		"format": "prettier -uw --ignore-path .gitignore .",
 		"run-tsc": "tsc",
 		"run-eslint": "eslint --cache --fix --ignore-path .gitignore --ext .ts,.tsx src",
-		"run-stylelint": "stylelint --cache --fix --ignore-path .gitignore '**/*.css'",
+		"run-stylelint": "stylelint --cache --fix --ignore-path .gitignore \"**/*.css\"",
 		"lint": "run-p run-tsc run-eslint run-stylelint",
 		"validate": "run-p lint test:ci test:e2e:headless"
 	},
@@ -42,6 +42,7 @@
 		"@types/react": "17.0.44",
 		"@types/react-dom": "17.0.16",
 		"@types/react-router-dom": "5.3.3",
+		"@types/testing-library__jest-dom": "5.14.3",
 		"@typescript-eslint/eslint-plugin": "5.20.0",
 		"@typescript-eslint/parser": "5.20.0",
 		"@vitejs/plugin-react": "1.3.1",
