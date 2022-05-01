@@ -76,7 +76,7 @@
 		"rollup": "2.71.1",
 		"rollup-plugin-istanbul": "3.0.0",
 		"start-server-and-test": "1.14.0",
-		"stylelint": "14.7.1",
+		"stylelint": "14.8.1",
 		"stylelint-config-prettier": "9.0.3",
 		"stylelint-config-standard": "25.0.0",
 		"tailwindcss": "3.0.24",
