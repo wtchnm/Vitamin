@@ -52,7 +52,7 @@
 		"css-mediaquery": "0.1.2",
 		"cypress": "9.6.0",
 		"cz-conventional-changelog": "3.3.0",
-		"eslint": "8.14.0",
+		"eslint": "8.15.0",
 		"eslint-config-airbnb": "19.0.4",
 		"eslint-config-airbnb-base": "15.0.0",
 		"eslint-config-airbnb-typescript": "17.0.0",
