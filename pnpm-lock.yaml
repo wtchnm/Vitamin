@@ -12,7 +12,7 @@ specifiers:
   '@testing-library/user-event': 13.5.0
   '@types/css-mediaquery': 0.1.1
   '@types/react': 17.0.45
-  '@types/react-dom': 17.0.16
+  '@types/react-dom': 17.0.17
   '@types/react-router-dom': 5.3.3
   '@types/testing-library__jest-dom': 5.14.3
   '@typescript-eslint/eslint-plugin': 5.22.0
@@ -83,7 +83,7 @@ devDependencies:
   '@testing-library/user-event': 13.5.0_tlwynutqiyp5mns3woioasuxnq
   '@types/css-mediaquery': 0.1.1
   '@types/react': 17.0.45
-  '@types/react-dom': 17.0.16
+  '@types/react-dom': 17.0.17
   '@types/react-router-dom': 5.3.3
   '@types/testing-library__jest-dom': 5.14.3
   '@typescript-eslint/eslint-plugin': 5.22.0_tal4xlmvnofklupd3hwjtzfb4q
@@ -1864,7 +1864,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.17.9
       '@testing-library/dom': 8.13.0
-      '@types/react-dom': 17.0.16
+      '@types/react-dom': 17.0.17
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: true
@@ -1992,8 +1992,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react-dom/17.0.16:
-    resolution: {integrity: sha512-DWcXf8EbMrO/gWnQU7Z88Ws/p16qxGpPyjTKTpmBSFKeE+HveVubqGO1CVK7FrwlWD5MuOcvh8gtd0/XO38NdQ==}
+  /@types/react-dom/17.0.17:
+    resolution: {integrity: sha512-VjnqEmqGnasQKV0CWLevqMTXBYG9GbwuE6x3VetERLh0cq2LTptFE73MrQi2S7GkKXCf2GgwItB/melLnxfnsg==}
     dependencies:
       '@types/react': 17.0.45
     dev: true
