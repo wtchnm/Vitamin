@@ -35,7 +35,7 @@ specifiers:
   eslint-plugin-react: 7.29.4
   eslint-plugin-react-hooks: 4.4.0
   eslint-plugin-react-prefer-function-component: 2.0.0
-  eslint-plugin-testing-library: 5.4.0
+  eslint-plugin-testing-library: 5.5.0
   eslint-plugin-unicorn: 42.0.0
   husky: 7.0.4
   jsdom: 19.0.0
@@ -106,7 +106,7 @@ devDependencies:
   eslint-plugin-react: 7.29.4_eslint@8.15.0
   eslint-plugin-react-hooks: 4.4.0_eslint@8.15.0
   eslint-plugin-react-prefer-function-component: 2.0.0
-  eslint-plugin-testing-library: 5.4.0_hcfsmds2fshutdssjqluwm76uu
+  eslint-plugin-testing-library: 5.5.0_hcfsmds2fshutdssjqluwm76uu
   eslint-plugin-unicorn: 42.0.0_eslint@8.15.0
   husky: 7.0.4
   jsdom: 19.0.0
@@ -4454,8 +4454,8 @@ packages:
       string.prototype.matchall: 4.0.7
     dev: true
 
-  /eslint-plugin-testing-library/5.4.0_hcfsmds2fshutdssjqluwm76uu:
-    resolution: {integrity: sha512-XjxIf4g33KaZXxRNbR33+0WcRQ/zt8N0R58IY6/kkHnrY6zPsC1gs3u5cTZr5eUmCZN/sjoPak3uF5vHGKg2wg==}
+  /eslint-plugin-testing-library/5.5.0_hcfsmds2fshutdssjqluwm76uu:
+    resolution: {integrity: sha512-eWQ19l6uWL7LW8oeMyQVSGjVYFnBqk7DMHjadm0yOHBvX3Xi9OBrsNuxoAMdX4r7wlQ5WWpW46d+CB6FWFL/PQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0, npm: '>=6'}
     peerDependencies:
       eslint: ^7.5.0 || ^8.0.0
