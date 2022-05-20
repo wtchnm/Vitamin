@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@cypress/code-coverage': 3.9.12
   '@nabla/vite-plugin-eslint': 1.4.0
-  '@tailwindcss/forms': 0.5.1
+  '@tailwindcss/forms': 0.5.2
   '@testing-library/cypress': 8.0.2
   '@testing-library/dom': 8.13.0
   '@testing-library/jest-dom': 5.16.4
@@ -74,7 +74,7 @@ dependencies:
 devDependencies:
   '@cypress/code-coverage': 3.9.12_cypress@9.6.1
   '@nabla/vite-plugin-eslint': 1.4.0_eslint@8.15.0+vite@2.9.9
-  '@tailwindcss/forms': 0.5.1_tailwindcss@3.0.24
+  '@tailwindcss/forms': 0.5.2_tailwindcss@3.0.24
   '@testing-library/cypress': 8.0.2_cypress@9.6.1
   '@testing-library/dom': 8.13.0
   '@testing-library/jest-dom': 5.16.4
@@ -1783,8 +1783,8 @@ packages:
       string.prototype.matchall: 4.0.7
     dev: true
 
-  /@tailwindcss/forms/0.5.1_tailwindcss@3.0.24:
-    resolution: {integrity: sha512-QSwsFORnC2BAP0lRzQkz1pw+EzIiiPdk4e27vGQjyXkwJPeC7iLIRVndJzf9CJVbcrrIcirb/TfxF3gRTyFEVA==}
+  /@tailwindcss/forms/0.5.2_tailwindcss@3.0.24:
+    resolution: {integrity: sha512-pSrFeJB6Bg1Mrg9CdQW3+hqZXAKsBrSG9MAfFLKy1pVA4Mb4W7C0k7mEhlmS2Dfo/otxrQOET7NJiJ9RrS563w==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1'
     dependencies:
