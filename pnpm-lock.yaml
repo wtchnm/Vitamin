@@ -40,7 +40,7 @@ specifiers:
   husky: 8.0.1
   jsdom: 19.0.0
   lint-staged: 12.4.1
-  msw: 0.39.2
+  msw: 0.40.2
   npm-run-all: 4.1.5
   postcss: 8.4.13
   prettier: 2.6.2
@@ -111,7 +111,7 @@ devDependencies:
   husky: 8.0.1
   jsdom: 19.0.0
   lint-staged: 12.4.1
-  msw: 0.39.2
+  msw: 0.40.2_typescript@4.6.4
   npm-run-all: 4.1.5
   postcss: 8.4.13
   prettier: 2.6.2
@@ -6600,11 +6600,16 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw/0.39.2:
-    resolution: {integrity: sha512-ju/HpqQpE4/qCxZ23t5Gaau0KREn4QuFzdG28nP1EpidMrymMJuIvNd32+2uGTGG031PMwrC41YW7vCxHOwyHA==}
+  /msw/0.40.2_typescript@4.6.4:
+    resolution: {integrity: sha512-8MymevYPIniUhk3W/xxWmhaMAeZHD9uhI37fik31i4JSToDhPWFg9hO6v/8IfTEPCD2Y1r4npDUxHmNbIeaOsg==}
     engines: {node: '>=14'}
     hasBin: true
     requiresBuild: true
+    peerDependencies:
+      typescript: '>= 4.2.x <= 4.6.x'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
     dependencies:
       '@mswjs/cookies': 0.2.0
       '@mswjs/interceptors': 0.15.1
@@ -6624,6 +6629,7 @@ packages:
       statuses: 2.0.1
       strict-event-emitter: 0.2.4
       type-fest: 1.4.0
+      typescript: 4.6.4
       yargs: 17.4.1
     transitivePeerDependencies:
       - encoding
