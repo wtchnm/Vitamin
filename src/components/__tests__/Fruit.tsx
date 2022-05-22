@@ -27,22 +27,22 @@ describe('<Fruit />', () => {
 
 		expect(screen.getByText('Apple')).toBeInTheDocument()
 	})
-	it('redirect to fruit details page on enter', () => {
+	it('redirect to fruit details page on enter', async () => {
 		renderFruit()
 
 		screen.getByTestId('FruitCard').focus()
 		// No action should be performed
-		userEvent.keyboard('a')
-		userEvent.keyboard('[Enter]')
+		await userEvent.keyboard('a')
+		await userEvent.keyboard('[Enter]')
 
 		// eslint-disable-next-line @typescript-eslint/no-magic-numbers
 		expect(mockNavigate).toHaveBeenCalledTimes(1)
 		expect(mockNavigate).toHaveBeenCalledWith('apple')
 	})
-	it('redirect to photographer profile page on image attribute link click', () => {
+	it('redirect to photographer profile page on image attribute link click', async () => {
 		renderFruit()
 
-		userEvent.click(screen.getByRole('link', { name: 'Matheus Cenali' }))
+		await userEvent.click(screen.getByRole('link', { name: 'Matheus Cenali' }))
 
 		expect(mockNavigate).toHaveBeenCalledTimes(0)
 	})

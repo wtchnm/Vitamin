@@ -178,7 +178,12 @@
 			"files": ["**/__tests__/**/*.ts?(x)"],
 			"extends": ["plugin:testing-library/react"],
 			"rules": {
-				"testing-library/no-await-sync-events": "error",
+				"testing-library/no-await-sync-events": [
+					"error",
+					{
+						"eventModules": ["fire-event"]
+					}
+				],
 				"testing-library/no-manual-cleanup": "error",
 				"testing-library/prefer-explicit-assert": "error",
 				"testing-library/prefer-user-event": "error",
