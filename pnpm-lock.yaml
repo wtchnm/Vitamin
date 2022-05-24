@@ -39,7 +39,7 @@ specifiers:
   eslint-plugin-unicorn: 42.0.0
   husky: 8.0.1
   jsdom: 19.0.0
-  lint-staged: 12.4.1
+  lint-staged: 12.4.2
   msw: 0.41.0
   npm-run-all: 4.1.5
   postcss: 8.4.14
@@ -110,7 +110,7 @@ devDependencies:
   eslint-plugin-unicorn: 42.0.0_eslint@8.16.0
   husky: 8.0.1
   jsdom: 19.0.0
-  lint-staged: 12.4.1
+  lint-staged: 12.4.2
   msw: 0.41.0_typescript@4.6.4
   npm-run-all: 4.1.5
   postcss: 8.4.14
@@ -6246,8 +6246,8 @@ packages:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
 
-  /lint-staged/12.4.1:
-    resolution: {integrity: sha512-PTXgzpflrQ+pODQTG116QNB+Q6uUTDg5B5HqGvNhoQSGt8Qy+MA/6zSnR8n38+sxP5TapzeQGTvoKni0KRS8Vg==}
+  /lint-staged/12.4.2:
+    resolution: {integrity: sha512-JAJGIzY/OioIUtrRePr8go6qUxij//mL+RGGoFKU3VWQRtIHgWoHizSqH0QVn2OwrbXS9Q6CICQjfj+E5qvrXg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
