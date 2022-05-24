@@ -23,7 +23,7 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm i
+        run: pnpm i && pnpm cypress install
 
       - name: Validate
         run: pnpm run-p lint test:ci test:e2e:ci
