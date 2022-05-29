@@ -60,7 +60,7 @@ specifiers:
   vite: 2.9.9
   vite-plugin-pwa: 0.12.0
   vite-tsconfig-paths: 3.4.1
-  vitest: 0.12.9
+  vitest: 0.13.0
   whatwg-fetch: 3.6.2
   workbox-build: 6.5.3
   workbox-window: 6.5.3
@@ -127,7 +127,7 @@ devDependencies:
   vite: 2.9.9
   vite-plugin-pwa: 0.12.0_vite@2.9.9
   vite-tsconfig-paths: 3.4.1_vite@2.9.9
-  vitest: 0.12.9_c8@7.11.3+jsdom@19.0.0
+  vitest: 0.13.0_c8@7.11.3+jsdom@19.0.0
   whatwg-fetch: 3.6.2
   workbox-build: 6.5.3
   workbox-window: 6.5.3
@@ -5041,7 +5041,7 @@ packages:
     dev: true
 
   /get-func-name/2.0.0:
-    resolution: {integrity: sha1-6td0q+5y4gQJQzoGY2YCPdaIekE=}
+    resolution: {integrity: sha512-Hm0ixYtaSZ/V7C8FJrtZIuBBI+iSgL+1Aq82zSu8VQNB4S3Gk8e7Qs3VwBDJAhmRZcFqkl3tQu36g/Foh5I5ig==}
     dev: true
 
   /get-intrinsic/1.1.1:
@@ -8974,8 +8974,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.12.9_c8@7.11.3+jsdom@19.0.0:
-    resolution: {integrity: sha512-1NtyUANS72Qw5PwYvoztk067NX4fSiis2xQxhByOWS33eL2er/yupHyLxlBCOkF2ANe0dLFRvT1GVb+nczL5aw==}
+  /vitest/0.13.0_c8@7.11.3+jsdom@19.0.0:
+    resolution: {integrity: sha512-vuYt3+G25MMnANgyMHHG3VK86C9K/VFi/8uH5myQ2v660W4WArv99ElakPlVFxxSXXM1jqQPiPj2ht35Bod9LQ==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
