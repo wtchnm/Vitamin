@@ -47,7 +47,7 @@ specifiers:
   prettier-plugin-tailwindcss: 0.1.11
   react: 17.0.2
   react-dom: 17.0.2
-  react-query: 3.39.0
+  react-query: 3.39.1
   react-router-dom: 6.3.0
   rollup: 2.74.1
   rollup-plugin-istanbul: 3.0.0
@@ -68,7 +68,7 @@ specifiers:
 dependencies:
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
-  react-query: 3.39.0_sfoxds7t5ydpegc3knd667wn6m
+  react-query: 3.39.1_sfoxds7t5ydpegc3knd667wn6m
   react-router-dom: 6.3.0_sfoxds7t5ydpegc3knd667wn6m
 
 devDependencies:
@@ -6632,7 +6632,7 @@ packages:
     dev: true
 
   /nano-time/1.0.0:
-    resolution: {integrity: sha1-sFVPaa2J4i0JB/ehKwmTpdlhN+8=}
+    resolution: {integrity: sha512-flnngywOoQ0lLQOTRNexn2gGSNuM9bKj9RZAWSzhQ+UJYaAFG9bac4DW9VHjUAzrOaIcajHybCTHe/bkvozQqA==}
     dependencies:
       big-integer: 1.6.51
     dev: false
@@ -7433,8 +7433,8 @@ packages:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
     dev: true
 
-  /react-query/3.39.0_sfoxds7t5ydpegc3knd667wn6m:
-    resolution: {integrity: sha512-Od0IkSuS79WJOhzWBx/ys0x13+7wFqgnn64vBqqAAnZ9whocVhl/y1padD5uuZ6EIkXbFbInax0qvY7zGM0thA==}
+  /react-query/3.39.1_sfoxds7t5ydpegc3knd667wn6m:
+    resolution: {integrity: sha512-qYKT1bavdDiQZbngWZyPotlBVzcBjDYEJg5RQLBa++5Ix5jjfbEYJmHSZRZD+USVHUSvl/ey9Hu+QfF1QAK80A==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: '*'
