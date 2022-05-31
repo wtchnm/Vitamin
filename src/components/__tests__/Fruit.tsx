@@ -1,13 +1,13 @@
 import { render, screen } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import fruits from 'mocks/data/fruits.json'
-import type { useNavigate } from 'react-router-dom'
+import type ReactRouterDOM from 'react-router-dom'
 import Fruit from '../Fruit'
 
 const mockNavigate = vi.fn()
-vi.mock('react-router-dom', () => ({
-	...vi.importActual('react-router-dom'),
-	useNavigate: (): ReturnType<typeof useNavigate> => mockNavigate
+vi.mock('react-router-dom', async () => ({
+	...(await vi.importActual<typeof ReactRouterDOM>('react-router-dom')),
+	useNavigate: (): typeof mockNavigate => mockNavigate
 }))
 
 function renderFruit(): void {
