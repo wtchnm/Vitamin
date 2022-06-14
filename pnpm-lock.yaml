@@ -64,7 +64,7 @@ specifiers:
   vite-plugin-pwa: 0.12.0
   vite-tsconfig-paths: 3.5.0
   vitest: 0.14.0
-  webpack: 5.72.1
+  webpack: 5.73.0
   whatwg-fetch: 3.6.2
   workbox-build: 6.5.3
   workbox-window: 6.5.3
@@ -78,7 +78,7 @@ dependencies:
 devDependencies:
   '@babel/core': 7.18.5
   '@babel/preset-env': 7.18.2_@babel+core@7.18.5
-  '@cypress/code-coverage': 3.10.0_32unoxu5g5wcvlav4ccrymkkje
+  '@cypress/code-coverage': 3.10.0_pwemo32shu6p3k4yuku5rtyquy
   '@nabla/vite-plugin-eslint': 1.4.0_eslint@8.16.0+vite@2.9.10
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.0.24
   '@testing-library/cypress': 8.0.2_cypress@9.7.0
@@ -96,7 +96,7 @@ devDependencies:
   '@typescript-eslint/parser': 5.27.0_blx5qwtqxfukidcbfrsfa7cnnq
   '@vitejs/plugin-react': 1.3.2
   autoprefixer: 10.4.7_postcss@8.4.14
-  babel-loader: 8.2.5_bknskcquvzhx5phrpr2fwapcku
+  babel-loader: 8.2.5_te6ollfzjcco6mbxjl755ucqke
   c8: 7.11.3
   commitizen: 4.2.4
   css-mediaquery: 0.1.2
@@ -135,7 +135,7 @@ devDependencies:
   vite-plugin-pwa: 0.12.0_vite@2.9.10
   vite-tsconfig-paths: 3.5.0_vite@2.9.10
   vitest: 0.14.0_c8@7.11.3+jsdom@19.0.0
-  webpack: 5.72.1
+  webpack: 5.73.0
   whatwg-fetch: 3.6.2
   workbox-build: 6.5.3
   workbox-window: 6.5.3
@@ -1434,12 +1434,12 @@ packages:
     resolution: {integrity: sha512-RpfLEtTlyIxeNPGKcokS+p3BZII/Q3bYxryFRglh5H3A3T8q9fsLYm72VYAMEOOIBLEa8o93kFLiBDUWKrwXZA==}
     dev: true
 
-  /@cypress/code-coverage/3.10.0_32unoxu5g5wcvlav4ccrymkkje:
+  /@cypress/code-coverage/3.10.0_pwemo32shu6p3k4yuku5rtyquy:
     resolution: {integrity: sha512-K5pW2KPpK4vKMXqxd6vuzo6m9BNgpAv1LcrrtmqAtOJ1RGoEILXYZVost0L6Q+V01NyY7n7jXIIfS7LR3nP6YA==}
     peerDependencies:
       cypress: '*'
     dependencies:
-      '@cypress/webpack-preprocessor': 5.11.1_7rj23y654yyl7ogp3nvjwcuwra
+      '@cypress/webpack-preprocessor': 5.11.1_yhrwncs34vqjvsx25w6zwwjwdi
       chalk: 4.1.2
       cypress: 9.7.0
       dayjs: 1.10.7
@@ -1481,7 +1481,7 @@ packages:
       uuid: 8.3.2
     dev: true
 
-  /@cypress/webpack-preprocessor/5.11.1_7rj23y654yyl7ogp3nvjwcuwra:
+  /@cypress/webpack-preprocessor/5.11.1_yhrwncs34vqjvsx25w6zwwjwdi:
     resolution: {integrity: sha512-kfdF+W/Tns81rFplnqlgZ+t6V+FJ7vegeQCYolLyhh0nJ8eG3s5HvV/ak/zSlbQnaOmAuYiZIChJFVZLUWuNOA==}
     peerDependencies:
       '@babel/core': ^7.0.1
@@ -1491,11 +1491,11 @@ packages:
     dependencies:
       '@babel/core': 7.18.5
       '@babel/preset-env': 7.18.2_@babel+core@7.18.5
-      babel-loader: 8.2.5_bknskcquvzhx5phrpr2fwapcku
+      babel-loader: 8.2.5_te6ollfzjcco6mbxjl755ucqke
       bluebird: 3.7.1
       debug: 4.3.4
       lodash: 4.17.21
-      webpack: 5.72.1
+      webpack: 5.73.0
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -2661,7 +2661,7 @@ packages:
     resolution: {integrity: sha512-Td525n+iPOOyUQIeBfcASuG6uJsDOITl7Mds5gFyerkWiX7qhUTdYUBlSgNMyVqtSJqwpt1kXGLdUt6SykLMRA==}
     dev: true
 
-  /babel-loader/8.2.5_bknskcquvzhx5phrpr2fwapcku:
+  /babel-loader/8.2.5_te6ollfzjcco6mbxjl755ucqke:
     resolution: {integrity: sha512-OSiFfH89LrEMiWd4pLNqGz4CwJDtbs2ZVc+iGu2HrkRfPxId9F2anQj38IxWpmRfsUY0aBZYi1EFcd3mhtRMLQ==}
     engines: {node: '>= 8.9'}
     peerDependencies:
@@ -2673,7 +2673,7 @@ packages:
       loader-utils: 2.0.2
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.72.1
+      webpack: 5.73.0
     dev: true
 
   /babel-plugin-dynamic-import-node/2.3.3:
@@ -7842,7 +7842,7 @@ packages:
       unique-string: 2.0.0
     dev: true
 
-  /terser-webpack-plugin/5.3.1_webpack@5.72.1:
+  /terser-webpack-plugin/5.3.1_webpack@5.73.0:
     resolution: {integrity: sha512-GvlZdT6wPQKbDNW/GDQzZFg/j4vKU96yl2q6mcUkzKOgW4gwf1Z8cZToUCrz31XHlPWH8MVb1r2tFtdDtTGJ7g==}
     engines: {node: '>= 10.13.0'}
     peerDependencies:
@@ -7863,7 +7863,7 @@ packages:
       serialize-javascript: 6.0.0
       source-map: 0.6.1
       terser: 5.14.0
-      webpack: 5.72.1
+      webpack: 5.73.0
     dev: true
 
   /terser/5.14.0:
@@ -8387,8 +8387,8 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /webpack/5.72.1:
-    resolution: {integrity: sha512-dXG5zXCLspQR4krZVR6QgajnZOjW2K/djHvdcRaDQvsjV9z9vaW6+ja5dZOYbqBBjF6kGXka/2ZyxNdc+8Jung==}
+  /webpack/5.73.0:
+    resolution: {integrity: sha512-svjudQRPPa0YiOYa2lM/Gacw0r6PvxptHj4FuEKQ2kX05ZLkjbVc5MnPs6its5j7IZljnIqSVo/OsY2X0IpHGA==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -8418,7 +8418,7 @@ packages:
       neo-async: 2.6.2
       schema-utils: 3.1.1
       tapable: 2.2.1
-      terser-webpack-plugin: 5.3.1_webpack@5.72.1
+      terser-webpack-plugin: 5.3.1_webpack@5.73.0
       watchpack: 2.3.1
       webpack-sources: 3.2.3
     transitivePeerDependencies:
