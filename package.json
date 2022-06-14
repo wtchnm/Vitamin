@@ -29,7 +29,7 @@
 		"react-router-dom": "6.3.0"
 	},
 	"devDependencies": {
-		"@babel/core": "7.18.2",
+		"@babel/core": "7.18.5",
 		"@babel/preset-env": "7.18.2",
 		"@cypress/code-coverage": "3.10.0",
 		"@nabla/vite-plugin-eslint": "1.4.0",
