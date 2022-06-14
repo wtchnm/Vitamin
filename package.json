@@ -34,7 +34,7 @@
 		"@cypress/code-coverage": "3.10.0",
 		"@nabla/vite-plugin-eslint": "1.4.0",
 		"@tailwindcss/forms": "0.5.2",
-		"@testing-library/cypress": "8.0.2",
+		"@testing-library/cypress": "8.0.3",
 		"@testing-library/dom": "8.13.0",
 		"@testing-library/jest-dom": "5.16.4",
 		"@testing-library/react": "12.1.5",
