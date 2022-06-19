@@ -15,7 +15,7 @@
 		"test:e2e": "pnpm preview:test 'cypress open'",
 		"test:e2e:headless": "pnpm preview:test 'cypress run'",
 		"test:e2e:ci": "vite build && pnpm preview:test 'cypress run --record'",
-		"format": "prettier -uw --ignore-path .gitignore .",
+		"format": "prettier -uw --cache --ignore-path .gitignore .",
 		"run-tsc": "tsc",
 		"run-eslint": "eslint --cache --fix --ignore-path .gitignore --ext .ts,.tsx src",
 		"run-stylelint": "stylelint --cache --fix --ignore-path .gitignore \"**/*.css\"",
@@ -74,7 +74,7 @@
 		"msw": "0.42.1",
 		"npm-run-all": "4.1.5",
 		"postcss": "8.4.14",
-		"prettier": "2.6.2",
+		"prettier": "2.7.1",
 		"prettier-plugin-tailwindcss": "0.1.11",
 		"rollup": "2.75.6",
 		"rollup-plugin-istanbul": "3.0.0",
@@ -101,7 +101,7 @@
 		]
 	},
 	"lint-staged": {
-		"*": "prettier -uw",
+		"*": "prettier -uw --cache",
 		"*.css": "stylelint --cache --fix",
 		"*.{ts,tsx}": [
 			"eslint --cache --fix",
