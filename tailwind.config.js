@@ -1,7 +1,8 @@
 const defaultConfig = require('tailwindcss/defaultConfig')
 const formsPlugin = require('@tailwindcss/forms')
 
-module.exports = {
+/** @type {import('tailwindcss/types').Config} */
+const config = {
 	content: ['index.html', 'src/**/*.tsx'],
 	theme: {
 		fontFamily: {
@@ -11,3 +12,4 @@ module.exports = {
 	experimental: { optimizeUniversalDefaults: true },
 	plugins: [formsPlugin]
 }
+module.exports = config
