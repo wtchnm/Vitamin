@@ -35,7 +35,7 @@ specifiers:
   eslint-plugin-cypress: 2.12.1
   eslint-plugin-import: 2.26.0
   eslint-plugin-jsx-a11y: 6.5.1
-  eslint-plugin-react: 7.30.0
+  eslint-plugin-react: 7.30.1
   eslint-plugin-react-hooks: 4.6.0
   eslint-plugin-react-prefer-function-component: 2.0.0
   eslint-plugin-testing-library: 5.5.1
@@ -103,14 +103,14 @@ devDependencies:
   cypress: 9.7.0
   cz-conventional-changelog: 3.3.0
   eslint: 8.18.0
-  eslint-config-airbnb: 19.0.4_33hhosu7yovqp6ljggjzij5oci
+  eslint-config-airbnb: 19.0.4_h7xqtcnzuvoj7ivkhmuaagpsxu
   eslint-config-airbnb-base: 15.0.0_srrmf5la5dmnsfe2mpg6sboreu
   eslint-config-airbnb-typescript: 17.0.0_5hz5uetpggdx7cisb4emmjbrn4
   eslint-config-prettier: 8.5.0_eslint@8.18.0
   eslint-plugin-cypress: 2.12.1_eslint@8.18.0
   eslint-plugin-import: 2.26.0_zgg5sxdhnxsuz2d3vdnwdtmcnu
   eslint-plugin-jsx-a11y: 6.5.1_eslint@8.18.0
-  eslint-plugin-react: 7.30.0_eslint@8.18.0
+  eslint-plugin-react: 7.30.1_eslint@8.18.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.18.0
   eslint-plugin-react-prefer-function-component: 2.0.0
   eslint-plugin-testing-library: 5.5.1_b5e7v2qnwxfo6hmiq56u52mz3e
@@ -3257,7 +3257,7 @@ packages:
     dev: true
 
   /concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
   /confusing-browser-globals/1.0.11:
     resolution: {integrity: sha512-JsPKdmh8ZkmnHxDk55FZ1TqVLvEQTvoByJZRN9jzI0UjxK/QgAmsphz7PGtqgPieQZ/CQcHWXCR7ATDNhGe+YA==}
@@ -4118,7 +4118,7 @@ packages:
       eslint-plugin-import: 2.26.0_zgg5sxdhnxsuz2d3vdnwdtmcnu
     dev: true
 
-  /eslint-config-airbnb/19.0.4_33hhosu7yovqp6ljggjzij5oci:
+  /eslint-config-airbnb/19.0.4_h7xqtcnzuvoj7ivkhmuaagpsxu:
     resolution: {integrity: sha512-T75QYQVQX57jiNgpF9r1KegMICE94VYwoFQyMGhrvc+lB8YF2E/M/PYDaQe1AJcWaEgqLE+ErXV1Og/+6Vyzew==}
     engines: {node: ^10.12.0 || ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -4132,7 +4132,7 @@ packages:
       eslint-config-airbnb-base: 15.0.0_srrmf5la5dmnsfe2mpg6sboreu
       eslint-plugin-import: 2.26.0_zgg5sxdhnxsuz2d3vdnwdtmcnu
       eslint-plugin-jsx-a11y: 6.5.1_eslint@8.18.0
-      eslint-plugin-react: 7.30.0_eslint@8.18.0
+      eslint-plugin-react: 7.30.1_eslint@8.18.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.18.0
       object.assign: 4.1.2
       object.entries: 1.1.5
@@ -4256,8 +4256,8 @@ packages:
     resolution: {integrity: sha512-f/S1k3FXEGk5s+q2nOL4VxAXWGbWElVidmXcDlulo7kt5py5OS2dB0NzuAH6bASihJWEM9GqFXfBmyiYRvR55A==}
     dev: true
 
-  /eslint-plugin-react/7.30.0_eslint@8.18.0:
-    resolution: {integrity: sha512-RgwH7hjW48BleKsYyHK5vUAvxtE9SMPDKmcPRQgtRCYaZA0XQPt5FSkrU3nhz5ifzMZcA8opwmRJ2cmOO8tr5A==}
+  /eslint-plugin-react/7.30.1_eslint@8.18.0:
+    resolution: {integrity: sha512-NbEvI9jtqO46yJA3wcRF9Mo0lF9T/jhdHqhCHXiXtD+Zcb98812wvokjWpU7Q4QH5edo6dmqrukxVvWWXHlsUg==}
     engines: {node: '>=4'}
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
