@@ -43,7 +43,7 @@ specifiers:
   husky: 8.0.1
   jsdom: 20.0.0
   lint-staged: 13.0.2
-  msw: 0.42.1
+  msw: 0.42.3
   npm-run-all: 4.1.5
   postcss: 8.4.14
   prettier: 2.7.1
@@ -118,7 +118,7 @@ devDependencies:
   husky: 8.0.1
   jsdom: 20.0.0
   lint-staged: 13.0.2
-  msw: 0.42.1_typescript@4.7.4
+  msw: 0.42.3_typescript@4.7.4
   npm-run-all: 4.1.5
   postcss: 8.4.14
   prettier: 2.7.1
@@ -6225,8 +6225,8 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw/0.42.1_typescript@4.7.4:
-    resolution: {integrity: sha512-LZZuz7VddL45gCBgfBWHyXj6a4W7OTJY0mZPoipJ3P/xwbuJwrtwB3IJrWlqBM8aink/eTKlRxwzmtIAwCj5yQ==}
+  /msw/0.42.3_typescript@4.7.4:
+    resolution: {integrity: sha512-zrKBIGCDsNUCZLd3DLSeUtRruZ0riwJgORg9/bSDw3D0PTI8XUGAK3nC0LJA9g0rChGuKaWK/SwObA8wpFrz4g==}
     engines: {node: '>=14'}
     hasBin: true
     requiresBuild: true
@@ -6263,7 +6263,7 @@ packages:
     dev: true
 
   /mute-stream/0.0.7:
-    resolution: {integrity: sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=}
+    resolution: {integrity: sha512-r65nCZhrbXXb6dXOACihYApHw2Q6pV0M3V0PSxd74N0+D8nzAdEAITq2oAjA1jVnKI+tGvEBUpqiMh0+rW6zDQ==}
     dev: true
 
   /mute-stream/0.0.8:
