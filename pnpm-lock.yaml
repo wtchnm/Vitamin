@@ -47,7 +47,7 @@ specifiers:
   npm-run-all: 4.1.5
   postcss: 8.4.14
   prettier: 2.7.1
-  prettier-plugin-tailwindcss: 0.1.11
+  prettier-plugin-tailwindcss: 0.1.12
   react: 17.0.2
   react-dom: 17.0.2
   react-query: 3.39.1
@@ -122,7 +122,7 @@ devDependencies:
   npm-run-all: 4.1.5
   postcss: 8.4.14
   prettier: 2.7.1
-  prettier-plugin-tailwindcss: 0.1.11_prettier@2.7.1
+  prettier-plugin-tailwindcss: 0.1.12_prettier@2.7.1
   rollup: 2.75.7
   rollup-plugin-istanbul: 3.0.0_rollup@2.75.7
   start-server-and-test: 1.14.0
@@ -6878,8 +6878,8 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-plugin-tailwindcss/0.1.11_prettier@2.7.1:
-    resolution: {integrity: sha512-a28+1jvpIZQdZ/W97wOXb6VqI762MKE/TxMMuibMEHhyYsSxQA8Ek30KObd5kJI2HF1ldtSYprFayXJXi3pz8Q==}
+  /prettier-plugin-tailwindcss/0.1.12_prettier@2.7.1:
+    resolution: {integrity: sha512-pEZ6tppwknCeq3ObR9g8t61AhWtVRRR3I0EQNeiRrrJ3D42FJGeUDxiFc/LJRYEeAx5JOxagsF0MICwuWOJa+w==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
       prettier: '>=2.2.0'
