@@ -11,7 +11,7 @@ specifiers:
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 12.1.5
   '@testing-library/react-hooks': 8.0.1
-  '@testing-library/user-event': 14.2.3
+  '@testing-library/user-event': 14.2.6
   '@types/css-mediaquery': 0.1.1
   '@types/react': 17.0.47
   '@types/react-dom': 17.0.17
@@ -86,7 +86,7 @@ devDependencies:
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 12.1.5_sfoxds7t5ydpegc3knd667wn6m
   '@testing-library/react-hooks': 8.0.1_nn45z5sr7igu7sfun6tiae5hx4
-  '@testing-library/user-event': 14.2.3_ihvo3xlg2d6kwqju3os3zitn3y
+  '@testing-library/user-event': 14.2.6_ihvo3xlg2d6kwqju3os3zitn3y
   '@types/css-mediaquery': 0.1.1
   '@types/react': 17.0.47
   '@types/react-dom': 17.0.17
@@ -1905,8 +1905,8 @@ packages:
       react-dom: 17.0.2_react@17.0.2
     dev: true
 
-  /@testing-library/user-event/14.2.3_ihvo3xlg2d6kwqju3os3zitn3y:
-    resolution: {integrity: sha512-07Ly+NsFDTvjNdvl5bLBA5oHeGIIHCKc7CniGuKnHrjvqcTPVqPEo4z6a8iYydZ0WvDA6ZA0fnhYrqCLbsm0+A==}
+  /@testing-library/user-event/14.2.6_ihvo3xlg2d6kwqju3os3zitn3y:
+    resolution: {integrity: sha512-l/4W4x3Lm24wkWNkPasXqvEzG+a6n2X872XCUjhyfbNqcoOapaWyCxC5Fz+E4r7JPu8gysQKSSCrK0OO2x+D+A==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
