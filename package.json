@@ -51,7 +51,7 @@
 		"autoprefixer": "10.4.7",
 		"babel-loader": "8.2.5",
 		"c8": "7.11.3",
-		"commitizen": "4.2.4",
+		"commitizen": "4.2.5",
 		"css-mediaquery": "0.1.2",
 		"cypress": "9.7.0",
 		"cz-conventional-changelog": "3.3.0",
