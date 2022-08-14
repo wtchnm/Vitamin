@@ -39,7 +39,7 @@ specifiers:
   eslint-plugin-react-hooks: 4.6.0
   eslint-plugin-react-prefer-function-component: 3.0.0
   eslint-plugin-testing-library: 5.5.1
-  eslint-plugin-unicorn: 43.0.0
+  eslint-plugin-unicorn: 43.0.2
   husky: 8.0.1
   jsdom: 20.0.0
   lint-staged: 13.0.3
@@ -114,7 +114,7 @@ devDependencies:
   eslint-plugin-react-hooks: 4.6.0_eslint@8.19.0
   eslint-plugin-react-prefer-function-component: 3.0.0
   eslint-plugin-testing-library: 5.5.1_4x5o4skxv6sl53vpwefgt23khm
-  eslint-plugin-unicorn: 43.0.0_eslint@8.19.0
+  eslint-plugin-unicorn: 43.0.2_eslint@8.19.0
   husky: 8.0.1
   jsdom: 20.0.0
   lint-staged: 13.0.3
@@ -4282,8 +4282,8 @@ packages:
       - typescript
     dev: true
 
-  /eslint-plugin-unicorn/43.0.0_eslint@8.19.0:
-    resolution: {integrity: sha512-Z/6HX8yry+zAjo4jHHTAbe1rfniox7qgmCReGBfTc/CVgotfScaMCc4dtSSTHlJ+7Yix5o6LPXzwwpuGGFricg==}
+  /eslint-plugin-unicorn/43.0.2_eslint@8.19.0:
+    resolution: {integrity: sha512-DtqZ5mf/GMlfWoz1abIjq5jZfaFuHzGBZYIeuJfEoKKGWRHr2JiJR+ea+BF7Wx2N1PPRoT/2fwgiK1NnmNE3Hg==}
     engines: {node: '>=14.18'}
     peerDependencies:
       eslint: '>=8.18.0'
