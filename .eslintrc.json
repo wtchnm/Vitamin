@@ -83,6 +83,7 @@
 			"error",
 			{
 				"devDependencies": [
+					"cypress.config.ts",
 					"vite.config.ts",
 					"src/setupTests.ts",
 					"src/testUtils.tsx",
@@ -169,7 +170,7 @@
 			}
 		},
 		{
-			"files": ["vite.config.ts"],
+			"files": ["vite.config.ts", "cypress.config.ts"],
 			"parserOptions": {
 				"project": ["./tsconfig.node.json"]
 			}

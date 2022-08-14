@@ -6,7 +6,16 @@ import { VitePWA } from 'vite-plugin-pwa'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig(({ mode }) => ({
+	optimizeDeps: {
+		disabled: false
+	},
+	build: {
+		commonjsOptions: {
+			include: []
+		}
+	},
 	test: {
+		css: false,
 		include: ['src/**/__tests__/*'],
 		globals: true,
 		environment: 'jsdom',
@@ -16,7 +25,7 @@ export default defineConfig(({ mode }) => ({
 			enabled: true,
 			'100': true,
 			reporter: ['text', 'lcov'],
-			reportsDirectory: 'coverage/jest'
+			reportsDirectory: 'coverage'
 		}
 	},
 	plugins: [
