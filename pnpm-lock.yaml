@@ -13,7 +13,7 @@ specifiers:
   '@testing-library/react-hooks': 8.0.1
   '@testing-library/user-event': 14.2.6
   '@types/css-mediaquery': 0.1.1
-  '@types/react': 17.0.47
+  '@types/react': 17.0.48
   '@types/react-dom': 17.0.17
   '@types/react-router-dom': 5.3.3
   '@types/testing-library__jest-dom': 5.14.5
@@ -85,10 +85,10 @@ devDependencies:
   '@testing-library/dom': 8.14.0
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 12.1.5_sfoxds7t5ydpegc3knd667wn6m
-  '@testing-library/react-hooks': 8.0.1_nn45z5sr7igu7sfun6tiae5hx4
+  '@testing-library/react-hooks': 8.0.1_sk3eihvpffgp52mstba5zhq3vu
   '@testing-library/user-event': 14.2.6_ihvo3xlg2d6kwqju3os3zitn3y
   '@types/css-mediaquery': 0.1.1
-  '@types/react': 17.0.47
+  '@types/react': 17.0.48
   '@types/react-dom': 17.0.17
   '@types/react-router-dom': 5.3.3
   '@types/testing-library__jest-dom': 5.14.5
@@ -1872,7 +1872,7 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react-hooks/8.0.1_nn45z5sr7igu7sfun6tiae5hx4:
+  /@testing-library/react-hooks/8.0.1_sk3eihvpffgp52mstba5zhq3vu:
     resolution: {integrity: sha512-Aqhl2IVmLt8IovEVarNDFuJDVWVvhnr9/GCU6UUnrYXwgDFF9h2L2o2P9KBni1AST5sT6riAyoukFLyjQUgD/g==}
     engines: {node: '>=12'}
     peerDependencies:
@@ -1889,7 +1889,7 @@ packages:
         optional: true
     dependencies:
       '@babel/runtime': 7.18.3
-      '@types/react': 17.0.47
+      '@types/react': 17.0.48
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       react-error-boundary: 3.1.4_react@17.0.2
@@ -2051,7 +2051,7 @@ packages:
   /@types/react-dom/17.0.17:
     resolution: {integrity: sha512-VjnqEmqGnasQKV0CWLevqMTXBYG9GbwuE6x3VetERLh0cq2LTptFE73MrQi2S7GkKXCf2GgwItB/melLnxfnsg==}
     dependencies:
-      '@types/react': 17.0.47
+      '@types/react': 17.0.48
     dev: true
 
   /@types/react-router-dom/5.3.3:
@@ -2069,8 +2069,8 @@ packages:
       '@types/react': 18.0.14
     dev: true
 
-  /@types/react/17.0.47:
-    resolution: {integrity: sha512-mk0BL8zBinf2ozNr3qPnlu1oyVTYq+4V7WA76RgxUAtf0Em/Wbid38KN6n4abEkvO4xMTBWmnP1FtQzgkEiJoA==}
+  /@types/react/17.0.48:
+    resolution: {integrity: sha512-zJ6IYlJ8cYYxiJfUaZOQee4lh99mFihBoqkOSEGV+dFi9leROW6+PgstzQ+w3gWTnUfskALtQPGHK6dYmPj+2A==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2

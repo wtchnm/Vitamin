@@ -41,7 +41,7 @@
 		"@testing-library/react-hooks": "8.0.1",
 		"@testing-library/user-event": "14.2.6",
 		"@types/css-mediaquery": "0.1.1",
-		"@types/react": "17.0.47",
+		"@types/react": "17.0.48",
 		"@types/react-dom": "17.0.17",
 		"@types/react-router-dom": "5.3.3",
 		"@types/testing-library__jest-dom": "5.14.5",
