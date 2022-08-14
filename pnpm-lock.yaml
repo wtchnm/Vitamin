@@ -7,7 +7,7 @@ specifiers:
   '@nabla/vite-plugin-eslint': 1.4.1
   '@tailwindcss/forms': 0.5.2
   '@testing-library/cypress': 8.0.3
-  '@testing-library/dom': 8.14.0
+  '@testing-library/dom': 8.17.1
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 12.1.5
   '@testing-library/react-hooks': 8.0.1
@@ -82,11 +82,11 @@ devDependencies:
   '@nabla/vite-plugin-eslint': 1.4.1_eslint@8.19.0+vite@2.9.14
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.6
   '@testing-library/cypress': 8.0.3_cypress@9.7.0
-  '@testing-library/dom': 8.14.0
+  '@testing-library/dom': 8.17.1
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 12.1.5_sfoxds7t5ydpegc3knd667wn6m
   '@testing-library/react-hooks': 8.0.1_nn45z5sr7igu7sfun6tiae5hx4
-  '@testing-library/user-event': 14.2.6_ihvo3xlg2d6kwqju3os3zitn3y
+  '@testing-library/user-event': 14.2.6_wl4iynrlixafokvgqnhzlvigei
   '@types/css-mediaquery': 0.1.1
   '@types/react': 17.0.47
   '@types/react-dom': 17.0.17
@@ -164,13 +164,6 @@ packages:
       json-schema: 0.4.0
       jsonpointer: 5.0.0
       leven: 3.1.0
-    dev: true
-
-  /@babel/code-frame/7.16.7:
-    resolution: {integrity: sha512-iAXqUn8IIeBTNd72xsFlgaXHkMBMt6y4HJp1tIaK465CWLT/fG1aqB7ykr95gHHmlBdGbFeWWfyB4NJJ0nmeIg==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/highlight': 7.18.6
     dev: true
 
   /@babel/code-frame/7.18.6:
@@ -1839,15 +1832,15 @@ packages:
       cypress: ^2.1.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0
     dependencies:
       '@babel/runtime': 7.18.3
-      '@testing-library/dom': 8.14.0
+      '@testing-library/dom': 8.17.1
       cypress: 9.7.0
     dev: true
 
-  /@testing-library/dom/8.14.0:
-    resolution: {integrity: sha512-m8FOdUo77iMTwVRCyzWcqxlEIk+GnopbrRI15a0EaLbpZSCinIVI4kSQzWhkShK83GogvEFJSsHF3Ws0z1vrqA==}
+  /@testing-library/dom/8.17.1:
+    resolution: {integrity: sha512-KnH2MnJUzmFNPW6RIKfd+zf2Wue8mEKX0M3cpX6aKl5ZXrJM1/c/Pc8c2xDNYQCnJO48Sm5ITbMXgqTr3h4jxQ==}
     engines: {node: '>=12'}
     dependencies:
-      '@babel/code-frame': 7.16.7
+      '@babel/code-frame': 7.18.6
       '@babel/runtime': 7.18.3
       '@types/aria-query': 4.2.2
       aria-query: 5.0.0
@@ -1903,19 +1896,19 @@ packages:
       react-dom: <18.0.0
     dependencies:
       '@babel/runtime': 7.18.3
-      '@testing-library/dom': 8.14.0
+      '@testing-library/dom': 8.17.1
       '@types/react-dom': 17.0.17
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
     dev: true
 
-  /@testing-library/user-event/14.2.6_ihvo3xlg2d6kwqju3os3zitn3y:
+  /@testing-library/user-event/14.2.6_wl4iynrlixafokvgqnhzlvigei:
     resolution: {integrity: sha512-l/4W4x3Lm24wkWNkPasXqvEzG+a6n2X872XCUjhyfbNqcoOapaWyCxC5Fz+E4r7JPu8gysQKSSCrK0OO2x+D+A==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
     dependencies:
-      '@testing-library/dom': 8.14.0
+      '@testing-library/dom': 8.17.1
     dev: true
 
   /@tootallnate/once/2.0.0:
