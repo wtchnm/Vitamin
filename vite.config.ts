@@ -22,6 +22,7 @@ export default defineConfig(({ mode }) => ({
 		setupFiles: 'src/setupTests.ts',
 		clearMocks: true,
 		coverage: {
+			provider: 'istanbul',
 			enabled: true,
 			'100': true,
 			reporter: ['text', 'lcov'],
