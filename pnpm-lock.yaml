@@ -53,7 +53,7 @@ specifiers:
   stylelint-config-standard: 27.0.0
   tailwindcss: 3.1.8
   typescript: 4.7.4
-  vite: 3.0.8
+  vite: 3.0.9
   vite-plugin-pwa: 0.12.3
   vite-tsconfig-paths: 3.5.0
   vitest: 0.22.1
@@ -68,7 +68,7 @@ dependencies:
   react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
-  '@nabla/vite-plugin-eslint': 1.4.1_eslint@8.22.0+vite@3.0.8
+  '@nabla/vite-plugin-eslint': 1.4.1_eslint@8.22.0+vite@3.0.9
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.8
   '@testing-library/cypress': 8.0.3_cypress@10.6.0
   '@testing-library/dom': 8.17.1
@@ -82,7 +82,7 @@ devDependencies:
   '@types/testing-library__jest-dom': 5.14.5
   '@typescript-eslint/eslint-plugin': 5.33.1_vsoshirnpb7xw6mr7xomgfas2i
   '@typescript-eslint/parser': 5.33.1_4rv7y5c6xz3vfxwhbrcxxi73bq
-  '@vitejs/plugin-react': 2.0.1_vite@3.0.8
+  '@vitejs/plugin-react': 2.0.1_vite@3.0.9
   '@vitest/coverage-istanbul': 0.22.1_jsdom@20.0.0
   autoprefixer: 10.4.8_postcss@8.4.16
   commitizen: 4.2.5
@@ -116,9 +116,9 @@ devDependencies:
   stylelint-config-standard: 27.0.0_stylelint@14.10.0
   tailwindcss: 3.1.8_postcss@8.4.16
   typescript: 4.7.4
-  vite: 3.0.8
-  vite-plugin-pwa: 0.12.3_d6yhubcitfikvmulwfzjomm5gm
-  vite-tsconfig-paths: 3.5.0_vite@3.0.8
+  vite: 3.0.9
+  vite-plugin-pwa: 0.12.3_yny4xarjh5jmdjqikwv2mudeou
+  vite-tsconfig-paths: 3.5.0_vite@3.0.9
   vitest: 0.22.1_jsdom@20.0.0
   whatwg-fetch: 3.6.2
   workbox-build: 6.5.4
@@ -1615,7 +1615,7 @@ packages:
       - supports-color
     dev: true
 
-  /@nabla/vite-plugin-eslint/1.4.1_eslint@8.22.0+vite@3.0.8:
+  /@nabla/vite-plugin-eslint/1.4.1_eslint@8.22.0+vite@3.0.9:
     resolution: {integrity: sha512-H19ReYMRdy7i6zz7HKYcBlfv/4Nu/sv9Wtu9+GImQ5nzCgOz4RRUqnj/PJ2OuATcbxNgLr1NSbk7miJDdK6BOw==}
     peerDependencies:
       eslint: '*'
@@ -1624,7 +1624,7 @@ packages:
       '@types/eslint': 8.4.5
       chalk: 4.1.2
       eslint: 8.22.0
-      vite: 3.0.8
+      vite: 3.0.9
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -2208,7 +2208,7 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-react/2.0.1_vite@3.0.8:
+  /@vitejs/plugin-react/2.0.1_vite@3.0.9:
     resolution: {integrity: sha512-uINzNHmjrbunlFtyVkST6lY1ewSfz/XwLufG0PIqvLGnpk2nOIOa/1CACTDNcKi1/RwaCzJLmsXwm1NsUVV/NA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2221,7 +2221,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.18.6_@babel+core@7.18.10
       magic-string: 0.26.2
       react-refresh: 0.14.0
-      vite: 3.0.8
+      vite: 3.0.9
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -7567,7 +7567,7 @@ packages:
       extsprintf: 1.3.0
     dev: true
 
-  /vite-plugin-pwa/0.12.3_d6yhubcitfikvmulwfzjomm5gm:
+  /vite-plugin-pwa/0.12.3_yny4xarjh5jmdjqikwv2mudeou:
     resolution: {integrity: sha512-gmYdIVXpmBuNjzbJFPZFzxWYrX4lHqwMAlOtjmXBbxApiHjx9QPXKQPJjSpeTeosLKvVbNcKSAAhfxMda0QVNQ==}
     peerDependencies:
       vite: ^2.0.0 || ^3.0.0-0
@@ -7578,14 +7578,14 @@ packages:
       fast-glob: 3.2.11
       pretty-bytes: 6.0.0
       rollup: 2.77.3
-      vite: 3.0.8
+      vite: 3.0.9
       workbox-build: 6.5.4
       workbox-window: 6.5.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite-tsconfig-paths/3.5.0_vite@3.0.8:
+  /vite-tsconfig-paths/3.5.0_vite@3.0.9:
     resolution: {integrity: sha512-NKIubr7gXgh/3uniQaOytSg+aKWPrjquP6anAy+zCWEn6h9fB8z2/qdlfQrTgZWaXJ2pHVlllrSdRZltHn9P4g==}
     peerDependencies:
       vite: '>2.0.0-0'
@@ -7594,13 +7594,13 @@ packages:
       globrex: 0.1.2
       recrawl-sync: 2.2.2
       tsconfig-paths: 4.1.0
-      vite: 3.0.8
+      vite: 3.0.9
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/3.0.8:
-    resolution: {integrity: sha512-AOZ4eN7mrkJiOLuw8IA7piS4IdOQyQCA81GxGsAQvAZzMRi9ZwGB3TOaYsj4uLAWK46T5L4AfQ6InNGlxX30IQ==}
+  /vite/3.0.9:
+    resolution: {integrity: sha512-waYABTM+G6DBTCpYAxvevpG50UOlZuynR0ckTK5PawNVt7ebX6X7wNXHaGIO6wYYFXSM7/WcuFuO2QzhBB6aMw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -7657,7 +7657,7 @@ packages:
       local-pkg: 0.4.2
       tinypool: 0.2.4
       tinyspy: 1.0.2
-      vite: 3.0.8
+      vite: 3.0.9
     transitivePeerDependencies:
       - less
       - sass
