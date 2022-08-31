@@ -21,7 +21,7 @@ specifiers:
   autoprefixer: 10.4.8
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
-  cypress: 10.6.0
+  cypress: 10.7.0
   cz-conventional-changelog: 3.3.0
   eslint: 8.23.0
   eslint-config-airbnb: 19.0.4
@@ -70,7 +70,7 @@ dependencies:
 devDependencies:
   '@nabla/vite-plugin-eslint': 1.4.1_eslint@8.23.0+vite@3.0.9
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.8
-  '@testing-library/cypress': 8.0.3_cypress@10.6.0
+  '@testing-library/cypress': 8.0.3_cypress@10.7.0
   '@testing-library/dom': 8.17.1
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.3.0_biqbaboplfbrettd7655fr4n2y
@@ -87,7 +87,7 @@ devDependencies:
   autoprefixer: 10.4.8_postcss@8.4.16
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
-  cypress: 10.6.0
+  cypress: 10.7.0
   cz-conventional-changelog: 3.3.0
   eslint: 8.23.0
   eslint-config-airbnb: 19.0.4_dc5unztgy7cri6hrpc62vxgf2u
@@ -1770,7 +1770,7 @@ packages:
       use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
-  /@testing-library/cypress/8.0.3_cypress@10.6.0:
+  /@testing-library/cypress/8.0.3_cypress@10.7.0:
     resolution: {integrity: sha512-nY2YaSbmuPo5k6kL0iLj/pGPPfka3iwb3kpTx8QN/vOCns92Saz9wfACqB8FJzcR7+lfA4d5HUOWqmTddBzczg==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -1778,7 +1778,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.18.9
       '@testing-library/dom': 8.17.1
-      cypress: 10.6.0
+      cypress: 10.7.0
     dev: true
 
   /@testing-library/dom/8.17.1:
@@ -3098,8 +3098,8 @@ packages:
     resolution: {integrity: sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==}
     dev: true
 
-  /cypress/10.6.0:
-    resolution: {integrity: sha512-6sOpHjostp8gcLO34p6r/Ci342lBs8S5z9/eb3ZCQ22w2cIhMWGUoGKkosabPBfKcvRS9BE4UxybBtlIs8gTQA==}
+  /cypress/10.7.0:
+    resolution: {integrity: sha512-gTFvjrUoBnqPPOu9Vl5SBHuFlzx/Wxg/ZXIz2H4lzoOLFelKeF7mbwYUOzgzgF0oieU2WhJAestQdkgwJMMTvQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     requiresBuild: true
