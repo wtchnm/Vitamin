@@ -39,7 +39,7 @@ specifiers:
   husky: 8.0.1
   jsdom: 20.0.0
   lint-staged: 13.0.3
-  msw: 0.45.0
+  msw: 0.46.0
   npm-run-all: 4.1.5
   postcss: 8.4.16
   prettier: 2.7.1
@@ -105,7 +105,7 @@ devDependencies:
   husky: 8.0.1
   jsdom: 20.0.0
   lint-staged: 13.0.3
-  msw: 0.45.0_typescript@4.7.4
+  msw: 0.46.0_typescript@4.7.4
   npm-run-all: 4.1.5
   postcss: 8.4.16
   prettier: 2.7.1
@@ -5700,14 +5700,14 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw/0.45.0_typescript@4.7.4:
-    resolution: {integrity: sha512-aZgYsSJWYLHj5wZs/g640GP5AK6gfHC6dKTED8bforKZx10IJ+b0z7Y+0infEKD4gNT3orj7tiUZe4pxgpY0SQ==}
+  /msw/0.46.0_typescript@4.7.4:
+    resolution: {integrity: sha512-jjPhOFSqHvmadhmnN8Ez5ZBMXaP7/pwQHiN4UQI62/pNYyRc/4Ls3QhQe//B0kvFBXbNS+7uAt+XQTIn7GdCGQ==}
     engines: {node: '>=14'}
     hasBin: true
     requiresBuild: true
     peerDependencies:
       graphql: ^15.0.0 || ^16.0.0
-      typescript: '>= 4.2.x <= 4.7.x'
+      typescript: '>= 4.2.x <= 4.8.x'
     peerDependenciesMeta:
       graphql:
         optional: true
@@ -5731,7 +5731,7 @@ packages:
       path-to-regexp: 6.2.1
       statuses: 2.0.1
       strict-event-emitter: 0.2.4
-      type-fest: 1.4.0
+      type-fest: 2.19.0
       typescript: 4.7.4
       yargs: 17.5.1
     transitivePeerDependencies:
@@ -7430,9 +7430,9 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /type-fest/1.4.0:
-    resolution: {integrity: sha512-yGSza74xk0UG8k+pLh5oeoYirvIiWo5t0/o3zHHAO2tRDiZcxWP7fywNlXhqb6/r6sWvwi+RsyQMWhVLe4BVuA==}
-    engines: {node: '>=10'}
+  /type-fest/2.19.0:
+    resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
+    engines: {node: '>=12.20'}
     dev: true
 
   /typescript/4.7.4:
