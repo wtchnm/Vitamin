@@ -43,7 +43,7 @@
 		"@types/testing-library__jest-dom": "5.14.5",
 		"@typescript-eslint/eslint-plugin": "5.36.1",
 		"@typescript-eslint/parser": "5.36.1",
-		"@vitejs/plugin-react": "2.0.1",
+		"@vitejs/plugin-react": "2.1.0",
 		"@vitest/coverage-istanbul": "0.22.1",
 		"autoprefixer": "10.4.8",
 		"commitizen": "4.2.5",
