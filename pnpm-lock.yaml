@@ -17,7 +17,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': 5.36.2
   '@typescript-eslint/parser': 5.36.2
   '@vitejs/plugin-react': 2.1.0
-  '@vitest/coverage-istanbul': 0.23.1
+  '@vitest/coverage-istanbul': 0.23.2
   autoprefixer: 10.4.10
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
@@ -83,7 +83,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.36.2_wxqvmnl3i4rbvz4ixyoiufmx3e
   '@typescript-eslint/parser': 5.36.2_irgkl5vooow2ydyo6aokmferha
   '@vitejs/plugin-react': 2.1.0_vite@3.1.0
-  '@vitest/coverage-istanbul': 0.23.1_jsdom@20.0.0
+  '@vitest/coverage-istanbul': 0.23.2_jsdom@20.0.0
   autoprefixer: 10.4.10_postcss@8.4.16
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
@@ -2203,8 +2203,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vitest/coverage-istanbul/0.23.1_jsdom@20.0.0:
-    resolution: {integrity: sha512-BkQgy3DFgtJR9986hr7c994M5AaEysUk/Sq1mNlVRBocnzgcCTByrwKiRfvlGFUJHcRq2OQ1x0FV2kRqHkYt1g==}
+  /@vitest/coverage-istanbul/0.23.2_jsdom@20.0.0:
+    resolution: {integrity: sha512-9CimCS08KNFQS5f8Br2ROK+vQP7tklWiBTDO4mMUBRusfmiFgp0KDoUObI6oNYzRknZTjKjTrYbM3eWKx44miA==}
     dependencies:
       istanbul-lib-coverage: 3.2.0
       istanbul-lib-instrument: 5.2.0
@@ -2212,7 +2212,7 @@ packages:
       istanbul-lib-source-maps: 4.0.1
       istanbul-reports: 3.1.5
       test-exclude: 6.0.0
-      vitest: 0.23.1_jsdom@20.0.0
+      vitest: 0.23.2_jsdom@20.0.0
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitest/browser'
@@ -7229,6 +7229,11 @@ packages:
     engines: {node: '>=14.0.0'}
     dev: true
 
+  /tinypool/0.3.0:
+    resolution: {integrity: sha512-NX5KeqHOBZU6Bc0xj9Vr5Szbb1j8tUHIeD18s41aDJaPeC5QTdEhK0SpdpUrZlj2nv5cctNcSjaKNanXlfcVEQ==}
+    engines: {node: '>=14.0.0'}
+    dev: true
+
   /tinyspy/1.0.2:
     resolution: {integrity: sha512-bSGlgwLBYf7PnUsQ6WOc6SJ3pGOcd+d8AA6EUnLDDM0kWEstC1JIlSZA3UNliDXhd9ABoS7hiRBDCu+XP/sf1Q==}
     engines: {node: '>=14.0.0'}
@@ -7657,6 +7662,48 @@ packages:
       strip-literal: 0.4.0
       tinybench: 2.1.5
       tinypool: 0.2.4
+      tinyspy: 1.0.2
+      vite: 3.1.0
+    transitivePeerDependencies:
+      - less
+      - sass
+      - stylus
+      - supports-color
+      - terser
+    dev: true
+
+  /vitest/0.23.2_jsdom@20.0.0:
+    resolution: {integrity: sha512-kTBKp3ROPDkYC+x2zWt4znkDtnT08W1FQ6ngRFuqxpBGNuNVS+eWZKfffr8y2JGvEzZ9EzMAOcNaiqMj/FZqMw==}
+    engines: {node: '>=v14.16.0'}
+    hasBin: true
+    peerDependencies:
+      '@edge-runtime/vm': '*'
+      '@vitest/browser': '*'
+      '@vitest/ui': '*'
+      happy-dom: '*'
+      jsdom: '*'
+    peerDependenciesMeta:
+      '@edge-runtime/vm':
+        optional: true
+      '@vitest/browser':
+        optional: true
+      '@vitest/ui':
+        optional: true
+      happy-dom:
+        optional: true
+      jsdom:
+        optional: true
+    dependencies:
+      '@types/chai': 4.3.3
+      '@types/chai-subset': 1.3.3
+      '@types/node': 18.7.3
+      chai: 4.3.6
+      debug: 4.3.4
+      jsdom: 20.0.0
+      local-pkg: 0.4.2
+      strip-literal: 0.4.0
+      tinybench: 2.1.5
+      tinypool: 0.3.0
       tinyspy: 1.0.2
       vite: 3.1.0
     transitivePeerDependencies:
