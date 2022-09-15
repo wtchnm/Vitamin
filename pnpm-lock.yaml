@@ -18,7 +18,7 @@ specifiers:
   '@typescript-eslint/parser': 5.36.2
   '@vitejs/plugin-react': 2.1.0
   '@vitest/coverage-istanbul': 0.23.2
-  autoprefixer: 10.4.10
+  autoprefixer: 10.4.11
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
   cypress: 10.7.0
@@ -84,7 +84,7 @@ devDependencies:
   '@typescript-eslint/parser': 5.36.2_irgkl5vooow2ydyo6aokmferha
   '@vitejs/plugin-react': 2.1.0_vite@3.1.1
   '@vitest/coverage-istanbul': 0.23.2_jsdom@20.0.0
-  autoprefixer: 10.4.10_postcss@8.4.16
+  autoprefixer: 10.4.11_postcss@8.4.16
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
   cypress: 10.7.0
@@ -2484,8 +2484,8 @@ packages:
     engines: {node: '>= 4.0.0'}
     dev: true
 
-  /autoprefixer/10.4.10_postcss@8.4.16:
-    resolution: {integrity: sha512-nMaiDARyp1e74c8IeAXkr+BmFKa8By4Zak7tyaNPF09Iu39WFpNXOWrVirmXjKr+5cOyERwvtbMOLYz6iBJYgQ==}
+  /autoprefixer/10.4.11_postcss@8.4.16:
+    resolution: {integrity: sha512-5lHp6DgRodxlBLSkzHOTcufWFflH1ewfy2hvFQyjrblBFlP/0Yh4O/Wrg4ow8WRlN3AAUFFLAQwX8hTptzqVHg==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
