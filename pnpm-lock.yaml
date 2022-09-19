@@ -21,7 +21,7 @@ specifiers:
   autoprefixer: 10.4.11
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
-  cypress: 10.7.0
+  cypress: 10.8.0
   cz-conventional-changelog: 3.3.0
   eslint: 8.23.1
   eslint-config-airbnb: 19.0.4
@@ -70,7 +70,7 @@ dependencies:
 devDependencies:
   '@nabla/vite-plugin-eslint': 1.4.1_eslint@8.23.1+vite@3.1.3
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.1.8
-  '@testing-library/cypress': 8.0.3_cypress@10.7.0
+  '@testing-library/cypress': 8.0.3_cypress@10.8.0
   '@testing-library/dom': 8.17.1
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
@@ -87,7 +87,7 @@ devDependencies:
   autoprefixer: 10.4.11_postcss@8.4.16
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
-  cypress: 10.7.0
+  cypress: 10.8.0
   cz-conventional-changelog: 3.3.0
   eslint: 8.23.1
   eslint-config-airbnb: 19.0.4_4zstfqq5uopk5xuvotejlnl36y
@@ -1805,7 +1805,7 @@ packages:
       use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
-  /@testing-library/cypress/8.0.3_cypress@10.7.0:
+  /@testing-library/cypress/8.0.3_cypress@10.8.0:
     resolution: {integrity: sha512-nY2YaSbmuPo5k6kL0iLj/pGPPfka3iwb3kpTx8QN/vOCns92Saz9wfACqB8FJzcR7+lfA4d5HUOWqmTddBzczg==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -1813,7 +1813,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.18.9
       '@testing-library/dom': 8.17.1
-      cypress: 10.7.0
+      cypress: 10.8.0
     dev: true
 
   /@testing-library/dom/8.17.1:
@@ -3129,8 +3129,8 @@ packages:
     resolution: {integrity: sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==}
     dev: true
 
-  /cypress/10.7.0:
-    resolution: {integrity: sha512-gTFvjrUoBnqPPOu9Vl5SBHuFlzx/Wxg/ZXIz2H4lzoOLFelKeF7mbwYUOzgzgF0oieU2WhJAestQdkgwJMMTvQ==}
+  /cypress/10.8.0:
+    resolution: {integrity: sha512-QVse0dnLm018hgti2enKMVZR9qbIO488YGX06nH5j3Dg1isL38DwrBtyrax02CANU6y8F4EJUuyW6HJKw1jsFA==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     requiresBuild: true
