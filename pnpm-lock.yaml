@@ -56,7 +56,7 @@ specifiers:
   vite: 3.1.2
   vite-plugin-pwa: 0.12.7
   vite-tsconfig-paths: 3.5.0
-  vitest: 0.23.2
+  vitest: 0.23.4
   whatwg-fetch: 3.6.2
   workbox-build: 6.5.4
   workbox-window: 6.5.4
@@ -119,7 +119,7 @@ devDependencies:
   vite: 3.1.2
   vite-plugin-pwa: 0.12.7_tnbsxvnb5c7kxmf7v7mkat7qym
   vite-tsconfig-paths: 3.5.0_vite@3.1.2
-  vitest: 0.23.2_jsdom@20.0.0
+  vitest: 0.23.4_jsdom@20.0.0
   whatwg-fetch: 3.6.2
   workbox-build: 6.5.4
   workbox-window: 6.5.4
@@ -7063,12 +7063,6 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /strip-literal/0.4.0:
-    resolution: {integrity: sha512-ql/sBDoJOybTKSIOWrrh8kgUEMjXMwRAkZTD0EwiwxQH/6tTPkZvMIEjp0CRlpi6V5FMiJyvxeRkEi1KrGISoA==}
-    dependencies:
-      acorn: 8.8.0
-    dev: true
-
   /strip-literal/0.4.2:
     resolution: {integrity: sha512-pv48ybn4iE1O9RLgCAN0iU4Xv7RlBTiit6DKmMiErbs9x1wH6vXBs45tWc0H5wUIF6TLTrKweqkmYF/iraQKNw==}
     dependencies:
@@ -7689,48 +7683,6 @@ packages:
       rollup: 2.78.1
     optionalDependencies:
       fsevents: 2.3.2
-    dev: true
-
-  /vitest/0.23.2_jsdom@20.0.0:
-    resolution: {integrity: sha512-kTBKp3ROPDkYC+x2zWt4znkDtnT08W1FQ6ngRFuqxpBGNuNVS+eWZKfffr8y2JGvEzZ9EzMAOcNaiqMj/FZqMw==}
-    engines: {node: '>=v14.16.0'}
-    hasBin: true
-    peerDependencies:
-      '@edge-runtime/vm': '*'
-      '@vitest/browser': '*'
-      '@vitest/ui': '*'
-      happy-dom: '*'
-      jsdom: '*'
-    peerDependenciesMeta:
-      '@edge-runtime/vm':
-        optional: true
-      '@vitest/browser':
-        optional: true
-      '@vitest/ui':
-        optional: true
-      happy-dom:
-        optional: true
-      jsdom:
-        optional: true
-    dependencies:
-      '@types/chai': 4.3.3
-      '@types/chai-subset': 1.3.3
-      '@types/node': 18.7.3
-      chai: 4.3.6
-      debug: 4.3.4
-      jsdom: 20.0.0
-      local-pkg: 0.4.2
-      strip-literal: 0.4.0
-      tinybench: 2.1.5
-      tinypool: 0.3.0
-      tinyspy: 1.0.2
-      vite: 3.1.2
-    transitivePeerDependencies:
-      - less
-      - sass
-      - stylus
-      - supports-color
-      - terser
     dev: true
 
   /vitest/0.23.4_jsdom@20.0.0:
