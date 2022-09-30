@@ -48,7 +48,7 @@ specifiers:
   react-dom: 18.2.0
   react-router-dom: 6.3.0
   start-server-and-test: 1.14.0
-  stylelint: 14.12.1
+  stylelint: 14.13.0
   stylelint-config-prettier: 9.0.3
   stylelint-config-standard: 28.0.0
   tailwindcss: 3.1.8
@@ -111,9 +111,9 @@ devDependencies:
   prettier: 2.7.1
   prettier-plugin-tailwindcss: 0.1.13_prettier@2.7.1
   start-server-and-test: 1.14.0
-  stylelint: 14.12.1
-  stylelint-config-prettier: 9.0.3_stylelint@14.12.1
-  stylelint-config-standard: 28.0.0_stylelint@14.12.1
+  stylelint: 14.13.0
+  stylelint-config-prettier: 9.0.3_stylelint@14.13.0
+  stylelint-config-standard: 28.0.0_stylelint@14.13.0
   tailwindcss: 3.1.8_postcss@8.4.16
   typescript: 4.8.4
   vite: 3.1.4
@@ -7087,35 +7087,35 @@ packages:
     resolution: {integrity: sha512-Dj1Okke1C3uKKwQcetra4jSuk0DqbzbYtXipzFlFMZtowbF1x7BKJwB9AayVMyFARvU8EDrZdcax4At/452cAg==}
     dev: true
 
-  /stylelint-config-prettier/9.0.3_stylelint@14.12.1:
+  /stylelint-config-prettier/9.0.3_stylelint@14.13.0:
     resolution: {integrity: sha512-5n9gUDp/n5tTMCq1GLqSpA30w2sqWITSSEiAWQlpxkKGAUbjcemQ0nbkRvRUa0B1LgD3+hCvdL7B1eTxy1QHJg==}
     engines: {node: '>= 12'}
     hasBin: true
     peerDependencies:
       stylelint: '>=11.0.0'
     dependencies:
-      stylelint: 14.12.1
+      stylelint: 14.13.0
     dev: true
 
-  /stylelint-config-recommended/9.0.0_stylelint@14.12.1:
+  /stylelint-config-recommended/9.0.0_stylelint@14.13.0:
     resolution: {integrity: sha512-9YQSrJq4NvvRuTbzDsWX3rrFOzOlYBmZP+o513BJN/yfEmGSr0AxdvrWs0P/ilSpVV/wisamAHu5XSk8Rcf4CQ==}
     peerDependencies:
       stylelint: ^14.10.0
     dependencies:
-      stylelint: 14.12.1
+      stylelint: 14.13.0
     dev: true
 
-  /stylelint-config-standard/28.0.0_stylelint@14.12.1:
+  /stylelint-config-standard/28.0.0_stylelint@14.13.0:
     resolution: {integrity: sha512-q/StuowDdDmFCravzGHAwgS9pjX0bdOQUEBBDIkIWsQuYGgYz/xsO8CM6eepmIQ1fc5bKdDVimlJZ6MoOUcJ5Q==}
     peerDependencies:
       stylelint: ^14.11.0
     dependencies:
-      stylelint: 14.12.1
-      stylelint-config-recommended: 9.0.0_stylelint@14.12.1
+      stylelint: 14.13.0
+      stylelint-config-recommended: 9.0.0_stylelint@14.13.0
     dev: true
 
-  /stylelint/14.12.1:
-    resolution: {integrity: sha512-ZEM4TuksChMBfuPadQsHUkbOoRySAT9QMfDvvYxdAchOJl0p+csTMBXOu6ORAAxKhwBmxqJiep8V88bXfNs3EQ==}
+  /stylelint/14.13.0:
+    resolution: {integrity: sha512-NJSAdloiAB/jgVJKxMR90mWlctvmeBFGFVUvyKngi9+j/qPSJ5ZB+u8jOmGbLTnS7OHrII9NFGehPRyar8U5vg==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
