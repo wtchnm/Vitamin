@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@nabla/vite-plugin-eslint': 1.4.1
   '@tailwindcss/forms': 0.5.3
-  '@tanstack/react-query': 4.10.1
+  '@tanstack/react-query': 4.10.3
   '@testing-library/cypress': 8.0.3
   '@testing-library/dom': 8.18.1
   '@testing-library/jest-dom': 5.16.5
@@ -62,7 +62,7 @@ specifiers:
   workbox-window: 6.5.4
 
 dependencies:
-  '@tanstack/react-query': 4.10.1_biqbaboplfbrettd7655fr4n2y
+  '@tanstack/react-query': 4.10.3_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
@@ -1792,12 +1792,12 @@ packages:
       tailwindcss: 3.1.8_postcss@8.4.17
     dev: true
 
-  /@tanstack/query-core/4.10.1:
-    resolution: {integrity: sha512-UZRYzjgQSfYhQ+cJX0CspAbzutf8p93gR1xFjQuH3OYcb/7t3WnHkdb/qC9mbqrfWXN/JAbBTJlTU/XQHc5HbA==}
+  /@tanstack/query-core/4.10.3:
+    resolution: {integrity: sha512-+ME02sUmBfx3Pjd+0XtEthK8/4rVMD2jcxvnW9DSgFONpKtpjzfRzjY4ykzpDw1QEo2eoPvl7NS8J5mNI199aA==}
     dev: false
 
-  /@tanstack/react-query/4.10.1_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-6GaLYAsAu/4aX6HR4krpOej9qbKWXe0X0eccikpv5hAw4CoAAPG29Pydql1nTl9cYF2zd21unVm4yApklFY0AA==}
+  /@tanstack/react-query/4.10.3_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-4OEJjkcsCTmG3ui7RjsVzsXerWQvInTe95CBKFyOV/GchMUlNztoFnnYmlMhX7hLUqJMhbG9l7M507V7+xU8Hw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -1808,7 +1808,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@tanstack/query-core': 4.10.1
+      '@tanstack/query-core': 4.10.3
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       use-sync-external-store: 1.2.0_react@18.2.0
