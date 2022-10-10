@@ -17,7 +17,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': 5.39.0
   '@typescript-eslint/parser': 5.39.0
   '@vitejs/plugin-react': 2.1.0
-  '@vitest/coverage-istanbul': 0.23.4
+  '@vitest/coverage-istanbul': 0.24.0
   autoprefixer: 10.4.12
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
@@ -83,7 +83,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.39.0_xyciw6oqjoiiono4dhv3uhn5my
   '@typescript-eslint/parser': 5.39.0_ypn2ylkkyfa5i233caldtndbqa
   '@vitejs/plugin-react': 2.1.0_vite@3.1.7
-  '@vitest/coverage-istanbul': 0.23.4_jsdom@20.0.1
+  '@vitest/coverage-istanbul': 0.24.0_jsdom@20.0.1
   autoprefixer: 10.4.12_postcss@8.4.17
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
@@ -2271,8 +2271,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vitest/coverage-istanbul/0.23.4_jsdom@20.0.1:
-    resolution: {integrity: sha512-vl+c682jwCkthdOomO7aBRY/H2bXfxjYAo+WZoGktdWEiSBfwhFUOcJJW3+Ery9i8ja+M1Jd19HrqYriLixGPw==}
+  /@vitest/coverage-istanbul/0.24.0_jsdom@20.0.1:
+    resolution: {integrity: sha512-H93pxVdG1/VqqpAeA2cuw5XTYBg0/dy0RPdsluQMSjlcmBVaV4c76XqBmTKJRZh21/qIs+YT8YTRnl4IdwQ8Zg==}
     dependencies:
       istanbul-lib-coverage: 3.2.0
       istanbul-lib-instrument: 5.2.0
@@ -2280,7 +2280,7 @@ packages:
       istanbul-lib-source-maps: 4.0.1
       istanbul-reports: 3.1.5
       test-exclude: 6.0.0
-      vitest: 0.23.4_jsdom@20.0.1
+      vitest: 0.24.0_jsdom@20.0.1
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitest/browser'
@@ -7717,48 +7717,6 @@ packages:
       rollup: 2.78.1
     optionalDependencies:
       fsevents: 2.3.2
-    dev: true
-
-  /vitest/0.23.4_jsdom@20.0.1:
-    resolution: {integrity: sha512-iukBNWqQAv8EKDBUNntspLp9SfpaVFbmzmM0sNcnTxASQZMzRw3PsM6DMlsHiI+I6GeO5/sYDg3ecpC+SNFLrQ==}
-    engines: {node: '>=v14.16.0'}
-    hasBin: true
-    peerDependencies:
-      '@edge-runtime/vm': '*'
-      '@vitest/browser': '*'
-      '@vitest/ui': '*'
-      happy-dom: '*'
-      jsdom: '*'
-    peerDependenciesMeta:
-      '@edge-runtime/vm':
-        optional: true
-      '@vitest/browser':
-        optional: true
-      '@vitest/ui':
-        optional: true
-      happy-dom:
-        optional: true
-      jsdom:
-        optional: true
-    dependencies:
-      '@types/chai': 4.3.3
-      '@types/chai-subset': 1.3.3
-      '@types/node': 18.7.3
-      chai: 4.3.6
-      debug: 4.3.4
-      jsdom: 20.0.1
-      local-pkg: 0.4.2
-      strip-literal: 0.4.2
-      tinybench: 2.3.0
-      tinypool: 0.3.0
-      tinyspy: 1.0.2
-      vite: 3.1.7
-    transitivePeerDependencies:
-      - less
-      - sass
-      - stylus
-      - supports-color
-      - terser
     dev: true
 
   /vitest/0.24.0_jsdom@20.0.1:
