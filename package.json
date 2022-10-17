@@ -44,7 +44,7 @@
 		"@typescript-eslint/eslint-plugin": "5.40.0",
 		"@typescript-eslint/parser": "5.40.0",
 		"@vitejs/plugin-react": "2.1.0",
-		"@vitest/coverage-istanbul": "0.24.1",
+		"@vitest/coverage-istanbul": "0.24.3",
 		"autoprefixer": "10.4.12",
 		"commitizen": "4.2.5",
 		"css-mediaquery": "0.1.2",
