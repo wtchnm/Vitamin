@@ -45,7 +45,7 @@
 		"@typescript-eslint/parser": "5.41.0",
 		"@vitejs/plugin-react": "2.2.0",
 		"@vitest/coverage-istanbul": "0.24.3",
-		"autoprefixer": "10.4.12",
+		"autoprefixer": "10.4.13",
 		"commitizen": "4.2.5",
 		"css-mediaquery": "0.1.2",
 		"cypress": "10.10.0",
