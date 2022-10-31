@@ -17,7 +17,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': 5.41.0
   '@typescript-eslint/parser': 5.41.0
   '@vitejs/plugin-react': 2.2.0
-  '@vitest/coverage-istanbul': 0.24.3
+  '@vitest/coverage-istanbul': 0.24.4
   autoprefixer: 10.4.13
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
@@ -56,7 +56,7 @@ specifiers:
   vite: 3.2.2
   vite-plugin-pwa: 0.13.1
   vite-tsconfig-paths: 3.5.2
-  vitest: 0.24.3
+  vitest: 0.24.4
   whatwg-fetch: 3.6.2
   workbox-build: 6.5.4
   workbox-window: 6.5.4
@@ -83,7 +83,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.41.0_huremdigmcnkianavgfk3x6iou
   '@typescript-eslint/parser': 5.41.0_wyqvi574yv7oiwfeinomdzmc3m
   '@vitejs/plugin-react': 2.2.0_vite@3.2.2
-  '@vitest/coverage-istanbul': 0.24.3_jsdom@20.0.2
+  '@vitest/coverage-istanbul': 0.24.4_jsdom@20.0.2
   autoprefixer: 10.4.13_postcss@8.4.18
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
@@ -119,7 +119,7 @@ devDependencies:
   vite: 3.2.2
   vite-plugin-pwa: 0.13.1_3bowiggcnrfgb4q2iavuqqt6vu
   vite-tsconfig-paths: 3.5.2_vite@3.2.2
-  vitest: 0.24.3_jsdom@20.0.2
+  vitest: 0.24.4_jsdom@20.0.2
   whatwg-fetch: 3.6.2
   workbox-build: 6.5.4
   workbox-window: 6.5.4
@@ -2280,8 +2280,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vitest/coverage-istanbul/0.24.3_jsdom@20.0.2:
-    resolution: {integrity: sha512-cPQ5icP/TPih3qeZ29qA2zg1lxAM+wAUuh1ZkQJ75OK7am/8isqhP5QCCeGCLdFOakDsm4Ik8vHHfcDffuxW9Q==}
+  /@vitest/coverage-istanbul/0.24.4_jsdom@20.0.2:
+    resolution: {integrity: sha512-v9E/rMSuAu/tRoTfvyKaI0/dN33dfEhYBZs1My88HEPdo9OLPWUKPsCjSHH/iuDfFXq0IBkbO+/lIj1MXpbocg==}
     dependencies:
       istanbul-lib-coverage: 3.2.0
       istanbul-lib-instrument: 5.2.1
@@ -2289,7 +2289,7 @@ packages:
       istanbul-lib-source-maps: 4.0.1
       istanbul-reports: 3.1.5
       test-exclude: 6.0.0
-      vitest: 0.24.3_jsdom@20.0.2
+      vitest: 0.24.4_jsdom@20.0.2
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitest/browser'
@@ -7308,8 +7308,8 @@ packages:
     resolution: {integrity: sha512-w89qg7PI8wAdvX60bMDP+bFoD5Dvhm9oLheFp5O4a2QF0cSBGsBX4qZmadPMvVqlLJBBci+WqGGOAPvcDeNSVg==}
     dev: true
 
-  /tinybench/2.3.0:
-    resolution: {integrity: sha512-zs1gMVBwyyG2QbVchYIbnabRhMOCGvrwZz/q+SV+LIMa9q5YDQZi2kkI6ZRqV2Bz7ba1uvrc7ieUoE4KWnGeKg==}
+  /tinybench/2.3.1:
+    resolution: {integrity: sha512-hGYWYBMPr7p4g5IarQE7XhlyWveh1EKhy4wUBS1LrHXCKYgvz+4/jCqgmJqZxxldesn05vccrtME2RLLZNW7iA==}
     dev: true
 
   /tinypool/0.3.0:
@@ -7724,8 +7724,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.24.3_jsdom@20.0.2:
-    resolution: {integrity: sha512-aM0auuPPgMSstWvr851hB74g/LKaKBzSxcG3da7ejfZbx08Y21JpZmbmDYrMTCGhVZKqTGwzcnLMwyfz2WzkhQ==}
+  /vitest/0.24.4_jsdom@20.0.2:
+    resolution: {integrity: sha512-4ratHSyVEJPtBLV00uhL4Wj3Pmandc9rsxUkE0q9peNOfaOgGF4lEepdkaXGRi9AGFKr1GRVtjGOJ6Fp2lCpEg==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
@@ -7754,7 +7754,7 @@ packages:
       jsdom: 20.0.2
       local-pkg: 0.4.2
       strip-literal: 0.4.2
-      tinybench: 2.3.0
+      tinybench: 2.3.1
       tinypool: 0.3.0
       tinyspy: 1.0.2
       vite: 3.2.2
