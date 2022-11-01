@@ -17,7 +17,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': 5.42.0
   '@typescript-eslint/parser': 5.42.0
   '@vitejs/plugin-react': 2.2.0
-  '@vitest/coverage-istanbul': 0.24.4
+  '@vitest/coverage-istanbul': 0.24.5
   autoprefixer: 10.4.13
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
@@ -56,7 +56,7 @@ specifiers:
   vite: 3.2.2
   vite-plugin-pwa: 0.13.1
   vite-tsconfig-paths: 3.5.2
-  vitest: 0.24.4
+  vitest: 0.24.5
   whatwg-fetch: 3.6.2
   workbox-build: 6.5.4
   workbox-window: 6.5.4
@@ -83,7 +83,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.42.0_6xw5wg2354iw4zujk2f3vyfrzu
   '@typescript-eslint/parser': 5.42.0_wyqvi574yv7oiwfeinomdzmc3m
   '@vitejs/plugin-react': 2.2.0_vite@3.2.2
-  '@vitest/coverage-istanbul': 0.24.4_jsdom@20.0.2
+  '@vitest/coverage-istanbul': 0.24.5_jsdom@20.0.2
   autoprefixer: 10.4.13_postcss@8.4.18
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
@@ -119,7 +119,7 @@ devDependencies:
   vite: 3.2.2
   vite-plugin-pwa: 0.13.1_3bowiggcnrfgb4q2iavuqqt6vu
   vite-tsconfig-paths: 3.5.2_vite@3.2.2
-  vitest: 0.24.4_jsdom@20.0.2
+  vitest: 0.24.5_jsdom@20.0.2
   whatwg-fetch: 3.6.2
   workbox-build: 6.5.4
   workbox-window: 6.5.4
@@ -2281,8 +2281,8 @@ packages:
       - supports-color
     dev: true
 
-  /@vitest/coverage-istanbul/0.24.4_jsdom@20.0.2:
-    resolution: {integrity: sha512-v9E/rMSuAu/tRoTfvyKaI0/dN33dfEhYBZs1My88HEPdo9OLPWUKPsCjSHH/iuDfFXq0IBkbO+/lIj1MXpbocg==}
+  /@vitest/coverage-istanbul/0.24.5_jsdom@20.0.2:
+    resolution: {integrity: sha512-0nvaC6agHYDLsbKOKB5efvQUggwPBb9khrQXRIh3b+RiAZ/mNswF/19o0Nh40IuhFYoJOWGQu4jWJf99qVA7QA==}
     dependencies:
       istanbul-lib-coverage: 3.2.0
       istanbul-lib-instrument: 5.2.1
@@ -2290,7 +2290,7 @@ packages:
       istanbul-lib-source-maps: 4.0.1
       istanbul-reports: 3.1.5
       test-exclude: 6.0.0
-      vitest: 0.24.4_jsdom@20.0.2
+      vitest: 0.24.5_jsdom@20.0.2
     transitivePeerDependencies:
       - '@edge-runtime/vm'
       - '@vitest/browser'
@@ -7729,8 +7729,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest/0.24.4_jsdom@20.0.2:
-    resolution: {integrity: sha512-4ratHSyVEJPtBLV00uhL4Wj3Pmandc9rsxUkE0q9peNOfaOgGF4lEepdkaXGRi9AGFKr1GRVtjGOJ6Fp2lCpEg==}
+  /vitest/0.24.5_jsdom@20.0.2:
+    resolution: {integrity: sha512-zw6JhPUHtLILQDe5Q39b/SzoITkG+R7hcFjuthp4xsi6zpmfQPOZcHodZ+3bqoWl4EdGK/p1fuMiEwdxgbGLOA==}
     engines: {node: '>=v14.16.0'}
     hasBin: true
     peerDependencies:
