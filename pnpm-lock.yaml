@@ -39,7 +39,7 @@ specifiers:
   husky: 8.0.2
   jsdom: 20.0.2
   lint-staged: 13.0.3
-  msw: 0.47.4
+  msw: 0.48.0
   npm-run-all: 4.1.5
   postcss: 8.4.18
   prettier: 2.7.1
@@ -105,7 +105,7 @@ devDependencies:
   husky: 8.0.2
   jsdom: 20.0.2
   lint-staged: 13.0.3
-  msw: 0.47.4_typescript@4.8.4
+  msw: 0.48.0_typescript@4.8.4
   npm-run-all: 4.1.5
   postcss: 8.4.18
   prettier: 2.7.1
@@ -5761,8 +5761,8 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw/0.47.4_typescript@4.8.4:
-    resolution: {integrity: sha512-Psftt8Yfl0+l+qqg9OlmKEsxF8S/vtda0CmlR6y8wTaWrMMzuCDa55n2hEGC0ZRDwuV6FFWc/4CjoDsBpATKBw==}
+  /msw/0.48.0_typescript@4.8.4:
+    resolution: {integrity: sha512-bInpCikiW1VnjNkEjdaL5Wj+P/Xgz/U1GiUH/++Ck96w+FRpegP38HqBHJjdYZM1oH8VrtGiT14xvQHHhUTDzQ==}
     engines: {node: '>=14'}
     hasBin: true
     requiresBuild: true
