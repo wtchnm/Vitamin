@@ -33,7 +33,7 @@ specifiers:
   eslint-plugin-jsx-a11y: 6.6.1
   eslint-plugin-react: 7.31.10
   eslint-plugin-react-hooks: 4.6.0
-  eslint-plugin-react-prefer-function-component: 3.0.0
+  eslint-plugin-react-prefer-function-component: 3.1.0
   eslint-plugin-testing-library: 5.9.1
   eslint-plugin-unicorn: 44.0.2
   husky: 8.0.2
@@ -99,7 +99,7 @@ devDependencies:
   eslint-plugin-jsx-a11y: 6.6.1_eslint@8.27.0
   eslint-plugin-react: 7.31.10_eslint@8.27.0
   eslint-plugin-react-hooks: 4.6.0_eslint@8.27.0
-  eslint-plugin-react-prefer-function-component: 3.0.0
+  eslint-plugin-react-prefer-function-component: 3.1.0
   eslint-plugin-testing-library: 5.9.1_rmayb2veg2btbq6mbmnyivgasy
   eslint-plugin-unicorn: 44.0.2_eslint@8.27.0
   husky: 8.0.2
@@ -3945,8 +3945,8 @@ packages:
       eslint: 8.27.0
     dev: true
 
-  /eslint-plugin-react-prefer-function-component/3.0.0:
-    resolution: {integrity: sha512-3sVu9h5rUEHHvCxK0oJ4nnMvy9GGW+jPTNhhaUwRuFLN1YVffzKPOQPmjj56KUllbHZymenymN+QkzCVbyOPtQ==}
+  /eslint-plugin-react-prefer-function-component/3.1.0:
+    resolution: {integrity: sha512-A80QdKaMKC5Prq6Od37rieOy9HutgKQhe7+mmRgoMVvEqMJtvCxk10QOlyujjaX+xGSA4ma8R+4QOQQIeTmPAA==}
     dev: true
 
   /eslint-plugin-react/7.31.10_eslint@8.27.0:
