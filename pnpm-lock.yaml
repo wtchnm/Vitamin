@@ -21,7 +21,7 @@ specifiers:
   autoprefixer: 10.4.13
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
-  cypress: 10.11.0
+  cypress: 11.2.0
   cz-conventional-changelog: 3.3.0
   eslint: 8.27.0
   eslint-config-airbnb: 19.0.4
@@ -70,7 +70,7 @@ dependencies:
 devDependencies:
   '@nabla/vite-plugin-eslint': 1.4.1_eslint@8.27.0+vite@3.2.4
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.1.8
-  '@testing-library/cypress': 8.0.7_cypress@10.11.0
+  '@testing-library/cypress': 8.0.7_cypress@11.2.0
   '@testing-library/dom': 8.19.0
   '@testing-library/jest-dom': 5.16.5
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
@@ -87,7 +87,7 @@ devDependencies:
   autoprefixer: 10.4.13_postcss@8.4.19
   commitizen: 4.2.5
   css-mediaquery: 0.1.2
-  cypress: 10.11.0
+  cypress: 11.2.0
   cz-conventional-changelog: 3.3.0
   eslint: 8.27.0
   eslint-config-airbnb: 19.0.4_gto5osv3xpxagsgraksq5y7ohi
@@ -1815,7 +1815,7 @@ packages:
       use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
-  /@testing-library/cypress/8.0.7_cypress@10.11.0:
+  /@testing-library/cypress/8.0.7_cypress@11.2.0:
     resolution: {integrity: sha512-3HTV725rOS+YHve/gD9coZp/UcPK5xhr4H0GMnq/ni6USdtzVtSOG9WBFtd8rYnrXk8rrGD+0toRFYouJNIG0Q==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -1823,7 +1823,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.18.9
       '@testing-library/dom': 8.19.0
-      cypress: 10.11.0
+      cypress: 11.2.0
     dev: true
 
   /@testing-library/dom/8.19.0:
@@ -3143,8 +3143,8 @@ packages:
     resolution: {integrity: sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==}
     dev: true
 
-  /cypress/10.11.0:
-    resolution: {integrity: sha512-lsaE7dprw5DoXM00skni6W5ElVVLGAdRUUdZjX2dYsGjbY/QnpzWZ95Zom1mkGg0hAaO/QVTZoFVS7Jgr/GUPA==}
+  /cypress/11.2.0:
+    resolution: {integrity: sha512-u61UGwtu7lpsNWLUma/FKNOsrjcI6wleNmda/TyKHe0dOBcVjbCPlp1N6uwFZ0doXev7f/91YDpU9bqDCFeBLA==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     requiresBuild: true
