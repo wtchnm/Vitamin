@@ -10,7 +10,7 @@ specifiers:
   '@testing-library/react': 13.4.0
   '@testing-library/user-event': 14.4.3
   '@types/css-mediaquery': 0.1.1
-  '@types/react': 18.0.25
+  '@types/react': 18.0.26
   '@types/react-dom': 18.0.8
   '@types/react-router-dom': 5.3.3
   '@types/testing-library__jest-dom': 5.14.5
@@ -76,7 +76,7 @@ devDependencies:
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@testing-library/user-event': 14.4.3_aaq3sbffpfe3jnxzm2zngsddei
   '@types/css-mediaquery': 0.1.1
-  '@types/react': 18.0.25
+  '@types/react': 18.0.26
   '@types/react-dom': 18.0.8
   '@types/react-router-dom': 5.3.3
   '@types/testing-library__jest-dom': 5.14.5
@@ -2000,14 +2000,14 @@ packages:
   /@types/react-dom/18.0.8:
     resolution: {integrity: sha512-C3GYO0HLaOkk9dDAz3Dl4sbe4AKUGTCfFIZsz3n/82dPNN8Du533HzKatDxeUYWu24wJgMP1xICqkWk1YOLOIw==}
     dependencies:
-      '@types/react': 18.0.25
+      '@types/react': 18.0.26
     dev: true
 
   /@types/react-router-dom/5.3.3:
     resolution: {integrity: sha512-kpqnYK4wcdm5UaWI3fLcELopqLrHgLqNsdpHauzlQktfkHL3npOSwtj1Uz9oKBAzs7lFtVkV8j83voAz2D8fhw==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 18.0.25
+      '@types/react': 18.0.26
       '@types/react-router': 5.1.18
     dev: true
 
@@ -2015,11 +2015,11 @@ packages:
     resolution: {integrity: sha512-YYknwy0D0iOwKQgz9v8nOzt2J6l4gouBmDnWqUUznltOTaon+r8US8ky8HvN0tXvc38U9m6z/t2RsVsnd1zM0g==}
     dependencies:
       '@types/history': 4.7.11
-      '@types/react': 18.0.25
+      '@types/react': 18.0.26
     dev: true
 
-  /@types/react/18.0.25:
-    resolution: {integrity: sha512-xD6c0KDT4m7n9uD4ZHi02lzskaiqcBxf4zi+tXZY98a04wvc0hi/TcCPC2FOESZi51Nd7tlUeOJY8RofL799/g==}
+  /@types/react/18.0.26:
+    resolution: {integrity: sha512-hCR3PJQsAIXyxhTNSiDFY//LhnMZWpNNr5etoCqx/iUfGc5gXWtQR2Phl908jVR6uPXacojQWTg4qRpkxTuGug==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
