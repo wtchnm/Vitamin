@@ -46,7 +46,7 @@ specifiers:
   prettier-plugin-tailwindcss: 0.1.13
   react: 18.2.0
   react-dom: 18.2.0
-  react-router-dom: 6.3.0
+  react-router-dom: 6.6.2
   start-server-and-test: 1.14.0
   stylelint: 14.15.0
   stylelint-config-prettier: 9.0.4
@@ -65,7 +65,7 @@ dependencies:
   '@tanstack/react-query': 4.13.5_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
+  react-router-dom: 6.6.2_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
   '@nabla/vite-plugin-eslint': 1.4.1_eslint@8.27.0+vite@3.2.4
@@ -1354,6 +1354,7 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.9
+    dev: true
 
   /@babel/template/7.18.10:
     resolution: {integrity: sha512-TI+rCtooWHr3QJ27kJxfjutghu44DLnasDMwpDqCXVTal9RLp3RSYNh4NdBrRP2cQAoG9A8juOQl6P6oZG4JxA==}
@@ -1702,6 +1703,11 @@ packages:
   /@open-draft/until/1.0.3:
     resolution: {integrity: sha512-Aq58f5HiWdyDlFffbbSjAlv596h/cOnt2DO1w3DOC7OJ5EHs0hd/nycJfiu9RJbT6Yk6F1knnRRXNSpxoIVZ9Q==}
     dev: true
+
+  /@remix-run/router/1.2.1:
+    resolution: {integrity: sha512-XiY0IsyHR+DXYS5vBxpoBe/8veTeoRpMHP+vDosLZxL5bnpetzI0igkxkLZS235ldLzyfkxF+2divEwWHP3vMQ==}
+    engines: {node: '>=14'}
+    dev: false
 
   /@rollup/plugin-babel/5.3.1_56fnebo2rl23pzm3cph57q7t7i:
     resolution: {integrity: sha512-WFfdLWU/xVWKeRQnKmIAQULUI7Il0gZnBIH/ZFO069wYIfPu+8zrfp/KMW0atmELoRDq8FbiP3VCss9MhCut7Q==}
@@ -4698,12 +4704,6 @@ packages:
     resolution: {integrity: sha512-AVwgTAzeGpF7kwUCMc9HbAoCKFcHGEfmWkaI8g0jprrkh9VPRaofIsfV7Lw8UuR9pi4Rk7IIjJce8l0C+jSJNA==}
     dev: true
 
-  /history/5.3.0:
-    resolution: {integrity: sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==}
-    dependencies:
-      '@babel/runtime': 7.18.9
-    dev: false
-
   /homedir-polyfill/1.0.3:
     resolution: {integrity: sha512-eSmmWE5bZTK2Nou4g0AI3zZ9rswp7GRKoKXS1BLUkvPviOqs4YTN1djQIqrXy9k5gEtdLPy86JjRwsNM9tnDcA==}
     engines: {node: '>=0.10.0'}
@@ -6440,24 +6440,26 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-router-dom/6.3.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-uaJj7LKytRxZNQV8+RbzJWnJ8K2nPsOOEuX7aQstlMZKQT0164C+X2w6bnkqU3sjtLvpd5ojrezAyfZ1+0sStw==}
+  /react-router-dom/6.6.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-6SCDXxRQqW5af8ImOqKza7icmQ47/EMbz572uFjzvcArg3lZ+04PxSPp8qGs+p2Y+q+b+S/AjXv8m8dyLndIIA==}
+    engines: {node: '>=14'}
     peerDependencies:
       react: '>=16.8'
       react-dom: '>=16.8'
     dependencies:
-      history: 5.3.0
+      '@remix-run/router': 1.2.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
-      react-router: 6.3.0_react@18.2.0
+      react-router: 6.6.2_react@18.2.0
     dev: false
 
-  /react-router/6.3.0_react@18.2.0:
-    resolution: {integrity: sha512-7Wh1DzVQ+tlFjkeo+ujvjSqSJmkt1+8JO+T5xklPlgrh70y7ogx75ODRW0ThWhY7S+6yEDks8TYrtQe/aoboBQ==}
+  /react-router/6.6.2_react@18.2.0:
+    resolution: {integrity: sha512-uJPG55Pek3orClbURDvfljhqFvMgJRo59Pktywkk8hUUkTY2aRfza8Yhl/vZQXs+TNQyr6tu+uqz/fLxPICOGQ==}
+    engines: {node: '>=14'}
     peerDependencies:
       react: '>=16.8'
     dependencies:
-      history: 5.3.0
+      '@remix-run/router': 1.2.1
       react: 18.2.0
     dev: false
 
@@ -6547,6 +6549,7 @@ packages:
 
   /regenerator-runtime/0.13.9:
     resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
+    dev: true
 
   /regenerator-transform/0.15.0:
     resolution: {integrity: sha512-LsrGtPmbYg19bcPHwdtmXwbW+TqNvtY4riE3P83foeHRroMbH6/2ddFBfab3t7kbzc7v7p4wbkIecHImqt0QNg==}
