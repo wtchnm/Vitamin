@@ -6,14 +6,6 @@ import { VitePWA } from 'vite-plugin-pwa'
 import tsconfigPaths from 'vite-tsconfig-paths'
 
 export default defineConfig(({ mode }) => ({
-	optimizeDeps: {
-		disabled: false
-	},
-	build: {
-		commonjsOptions: {
-			include: []
-		}
-	},
 	test: {
 		css: false,
 		include: ['src/**/__tests__/*'],
@@ -32,8 +24,9 @@ export default defineConfig(({ mode }) => ({
 	plugins: [
 		tsconfigPaths(),
 		react(),
-		...(mode !== 'test'
-			? [
+		...(mode === 'test'
+			? []
+			: [
 					eslintPlugin(),
 					VitePWA({
 						registerType: 'autoUpdate',
@@ -61,7 +54,6 @@ export default defineConfig(({ mode }) => ({
 							]
 						}
 					})
-			  ]
-			: [])
+			  ])
 	]
 }))
