@@ -29,7 +29,7 @@
 		"react-router-dom": "6.3.0"
 	},
 	"devDependencies": {
-		"@nabla/vite-plugin-eslint": "1.4.1",
+		"@nabla/vite-plugin-eslint": "1.5.0",
 		"@tailwindcss/forms": "0.5.3",
 		"@testing-library/cypress": "8.0.7",
 		"@testing-library/dom": "8.19.0",
@@ -43,7 +43,7 @@
 		"@types/testing-library__jest-dom": "5.14.5",
 		"@typescript-eslint/eslint-plugin": "5.43.0",
 		"@typescript-eslint/parser": "5.43.0",
-		"@vitejs/plugin-react": "2.2.0",
+		"@vitejs/plugin-react": "3.1.0",
 		"@vitest/coverage-istanbul": "0.25.2",
 		"autoprefixer": "10.4.13",
 		"commitizen": "4.2.5",
@@ -77,8 +77,8 @@
 		"stylelint-config-standard": "29.0.0",
 		"tailwindcss": "3.1.8",
 		"typescript": "4.8.4",
-		"vite": "3.2.4",
-		"vite-plugin-pwa": "0.13.1",
+		"vite": "4.1.2",
+		"vite-plugin-pwa": "0.14.4",
 		"vite-tsconfig-paths": "3.5.2",
 		"vitest": "0.25.2",
 		"whatwg-fetch": "3.6.2",

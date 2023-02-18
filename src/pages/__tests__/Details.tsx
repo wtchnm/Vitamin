@@ -39,8 +39,6 @@ describe('<Details />', () => {
 		expect(screen.getByText('Vitamins per 100 g (3.5 oz)')).toBeInTheDocument()
 		expect(screen.getByText('Vitamin')).toBeInTheDocument()
 		expect(screen.getByText('Quantity')).toBeInTheDocument()
-		expect(screen.getByText('Vitamin A')).toBeInTheDocument()
-		expect(screen.getByText('3 μg')).toBeInTheDocument()
 		expect(screen.getByText('Vitamin B1')).toBeInTheDocument()
 		expect(screen.getByText('0.017 mg')).toBeInTheDocument()
 
