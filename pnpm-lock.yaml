@@ -7,7 +7,7 @@ specifiers:
   '@testing-library/cypress': 8.0.7
   '@testing-library/dom': 9.0.0
   '@testing-library/jest-dom': 5.16.5
-  '@testing-library/react': 13.4.0
+  '@testing-library/react': 14.0.0
   '@testing-library/user-event': 14.4.3
   '@types/css-mediaquery': 0.1.1
   '@types/react': 18.0.25
@@ -73,7 +73,7 @@ devDependencies:
   '@testing-library/cypress': 8.0.7_cypress@10.11.0
   '@testing-library/dom': 9.0.0
   '@testing-library/jest-dom': 5.16.5
-  '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
+  '@testing-library/react': 14.0.0_biqbaboplfbrettd7655fr4n2y
   '@testing-library/user-event': 14.4.3_@testing-library+dom@9.0.0
   '@types/css-mediaquery': 0.1.1
   '@types/react': 18.0.25
@@ -2225,15 +2225,15 @@ packages:
       redent: 3.0.0
     dev: true
 
-  /@testing-library/react/13.4.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-sXOGON+WNTh3MLE9rve97ftaZukN3oNf2KjDy7YTx6hcTO2uuLHuCGynMDhFwGw/jYf4OJ2Qk0i4i79qMNNkyw==}
-    engines: {node: '>=12'}
+  /@testing-library/react/14.0.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-S04gSNJbYE30TlIMLTzv6QCTzt9AqIF5y6s6SzVFILNcNvbV/jU96GeiTPillGQo+Ny64M/5PV7klNYYgv5Dfg==}
+    engines: {node: '>=14'}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
     dependencies:
       '@babel/runtime': 7.18.9
-      '@testing-library/dom': 8.19.0
+      '@testing-library/dom': 9.0.0
       '@types/react-dom': 18.0.8
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
