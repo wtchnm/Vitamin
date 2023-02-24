@@ -6,7 +6,7 @@ overrides:
 specifiers:
   '@nabla/vite-plugin-eslint': 1.5.0
   '@tailwindcss/forms': 0.5.3
-  '@tanstack/react-query': 4.24.9
+  '@tanstack/react-query': 4.24.10
   '@testing-library/cypress': 8.0.7
   '@testing-library/dom': 9.0.0
   '@testing-library/jest-dom': 5.16.5
@@ -42,7 +42,7 @@ specifiers:
   husky: 8.0.3
   jsdom: 21.1.0
   lint-staged: 13.1.2
-  msw: 1.0.1
+  msw: 1.1.0
   npm-run-all: 4.1.5
   postcss: 8.4.21
   prettier: 2.8.4
@@ -56,7 +56,7 @@ specifiers:
   stylelint-config-standard: 30.0.1
   tailwindcss: 3.2.7
   typescript: 4.9.5
-  vite: 4.1.3
+  vite: 4.1.4
   vite-plugin-pwa: 0.14.4
   vite-tsconfig-paths: 4.0.5
   vitest: 0.28.5
@@ -65,13 +65,13 @@ specifiers:
   workbox-window: 6.5.4
 
 dependencies:
-  '@tanstack/react-query': 4.24.9_biqbaboplfbrettd7655fr4n2y
+  '@tanstack/react-query': 4.24.10_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-router-dom: 6.8.1_biqbaboplfbrettd7655fr4n2y
 
 devDependencies:
-  '@nabla/vite-plugin-eslint': 1.5.0_eslint@8.34.0+vite@4.1.3
+  '@nabla/vite-plugin-eslint': 1.5.0_eslint@8.34.0+vite@4.1.4
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.7
   '@testing-library/cypress': 8.0.7_cypress@10.11.0
   '@testing-library/dom': 9.0.0
@@ -85,7 +85,7 @@ devDependencies:
   '@types/testing-library__jest-dom': 5.14.5
   '@typescript-eslint/eslint-plugin': 5.53.0_ny4s7qc6yg74faf3d6xty2ofzy
   '@typescript-eslint/parser': 5.53.0_7kw3g6rralp5ps6mg3uyzz6azm
-  '@vitejs/plugin-react': 3.1.0_vite@4.1.3
+  '@vitejs/plugin-react': 3.1.0_vite@4.1.4
   '@vitest/coverage-istanbul': 0.28.5_jsdom@21.1.0
   autoprefixer: 10.4.13_postcss@8.4.21
   commitizen: 4.3.0
@@ -108,7 +108,7 @@ devDependencies:
   husky: 8.0.3
   jsdom: 21.1.0
   lint-staged: 13.1.2
-  msw: 1.0.1_typescript@4.9.5
+  msw: 1.1.0_typescript@4.9.5
   npm-run-all: 4.1.5
   postcss: 8.4.21
   prettier: 2.8.4
@@ -119,8 +119,8 @@ devDependencies:
   stylelint-config-standard: 30.0.1_stylelint@15.2.0
   tailwindcss: 3.2.7_postcss@8.4.21
   typescript: 4.9.5
-  vite: 4.1.3
-  vite-plugin-pwa: 0.14.4_a7neqmautsvqvxbixxqqjc4mq4
+  vite: 4.1.4
+  vite-plugin-pwa: 0.14.4_qtdhuw7qkuvvectm2wxn5d44j4
   vite-tsconfig-paths: 4.0.5_typescript@4.9.5
   vitest: 0.28.5_jsdom@21.1.0
   whatwg-fetch: 3.6.2
@@ -1925,7 +1925,7 @@ packages:
       - supports-color
     dev: true
 
-  /@nabla/vite-plugin-eslint/1.5.0_eslint@8.34.0+vite@4.1.3:
+  /@nabla/vite-plugin-eslint/1.5.0_eslint@8.34.0+vite@4.1.4:
     resolution: {integrity: sha512-3NR+mHcW4lY9n1t+cqM8W1xM/UQXKpuDyaoJmPPQKoBCEjFoSvE4XcJwG86lk7K0AauqWwecsgEhmdZLDW07YQ==}
     peerDependencies:
       eslint: '*'
@@ -1934,7 +1934,7 @@ packages:
       '@types/eslint': 8.21.1
       chalk: 4.1.2
       eslint: 8.34.0
-      vite: 4.1.3
+      vite: 4.1.4
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -2086,12 +2086,12 @@ packages:
       tailwindcss: 3.2.7_postcss@8.4.21
     dev: true
 
-  /@tanstack/query-core/4.24.9:
-    resolution: {integrity: sha512-pZQ2NpdaHzx8gPPkAPh06d6zRkjfonUzILSYBXrdHDapP2eaBbGsx5L4/dMF+fyAglFzQZdDDzZgAykbM20QVw==}
+  /@tanstack/query-core/4.24.10:
+    resolution: {integrity: sha512-2QywqXEAGBIUoTdgn1lAB4/C8QEqwXHj2jrCLeYTk2xVGtLiPEUD8jcMoeB2noclbiW2mMt4+Fq7fZStuz3wAQ==}
     dev: false
 
-  /@tanstack/react-query/4.24.9_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-6WLwUT9mrngIinRtcZjrWOUENOuLbWvQpKmU6DZCo2iPQVA+qvv3Ji90Amme4AkUyWQ8ZSSRTnAFq8V2tj2ACg==}
+  /@tanstack/react-query/4.24.10_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-FY1DixytOcNNCydPQXLxuKEV7VSST32CAuJ55BjhDNqASnMLZn+6c30yQBMrODjmWMNwzfjMZnq0Vw7C62Fwow==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -2102,7 +2102,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@tanstack/query-core': 4.24.9
+      '@tanstack/query-core': 4.24.10
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       use-sync-external-store: 1.2.0_react@18.2.0
@@ -2571,7 +2571,7 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@vitejs/plugin-react/3.1.0_vite@4.1.3:
+  /@vitejs/plugin-react/3.1.0_vite@4.1.4:
     resolution: {integrity: sha512-AfgcRL8ZBhAlc3BFdigClmTUMISmmzHn7sB2h9U1odvc5U/MjWXsAaz18b/WoppUTDBzxOJwo2VdClfUcItu9g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -2582,7 +2582,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.19.6_@babel+core@7.20.12
       magic-string: 0.27.0
       react-refresh: 0.14.0
-      vite: 4.1.3
+      vite: 4.1.4
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3895,13 +3895,13 @@ packages:
       es-to-primitive: 1.2.1
       function-bind: 1.1.1
       function.prototype.name: 1.1.5
-      get-intrinsic: 1.1.2
+      get-intrinsic: 1.2.0
       get-symbol-description: 1.0.0
       has: 1.0.3
       has-property-descriptors: 1.0.0
       has-symbols: 1.0.3
       internal-slot: 1.0.3
-      is-callable: 1.2.4
+      is-callable: 1.2.7
       is-negative-zero: 2.0.2
       is-regex: 1.1.4
       is-shared-array-buffer: 1.0.2
@@ -5151,27 +5151,6 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /inquirer/8.2.4:
-    resolution: {integrity: sha512-nn4F01dxU8VeKfq192IjLsxu0/OmMZ4Lg3xKAns148rCaXP6ntAoEkVYZThWjwON8AlzdZZi6oqnhNbxUG9hVg==}
-    engines: {node: '>=12.0.0'}
-    dependencies:
-      ansi-escapes: 4.3.2
-      chalk: 4.1.2
-      cli-cursor: 3.1.0
-      cli-width: 3.0.0
-      external-editor: 3.1.0
-      figures: 3.2.0
-      lodash: 4.17.21
-      mute-stream: 0.0.8
-      ora: 5.4.1
-      run-async: 2.4.1
-      rxjs: 7.8.0
-      string-width: 4.2.3
-      strip-ansi: 6.0.1
-      through: 2.3.8
-      wrap-ansi: 7.0.0
-    dev: true
-
   /inquirer/8.2.5:
     resolution: {integrity: sha512-QAgPDQMEgrDssk1XiwwHoOGYF9BAbUcc1+j+FhEvaOt8/cKRqyLn0U5qA6F74fGhTMGxf92pOvPBeh29jQJDTQ==}
     engines: {node: '>=12.0.0'}
@@ -5186,7 +5165,7 @@ packages:
       mute-stream: 0.0.8
       ora: 5.4.1
       run-async: 2.4.1
-      rxjs: 7.5.6
+      rxjs: 7.8.0
       string-width: 4.2.3
       strip-ansi: 6.0.1
       through: 2.3.8
@@ -5257,11 +5236,6 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       builtin-modules: 3.3.0
-    dev: true
-
-  /is-callable/1.2.4:
-    resolution: {integrity: sha512-nsuwtxZfMX67Oryl9LCQ+upnC0Z0BgpwntpS89m1H/TLF0zNfzfLMV/9Wa/6MZsj0acpEjAO0KF1xT6ZdLl95w==}
-    engines: {node: '>= 0.4'}
     dev: true
 
   /is-callable/1.2.7:
@@ -6164,8 +6138,8 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /msw/1.0.1_typescript@4.9.5:
-    resolution: {integrity: sha512-fBwQRCmf+jh0zlGlasBfpCaxLqb4QLMsY1Q+nkXkO0nnUYopl50NcNRvP4V+TAiqOwJSd0LrQ5NcJqwbrnTBqw==}
+  /msw/1.1.0_typescript@4.9.5:
+    resolution: {integrity: sha512-oqMvUXm1bMbwvGpoXAQVz8vXXQyQyx52HBDg3EDOK+dFXkQHssgkXEG4LfMwwZyr2Qt18I/w04XPaY4BkFTkzA==}
     engines: {node: '>=14'}
     hasBin: true
     requiresBuild: true
@@ -6185,7 +6159,7 @@ packages:
       cookie: 0.4.2
       graphql: 16.6.0
       headers-polyfill: 3.1.2
-      inquirer: 8.2.4
+      inquirer: 8.2.5
       is-node-process: 1.0.1
       js-levenshtein: 1.1.6
       node-fetch: 2.6.7
@@ -7221,12 +7195,6 @@ packages:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
     dependencies:
       queue-microtask: 1.2.3
-    dev: true
-
-  /rxjs/7.5.6:
-    resolution: {integrity: sha512-dnyv2/YsXhnm461G+R/Pe5bWP41Nm6LBXEYWI6eiFP4fiwx6WRI/CD0zbdVAudd9xwLEF2IDcKXLHit0FYjUzw==}
-    dependencies:
-      tslib: 2.4.0
     dev: true
 
   /rxjs/7.8.0:
@@ -8267,7 +8235,7 @@ packages:
       picocolors: 1.0.0
       source-map: 0.6.1
       source-map-support: 0.5.21
-      vite: 4.1.3_@types+node@18.7.3
+      vite: 4.1.4_@types+node@18.7.3
     transitivePeerDependencies:
       - '@types/node'
       - less
@@ -8278,7 +8246,7 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-pwa/0.14.4_a7neqmautsvqvxbixxqqjc4mq4:
+  /vite-plugin-pwa/0.14.4_qtdhuw7qkuvvectm2wxn5d44j4:
     resolution: {integrity: sha512-M7Ct0so8OlouMkTWgXnl8W1xU95glITSKIe7qswZf1tniAstO2idElGCnsrTJ5NPNSx1XqfTCOUj8j94S6FD7Q==}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
@@ -8290,7 +8258,7 @@ packages:
       fast-glob: 3.2.12
       pretty-bytes: 6.1.0
       rollup: 3.16.0
-      vite: 4.1.3
+      vite: 4.1.4
       workbox-build: 6.5.4
       workbox-window: 6.5.4
     transitivePeerDependencies:
@@ -8308,8 +8276,8 @@ packages:
       - typescript
     dev: true
 
-  /vite/4.1.3:
-    resolution: {integrity: sha512-0Zqo4/Fr/swSOBmbl+HAAhOjrqNwju+yTtoe4hQX9UsARdcuc9njyOdr6xU0DDnV7YP0RT6mgTTOiRtZgxfCxA==}
+  /vite/4.1.4:
+    resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -8341,8 +8309,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vite/4.1.3_@types+node@18.7.3:
-    resolution: {integrity: sha512-0Zqo4/Fr/swSOBmbl+HAAhOjrqNwju+yTtoe4hQX9UsARdcuc9njyOdr6xU0DDnV7YP0RT6mgTTOiRtZgxfCxA==}
+  /vite/4.1.4_@types+node@18.7.3:
+    resolution: {integrity: sha512-3knk/HsbSTKEin43zHu7jTwYWv81f8kgAL99G5NWBcA1LKvtvcVAC4JjBH1arBunO9kQka+1oGbrMKOjk4ZrBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -8419,7 +8387,7 @@ packages:
       tinybench: 2.3.1
       tinypool: 0.3.1
       tinyspy: 1.0.2
-      vite: 4.1.3_@types+node@18.7.3
+      vite: 4.1.4_@types+node@18.7.3
       vite-node: 0.28.5_@types+node@18.7.3
       why-is-node-running: 2.2.2
     transitivePeerDependencies:
