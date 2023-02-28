@@ -26,7 +26,7 @@
 		"@tanstack/react-query": "4.24.10",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
-		"react-router-dom": "6.8.1"
+		"react-router-dom": "6.8.2"
 	},
 	"devDependencies": {
 		"@nabla/vite-plugin-eslint": "1.5.0",
@@ -41,10 +41,10 @@
 		"@types/react-dom": "18.0.11",
 		"@types/react-router-dom": "5.3.3",
 		"@types/testing-library__jest-dom": "5.14.5",
-		"@typescript-eslint/eslint-plugin": "5.53.0",
-		"@typescript-eslint/parser": "5.53.0",
+		"@typescript-eslint/eslint-plugin": "5.54.0",
+		"@typescript-eslint/parser": "5.54.0",
 		"@vitejs/plugin-react": "3.1.0",
-		"@vitest/coverage-istanbul": "0.29.1",
+		"@vitest/coverage-istanbul": "0.29.2",
 		"autoprefixer": "10.4.13",
 		"commitizen": "4.3.0",
 		"css-mediaquery": "0.1.2",
@@ -80,7 +80,7 @@
 		"vite": "4.1.4",
 		"vite-plugin-pwa": "0.14.4",
 		"vite-tsconfig-paths": "4.0.5",
-		"vitest": "0.29.1",
+		"vitest": "0.29.2",
 		"whatwg-fetch": "3.6.2",
 		"workbox-build": "6.5.4",
 		"workbox-window": "6.5.4"
