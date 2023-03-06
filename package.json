@@ -62,7 +62,7 @@
 		"eslint-plugin-react-hooks": "4.6.0",
 		"eslint-plugin-react-prefer-function-component": "3.1.0",
 		"eslint-plugin-testing-library": "5.10.2",
-		"eslint-plugin-unicorn": "45.0.2",
+		"eslint-plugin-unicorn": "46.0.0",
 		"husky": "8.0.3",
 		"jsdom": "21.1.0",
 		"lint-staged": "13.1.2",

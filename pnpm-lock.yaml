@@ -38,7 +38,7 @@ specifiers:
   eslint-plugin-react-hooks: 4.6.0
   eslint-plugin-react-prefer-function-component: 3.1.0
   eslint-plugin-testing-library: 5.10.2
-  eslint-plugin-unicorn: 45.0.2
+  eslint-plugin-unicorn: 46.0.0
   husky: 8.0.3
   jsdom: 21.1.0
   lint-staged: 13.1.2
@@ -104,7 +104,7 @@ devDependencies:
   eslint-plugin-react-hooks: 4.6.0_eslint@8.35.0
   eslint-plugin-react-prefer-function-component: 3.1.0
   eslint-plugin-testing-library: 5.10.2_ycpbpc6yetojsgtrx3mwntkhsu
-  eslint-plugin-unicorn: 45.0.2_eslint@8.35.0
+  eslint-plugin-unicorn: 46.0.0_eslint@8.35.0
   husky: 8.0.3
   jsdom: 21.1.0
   lint-staged: 13.1.2
@@ -4263,8 +4263,8 @@ packages:
       - typescript
     dev: true
 
-  /eslint-plugin-unicorn/45.0.2_eslint@8.35.0:
-    resolution: {integrity: sha512-Y0WUDXRyGDMcKLiwgL3zSMpHrXI00xmdyixEGIg90gHnj0PcHY4moNv3Ppje/kDivdAy5vUeUr7z211ImPv2gw==}
+  /eslint-plugin-unicorn/46.0.0_eslint@8.35.0:
+    resolution: {integrity: sha512-j07WkC+PFZwk8J33LYp6JMoHa1lXc1u6R45pbSAipjpfpb7KIGr17VE2D685zCxR5VL4cjrl65kTJflziQWMDA==}
     engines: {node: '>=14.18'}
     peerDependencies:
       eslint: '>=8.28.0'
@@ -4274,7 +4274,7 @@ packages:
       ci-info: 3.7.1
       clean-regexp: 1.0.0
       eslint: 8.35.0
-      esquery: 1.4.0
+      esquery: 1.4.2
       indent-string: 4.0.0
       is-builtin-module: 3.2.0
       jsesc: 3.0.2
@@ -4386,13 +4386,6 @@ packages:
     resolution: {integrity: sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==}
     engines: {node: '>=4'}
     hasBin: true
-    dev: true
-
-  /esquery/1.4.0:
-    resolution: {integrity: sha512-cCDispWt5vHHtwMY2YrAQ4ibFkAL8RbH5YGBnZBc90MolvvfkkQcJro/aZiAQUlQ3qgrYS6D6v8Gc5G5CQsc9w==}
-    engines: {node: '>=0.10'}
-    dependencies:
-      estraverse: 5.3.0
     dev: true
 
   /esquery/1.4.2:
