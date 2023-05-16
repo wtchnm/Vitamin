@@ -32,7 +32,7 @@ pnpm install
 ### Before you start coding
 
 - [ ] If you don't plan to use GitHub Actions, delete the `.github` directory.
-- [ ] Clean up the `cypress/integration/index.spec.ts` file.
+- [ ] Clean up the `cypress/e2e/index.spec.ts` file.
 - [ ] Change the `favicon.png`, `apple-touch-icon.png`, `android-chrome-192x192.png` and `android-chrome-512x512.png`. [favicon.io](https://favicon.io) is a cool tool for generating these assets.
 - [ ] In the `src` folder, remove the `__tests__`, `api` and `components` folder and the `types.ts` file.
 - [ ] If you don't plan to use `react-query`, remove the query client logic in the `main.tsx` file.
