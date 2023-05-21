@@ -1,4 +1,4 @@
-function get(id: string): ReturnType<typeof cy.get> {
+function get(id: string) {
 	return cy.findByTestId(id)
 }
 
@@ -27,26 +27,31 @@ describe('Basic flow', () => {
 	})
 
 	it('Should navigate to the details page on click', () => {
+		cy.visit('/')
 		cy.findAllByTestId('FruitCardName').first().click()
 		cy.location('pathname').should('eq', `/apple`)
 	})
 
 	it('Should go back to gallery on back button click', () => {
+		cy.visit('/apple')
 		get('BackLink').click()
 		cy.location('pathname').should('eq', '/')
 	})
 
 	it('Should navigate to the details page on enter', () => {
+		cy.visit('/')
 		cy.findAllByTestId('FruitCard').first().focus().type('{enter}')
 		cy.location('pathname').should('eq', `/apple`)
 	})
 
 	it('Should render the fruit details correctly', () => {
+		cy.visit('/apple')
 		get('FruitImage').should('have.attr', 'src').and('contain', IMAGE_URL)
 		get('FruitName').should('have.text', 'Apple')
 	})
 
 	it('Should render a error message', () => {
+		cy.visit('/')
 		cy.viewport('iphone-xr')
 		cy.intercept('/fruits', request => request.destroy()).as('getFruits')
 		cy.reload()
@@ -55,6 +60,7 @@ describe('Basic flow', () => {
 	})
 
 	it('Should redirect to gallery when trying to access a invalid fruit', () => {
+		cy.visit('/')
 		cy.visit('/cypress')
 		cy.location('pathname').should('eq', '/')
 	})
