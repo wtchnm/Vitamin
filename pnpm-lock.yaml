@@ -119,8 +119,8 @@ devDependencies:
     specifier: 3.2.0
     version: 3.2.0
   eslint-plugin-testing-library:
-    specifier: 5.11.1
-    version: 5.11.1(eslint@8.47.0)(typescript@5.1.6)
+    specifier: 6.0.0
+    version: 6.0.0(eslint@8.47.0)(typescript@5.1.6)
   eslint-plugin-unicorn:
     specifier: 48.0.1
     version: 48.0.1(eslint@8.47.0)
@@ -2441,10 +2441,6 @@ packages:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
     dev: true
 
-  /@types/semver@7.3.12:
-    resolution: {integrity: sha512-WwA1MW0++RfXmCr12xeYOOC5baSC9mSb0ZqCquFzKhcoF4TvHu5MKOuXsncgZcpVFhB1pXd5hZmM0ryAoCp12A==}
-    dev: true
-
   /@types/semver@7.5.0:
     resolution: {integrity: sha512-G8hZ6XJiHnuhQKR7ZmysCeJWE08o8T0AXtk5darsCaTVsYZhhgUrq53jizaR2FvsoeCwJhlmwTjkXBY5Pn/ZHw==}
     dev: true
@@ -2626,8 +2622,8 @@ packages:
       eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.47.0)
-      '@types/json-schema': 7.0.11
-      '@types/semver': 7.3.12
+      '@types/json-schema': 7.0.12
+      '@types/semver': 7.5.0
       '@typescript-eslint/scope-manager': 5.62.0
       '@typescript-eslint/types': 5.62.0
       '@typescript-eslint/typescript-estree': 5.62.0(typescript@5.1.6)
@@ -4339,8 +4335,8 @@ packages:
       string.prototype.matchall: 4.0.8
     dev: true
 
-  /eslint-plugin-testing-library@5.11.1(eslint@8.47.0)(typescript@5.1.6):
-    resolution: {integrity: sha512-5eX9e1Kc2PqVRed3taaLnAAqPZGEX75C+M/rXzUAI3wIg/ZxzUm1OVAwfe/O+vE+6YXOLetSe9g5GKD2ecXipw==}
+  /eslint-plugin-testing-library@6.0.0(eslint@8.47.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-SHeisSxG1f6UV2wKdMuQBiTTmGEQ858H7LMyz1LG+30TxPQEcXXQauC4E6sfEdcrJ/nIOUxNmlFZdlL6PNK4mg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0, npm: '>=6'}
     peerDependencies:
       eslint: ^7.5.0 || ^8.0.0
