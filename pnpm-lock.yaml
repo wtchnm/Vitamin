@@ -23,8 +23,8 @@ dependencies:
 
 devDependencies:
   '@nabla/vite-plugin-eslint':
-    specifier: 1.5.0
-    version: 1.5.0(eslint@8.51.0)(vite@4.4.11)
+    specifier: 2.0.2
+    version: 2.0.2(eslint@8.51.0)(vite@4.4.11)
   '@tailwindcss/forms':
     specifier: 0.5.6
     version: 0.5.6(tailwindcss@3.3.3)
@@ -2112,11 +2112,11 @@ packages:
       - supports-color
     dev: true
 
-  /@nabla/vite-plugin-eslint@1.5.0(eslint@8.51.0)(vite@4.4.11):
-    resolution: {integrity: sha512-3NR+mHcW4lY9n1t+cqM8W1xM/UQXKpuDyaoJmPPQKoBCEjFoSvE4XcJwG86lk7K0AauqWwecsgEhmdZLDW07YQ==}
+  /@nabla/vite-plugin-eslint@2.0.2(eslint@8.51.0)(vite@4.4.11):
+    resolution: {integrity: sha512-bwOAkO3kdDyNvGNbIls9bLQHR1t/NKyCd/CSCP89rbmgmxScORq9O84TBc5t1Bh64UWSYmYM5j5HIjwuiVgtGQ==}
     peerDependencies:
       eslint: '*'
-      vite: ^2 || ^3 || ^4
+      vite: ^4 || ^5
     dependencies:
       '@types/eslint': 8.21.1
       chalk: 4.1.2
@@ -2428,7 +2428,7 @@ packages:
     resolution: {integrity: sha512-rc9K8ZpVjNcLs8Fp0dkozd5Pt2Apk1glO4Vgz8ix1u6yFByxfqo5Yavpy65o+93TAe24jr7v+eSBtFLvOQtCRQ==}
     dependencies:
       '@types/estree': 1.0.0
-      '@types/json-schema': 7.0.11
+      '@types/json-schema': 7.0.12
     dev: true
 
   /@types/estree@0.0.39:
@@ -2452,10 +2452,6 @@ packages:
 
   /@types/js-levenshtein@1.1.1:
     resolution: {integrity: sha512-qC4bCqYGy1y/NP7dDVr7KJarn+PbX1nSpwA7JXdu0HxT3QYjO8MJ+cntENtHFVy2dRAyBV23OZ6MxsW1AM1L8g==}
-    dev: true
-
-  /@types/json-schema@7.0.11:
-    resolution: {integrity: sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==}
     dev: true
 
   /@types/json-schema@7.0.12:
