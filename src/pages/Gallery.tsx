@@ -1,13 +1,16 @@
+import { useQuery } from '@tanstack/react-query'
 import getFruits from 'api/getFruits'
 import Fruit from 'components/Fruit'
 import Head from 'components/Head'
 import LoadingOrError from 'components/LoadingOrError'
 import type { ReactElement } from 'react'
-import { useQuery } from '@tanstack/react-query'
 
 export default function GalleryPage(): ReactElement {
-	const { isLoading, isError, error, data } = useQuery(['fruits'], getFruits)
-	if (isLoading || isError) {
+	const { isPending, isError, error, data } = useQuery({
+		queryKey: ['fruits'],
+		queryFn: getFruits
+	})
+	if (isPending || isError) {
 		return <LoadingOrError error={error as Error} />
 	}
 
