@@ -1,9 +1,9 @@
+import { useQuery } from '@tanstack/react-query'
 import getFruits from 'api/getFruits'
 import Head from 'components/Head'
 import ImageAttribution from 'components/ImageAttribution'
 import LoadingOrError from 'components/LoadingOrError'
 import type { ReactElement } from 'react'
-import { useQuery } from '@tanstack/react-query'
 import { Link, Navigate, useParams } from 'react-router-dom'
 import { useMediaQuery } from 'utils'
 
@@ -14,8 +14,11 @@ export default function DetailsPage(): ReactElement {
 	const isTabletAndUp = useMediaQuery('(min-width: 600px)')
 	const { fruitName } = useParams()
 
-	const { isLoading, isError, error, data } = useQuery(['fruits'], getFruits)
-	if (isLoading || isError) {
+	const { isPending, isError, error, data } = useQuery({
+		queryKey: ['fruits'],
+		queryFn: getFruits
+	})
+	if (isPending || isError) {
 		return <LoadingOrError error={error as Error} />
 	}
 
