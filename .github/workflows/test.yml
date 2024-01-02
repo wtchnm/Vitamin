@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [main]
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   Test:
     runs-on: ubuntu-latest
@@ -32,5 +36,3 @@ jobs:
 
       - name: Upload coverage
         uses: codecov/codecov-action@v3
-        with:
-          fail_ci_if_error: true
