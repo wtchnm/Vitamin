@@ -48,7 +48,7 @@
 		"autoprefixer": "10.4.16",
 		"commitizen": "4.3.0",
 		"css-mediaquery": "0.1.2",
-		"cypress": "13.6.2",
+		"cypress": "13.3.1",
 		"cz-conventional-changelog": "3.3.0",
 		"eslint": "8.56.0",
 		"eslint-config-airbnb": "19.0.4",
