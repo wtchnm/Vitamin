@@ -14,9 +14,13 @@ export default defineConfig(({ mode }) => ({
 		setupFiles: 'src/setupTests.ts',
 		clearMocks: true,
 		coverage: {
+			include: ['src/**/*'],
+			exclude: ['src/main.tsx'],
+			thresholds: {
+				'100': true
+			},
 			provider: 'istanbul',
 			enabled: true,
-			'100': true,
 			reporter: ['text', 'lcov'],
 			reportsDirectory: 'coverage'
 		}
