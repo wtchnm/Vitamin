@@ -1,4 +1,0 @@
-{
-	"extends": ["config:js-app", "schedule:weekly", "group:allNonMajor"],
-	"labels": ["dependencies"]
-}
