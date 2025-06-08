@@ -10,7 +10,7 @@ Opinionated Vite starter template. Previous version available on v1 branch.
 - [Tailwind CSS v4](https://tailwindcss.com) for easy stylization.
 - [Biome V2](https://next.biomejs.dev) for linting, formatting and automatic import sorting.
 - Write unit and integration tests with [Vitest 3](https://vitest.dev/) and [Testing Library 16](https://testing-library.com/).
-- Write e2e tests with [Cypress 13](https://www.cypress.io).
+- Write e2e tests with [Playwright 1.52](https://www.cypress.io).
 
 ## Getting started
 
