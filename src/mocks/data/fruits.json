@@ -1,62 +1,118 @@
 [
 	{
-		"name": "Apple",
 		"image": {
-			"author": {
-				"name": "Matheus Cenali",
-				"url": "https://unsplash.com/@cenali"
-			},
+			"author": "Matheus Cenali",
 			"color": "#bb3335",
 			"url": "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?fit=crop&q=60&auto=format"
 		},
 		"metadata": [
 			{ "name": "Vitamin A", "value": "3 μg" },
-			{ "name": "Vitamin B1", "value": "0.017 mg" }
-		]
+			{ "name": "Vitamin B1", "value": "0.017 mg" },
+			{ "name": "Vitamin B2", "value": "0.026 mg" },
+			{ "name": "Vitamin B3", "value": "0.091 mg" },
+			{ "name": "Vitamin B5", "value": "0.061 mg" },
+			{ "name": "Vitamin B6", "value": "0.041 mg" },
+			{ "name": "Vitamin B9", "value": "3 μg" },
+			{ "name": "Vitamin C", "value": "4.6 mg" },
+			{ "name": "Vitamin E", "value": "0.18 mg" },
+			{ "name": "Vitamin K", "value": "2.2 μg" }
+		],
+		"name": "Apple"
 	},
 	{
-		"name": "Banana",
 		"image": {
-			"author": {
-				"name": "Ilona Frey",
-				"url": "https://unsplash.com/@mensur"
-			},
+			"author": "Ilona Frey",
 			"color": "#d6c218",
 			"url": "https://images.unsplash.com/photo-1606050627722-3646950540ca?fit=crop&q=60&auto=format"
 		},
 		"metadata": [
 			{ "name": "Vitamin B1", "value": "0.031 mg" },
-			{ "name": "Vitamin B2", "value": "0.073 mg" }
-		]
+			{ "name": "Vitamin B2", "value": "0.073 mg" },
+			{ "name": "Vitamin B3", "value": "0.665 mg" },
+			{ "name": "Vitamin B5", "value": "0.334 mg" },
+			{ "name": "Vitamin B6", "value": "0.4 mg" },
+			{ "name": "Vitamin B9", "value": "20 μg" },
+			{ "name": "Choline", "value": "9.8 mg" },
+			{ "name": "Vitamin C", "value": "8.7 mg" }
+		],
+		"name": "Banana"
 	},
 	{
-		"name": "Orange",
 		"image": {
-			"author": {
-				"name": "Theme Inn",
-				"url": "https://unsplash.com/@themeinn"
-			},
+			"author": "Theme Inn",
 			"color": "#f28826",
 			"url": "https://images.unsplash.com/photo-1549888834-3ec93abae044?fit=crop&q=60&auto=format"
 		},
 		"metadata": [
 			{ "name": "Vitamin A", "value": "11 μg" },
-			{ "name": "Vitamin B1", "value": "0.087 mg" }
-		]
+			{ "name": "Vitamin B1", "value": "0.087 mg" },
+			{ "name": "Vitamin B2", "value": "0.04 mg" },
+			{ "name": "Vitamin B3", "value": "0.282 mg" },
+			{ "name": "Vitamin B5", "value": "0.25 mg" },
+			{ "name": "Vitamin B6", "value": "0.06 mg" },
+			{ "name": "Vitamin B9", "value": "30 μg" },
+			{ "name": "Choline", "value": "8.4 mg" },
+			{ "name": "Vitamin C", "value": "53.2 mg" },
+			{ "name": "Vitamin E", "value": "0.18 mg" }
+		],
+		"name": "Orange"
 	},
 	{
-		"name": "Grape",
 		"image": {
-			"author": {
-				"name": "Bill Williams",
-				"url": "https://unsplash.com/@imwilliamwilliams"
-			},
+			"author": "Bill Williams",
 			"color": "#362569",
 			"url": "https://images.unsplash.com/photo-1416432969026-7e41a751ee1e?fit=crop&q=60&auto=format"
 		},
 		"metadata": [
 			{ "name": "Vitamin B1", "value": "0.069 mg" },
-			{ "name": "Vitamin B2", "value": "0.07 mg" }
-		]
+			{ "name": "Vitamin B2", "value": "0.07 mg" },
+			{ "name": "Vitamin B3", "value": "0.188 mg" },
+			{ "name": "Vitamin B5", "value": "0.05 mg" },
+			{ "name": "Vitamin B6", "value": "0.086 mg" },
+			{ "name": "Vitamin B9", "value": "2 μg" },
+			{ "name": "Choline", "value": "5.6 mg" },
+			{ "name": "Vitamin C", "value": "3.2 mg" },
+			{ "name": "Vitamin E", "value": "0.19 mg" },
+			{ "name": "Vitamin K", "value": "14.6 μg" }
+		],
+		"name": "Grape"
+	},
+	{
+		"image": {
+			"author": "Massimiliano Martini",
+			"color": "#b23b43",
+			"url": "https://images.unsplash.com/photo-1543528176-61b239494933?fit=crop&q=60&auto=format"
+		},
+		"metadata": [
+			{ "name": "Vitamin B1", "value": "0.024 mg" },
+			{ "name": "Vitamin B2", "value": "0.022 mg" },
+			{ "name": "Vitamin B3", "value": "0.386 mg" },
+			{ "name": "Vitamin B5", "value": "0.125 mg" },
+			{ "name": "Vitamin B6", "value": "0.047 mg" },
+			{ "name": "Vitamin B9", "value": "24 μg" },
+			{ "name": "Choline", "value": "5.7 mg" },
+			{ "name": "Vitamin C", "value": "58.8 mg" },
+			{ "name": "Vitamin E", "value": "0.29 mg" },
+			{ "name": "Vitamin K", "value": "2.2 μg" }
+		],
+		"name": "Strawberry"
+	},
+	{
+		"image": {
+			"author": "KWON JUNHO",
+			"color": "#e98700",
+			"url": "https://images.unsplash.com/photo-1607595213051-227632ba53f8?fit=crop&q=60&auto=format"
+		},
+		"metadata": [
+			{ "name": "Vitamin B1", "value": "0.04 mg" },
+			{ "name": "Vitamin B2", "value": "0.02 mg" },
+			{ "name": "Vitamin B3", "value": "0.1 mg" },
+			{ "name": "Vitamin B5", "value": "0.19 mg" },
+			{ "name": "Vitamin B6", "value": "0.08 mg" },
+			{ "name": "Vitamin B9", "value": "11 μg" },
+			{ "name": "Choline", "value": "5.1 mg" },
+			{ "name": "Vitamin C", "value": "53 mg" }
+		],
+		"name": "Lemon"
 	}
 ]

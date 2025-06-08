@@ -1,40 +1,13 @@
-import type { MouseEvent, ReactElement } from 'react'
-import type { IFruit } from 'types'
-
 interface Properties {
-	author: IFruit['image']['author']
+	author: string
 }
 
-function onClick(event: MouseEvent): void {
-	event.stopPropagation()
-}
-
-export default function ImageAttribution({ author }: Properties): ReactElement {
+export function ImageAttribution({author}: Properties) {
 	return (
 		<>
-			<div className='absolute top-0 h-full w-full bg-gradient-to-b from-transparent via-transparent to-current text-black text-opacity-50' />
-			<div className='absolute bottom-1 right-1 px-1 text-xs text-white'>
-				<span>Photo by </span>
-				<a
-					data-testid='FruitImageAuthor'
-					href={author.url}
-					target='_blank'
-					rel='noreferrer noopener'
-					className='underline'
-					onClick={onClick}
-				>
-					{author.name}
-				</a>
-				<span> on </span>
-				<a
-					href='https://unsplash.com'
-					target='_blank'
-					rel='noreferrer noopener'
-					className='underline'
-					onClick={onClick}
-				>
-					Unsplash
-				</a>
+			<div className='absolute top-0 h-full w-full bg-linear-to-b from-transparent via-transparent to-current text-black text-opacity-50' />
+			<div className='absolute right-1 bottom-1 px-1 text-sm text-white'>
+				Photo by {author} on Unsplash
 			</div>
 		</>
 	)

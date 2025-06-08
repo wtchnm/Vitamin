@@ -4,13 +4,31 @@
 	class="text-gray-900 antialiased dark:bg-gray-800 dark:text-white"
 >
 	<head>
+		<link
+			rel="preload"
+			href="/Inter.woff2"
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/png" href="/favicon.png" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="description" content="Vitamin" />
-		<meta name="theme-color" content="#42b883" />
+		<meta name="theme-color" content="#BD34FE" />
 		<title>Vitamin</title>
+		<style>
+			@font-face {
+				font-family: Inter;
+				font-style: normal;
+				font-weight: 100 900;
+				font-display: swap;
+				src: url('/Inter.woff2') format('woff2');
+			}
+		</style>
 	</head>
 	<body>
 		<noscript>You need to enable JavaScript to run this app.</noscript>

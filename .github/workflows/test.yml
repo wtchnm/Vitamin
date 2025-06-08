@@ -17,22 +17,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v3.0.0
-        with:
-          version: latest
+      - uses: pnpm/action-setup@v4
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'pnpm'
 
       - name: Install dependencies
-        run: pnpm i && pnpm cypress install
+        run: pnpm i && pnpm playwright install --with-deps
 
       - name: Validate
-        run: pnpm run-p lint test:ci test:e2e:ci
-        env:
-          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
-
-      - name: Upload coverage
-        uses: codecov/codecov-action@v4
+        run: pnpm biome ci && pnpm test:ci && pnpm test:e2e:ci

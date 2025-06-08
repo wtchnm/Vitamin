@@ -1,5 +1,4 @@
-import { setupServer } from 'msw/node'
-import handlers from './handlers'
+import {setupServer} from 'msw/node'
+import {handlers} from './handlers'
 
-const server = setupServer(...handlers)
-export default server
+export const server = setupServer(...handlers)

@@ -1,32 +1,14 @@
 {
-	"css.validate": false,
-	"diffEditor.ignoreTrimWhitespace": false,
-	"editor.codeActionsOnSave": [
-		"source.addMissingImports",
-		"source.fixAll",
-		"source.organizeImports"
-	],
-	"editor.defaultFormatter": "esbenp.prettier-vscode",
-	"editor.foldingImportsByDefault": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.biome": "explicit",
+		"source.organizeImports.biome": "explicit",
+		"source.action.useSortedAttributes.biome": "explicit",
+		"source.action.useSortedKeys.biome": "explicit",
+		"source.action.useSortedProperties.biome": "explicit"
+	},
+	"editor.defaultFormatter": "biomejs.biome",
 	"editor.formatOnSave": true,
 	"editor.tabSize": 2,
-	"files.exclude": {
-		"**/.stylelintcache": true,
-		"**/.eslintcache": true,
-		"**/.gitignore": true,
-		"**/.nyc_output": true,
-		"**/.vscode": true,
-		"**/dist": true,
-		"**/node_modules": true,
-		"**/yarn.lock": true,
-		"**/coverage": true
-	},
-	"files.watcherExclude": {
-		"**/dist": true
-	},
-	"git.enableCommitSigning": true,
-	"javascript.format.enable": false,
-	"stylelint.validate": ["css"],
-	"typescript.disableAutomaticTypeAcquisition": true,
+	"editor.insertSpaces": false,
 	"typescript.tsdk": "node_modules/typescript/lib"
 }

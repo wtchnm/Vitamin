@@ -1,0 +1,50 @@
+{
+	"background_color": "#ffffff",
+	"display": "standalone",
+	"icons": [
+		{
+			"purpose": "maskable",
+			"sizes": "192x192",
+			"src": "/icon-192x192.png",
+			"type": "image/png"
+		},
+		{
+			"sizes": "512x512",
+			"src": "/icon-512x512.png",
+			"type": "image/png"
+		}
+	],
+	"id": "/",
+	"lang": "en",
+	"name": "Vitamin",
+	"scope": "/",
+	"screenshots": [
+		{
+			"form_factor": "narrow",
+			"sizes": "585x1266",
+			"src": "/screenshot-1.webp",
+			"type": "image/png"
+		},
+		{
+			"form_factor": "narrow",
+			"sizes": "585x1266",
+			"src": "/screenshot-2.webp",
+			"type": "image/png"
+		},
+		{
+			"form_factor": "wide",
+			"sizes": "1366x768",
+			"src": "/screenshot-3.webp",
+			"type": "image/png"
+		},
+		{
+			"form_factor": "wide",
+			"sizes": "1366x768",
+			"src": "/screenshot-4.webp",
+			"type": "image/png"
+		}
+	],
+	"short_name": "Vitamin",
+	"start_url": "/",
+	"theme_color": "#BD34FE"
+}

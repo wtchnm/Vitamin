@@ -3,8 +3,9 @@ node_modules
 dist
 dist-ssr
 *.local
-.eslintcache
 coverage
 .nyc_output
-.stylelintcache
-cypress/videos
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

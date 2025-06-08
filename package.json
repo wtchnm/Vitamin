@@ -1,110 +1,68 @@
 {
 	"name": "vitamin",
+	"type": "module",
 	"license": "MIT",
 	"private": true,
 	"version": "0.0.0",
 	"scripts": {
-		"build": "vite build",
-		"commit": "cz",
 		"dev": "vite --open",
-		"prepare": "husky install",
-		"preview": "vite preview",
-		"preview:test": "start-server-and-test preview http://localhost:4173",
 		"test": "vitest",
+		"test:e2e": "playwright test --ui",
 		"test:ci": "vitest run",
-		"test:e2e": "pnpm preview:test 'cypress open'",
-		"test:e2e:headless": "pnpm preview:test 'cypress run'",
-		"test:e2e:ci": "vite build && pnpm preview:test 'cypress run --record'",
-		"format": "prettier -uw --cache --ignore-path .gitignore .",
-		"run-tsc": "tsc",
-		"run-eslint": "eslint --cache --fix --ignore-path .gitignore --ext .ts,.tsx .",
-		"run-stylelint": "stylelint --cache --fix --ignore-path .gitignore **/*.css",
-		"lint": "run-p run-tsc run-eslint run-stylelint",
-		"validate": "run-p lint test:ci test:e2e:headless"
+		"test:e2e:ci": "playwright test",
+		"lint:tsc": "tsc -b",
+		"lint:biome": "biome check --write --unsafe",
+		"lint": "pnpm run \"/lint:./\"",
+		"format": "biome format",
+		"validate": "pnpm lint && pnpm test:ci && pnpm test:e2e:ci",
+		"build": "vite build",
+		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@tanstack/react-query": "5.29.2",
-		"react": "18.2.0",
-		"react-dom": "18.2.0",
-		"react-router-dom": "6.22.3"
+		"@tanstack/react-query": "5.80.6",
+		"@tanstack/react-query-devtools": "5.80.6",
+		"react": "19.1.0",
+		"react-dom": "19.1.0",
+		"react-error-boundary": "6.0.0",
+		"react-router": "7.6.2",
+		"valibot": "1.1.0"
 	},
 	"devDependencies": {
-		"@nabla/vite-plugin-eslint": "2.0.2",
-		"@tailwindcss/forms": "0.5.7",
-		"@testing-library/cypress": "10.0.1",
-		"@testing-library/dom": "10.0.0",
-		"@testing-library/jest-dom": "6.4.2",
-		"@testing-library/react": "15.0.1",
-		"@testing-library/user-event": "14.5.2",
-		"@types/css-mediaquery": "0.1.4",
-		"@types/react": "18.2.76",
-		"@types/react-dom": "18.2.25",
-		"@types/react-router-dom": "5.3.3",
-		"@typescript-eslint/eslint-plugin": "7.6.0",
-		"@typescript-eslint/parser": "7.6.0",
-		"@vitejs/plugin-react": "4.2.1",
-		"@vitest/coverage-istanbul": "1.6.1",
-		"autoprefixer": "10.4.19",
-		"commitizen": "4.3.0",
-		"css-mediaquery": "0.1.2",
-		"cypress": "13.3.1",
-		"cz-conventional-changelog": "3.3.0",
-		"eslint": "8.57.0",
-		"eslint-config-airbnb": "19.0.4",
-		"eslint-config-airbnb-base": "15.0.0",
-		"eslint-config-airbnb-typescript": "18.0.0",
-		"eslint-config-prettier": "9.1.0",
-		"eslint-plugin-cypress": "2.15.1",
-		"eslint-plugin-import": "2.29.1",
-		"eslint-plugin-jsx-a11y": "6.8.0",
-		"eslint-plugin-react": "7.34.1",
-		"eslint-plugin-react-hooks": "4.6.0",
-		"eslint-plugin-react-prefer-function-component": "3.3.0",
-		"eslint-plugin-testing-library": "6.2.0",
-		"eslint-plugin-unicorn": "52.0.0",
-		"husky": "9.0.11",
-		"jsdom": "24.0.0",
-		"lint-staged": "15.2.2",
-		"msw": "2.2.3",
-		"npm-run-all2": "6.1.2",
-		"postcss": "8.4.38",
-		"prettier": "3.2.5",
-		"prettier-plugin-tailwindcss": "0.5.13",
-		"start-server-and-test": "2.0.3",
-		"stylelint": "16.3.1",
-		"stylelint-config-standard": "36.0.0",
-		"tailwindcss": "3.4.3",
-		"typescript": "5.4.5",
-		"vite": "5.4.12",
-		"vite-plugin-pwa": "0.19.8",
-		"vite-tsconfig-paths": "4.3.2",
-		"vitest": "1.6.1",
-		"whatwg-fetch": "3.6.20",
-		"workbox-build": "7.0.0",
-		"workbox-window": "7.0.0"
-	},
-	"browserslist": {
-		"production": "Edge >= 18, Firefox >= 60, Chrome >= 61, Safari >= 11, Opera >= 48",
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version"
-		]
-	},
-	"lint-staged": {
-		"*": "prettier -uw --cache",
-		"*.css": "stylelint --cache --fix",
-		"*.{ts,tsx}": [
-			"eslint --cache --fix",
-			"vitest related --run --coverage=false"
-		]
+		"@biomejs/biome": "2.0.0-beta.6",
+		"@playwright/test": "1.52.0",
+		"@tailwindcss/vite": "4.1.8",
+		"@testing-library/dom": "10.4.0",
+		"@testing-library/jest-dom": "6.6.3",
+		"@testing-library/react": "16.3.0",
+		"@testing-library/user-event": "14.6.1",
+		"@types/node": "22.15.30",
+		"@types/react": "19.1.6",
+		"@types/react-dom": "19.1.6",
+		"@vitejs/plugin-react": "4.5.1",
+		"@vitest/coverage-v8": "3.2.2",
+		"happy-dom": "17.6.3",
+		"msw": "2.10.1",
+		"tailwindcss": "4.1.8",
+		"typescript": "5.8.3",
+		"vite": "6.3.5",
+		"vite-tsconfig-paths": "5.1.4",
+		"vitest": "3.2.2"
 	},
 	"pnpm": {
-		"overrides": {
-			"headers-polyfill": "3.1.2",
-			"micromatch@<4.0.8": ">=4.0.8",
-			"serialize-javascript@<6.0.2": ">=6.0.2",
-			"esbuild@<=0.24.2": ">=0.25.0"
-		}
+		"ignoredBuiltDependencies": [
+			"cypress"
+		],
+		"onlyBuiltDependencies": [
+			"@biomejs/biome",
+			"@tailwindcss/oxide",
+			"esbuild",
+			"msw"
+		]
 	},
-	"packageManager": "pnpm@8.10.0"
+	"packageManager": "pnpm@10.11.1",
+	"msw": {
+		"workerDirectory": [
+			"public"
+		]
+	}
 }

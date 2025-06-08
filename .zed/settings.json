@@ -1,0 +1,20 @@
+{
+	"code_actions_on_format": {
+		"source.fixAll.biome": true,
+		"source.organizeImports.biome": true,
+		"source.action.useSortedAttributes.biome": true,
+		"source.action.useSortedKeys.biome": true,
+		"source.action.useSortedProperties.biome": true
+	},
+	"format_on_save": "on",
+	"tab_size": 2,
+	"hard_tabs": true,
+	"lsp": {
+		"vtsls": {
+			"autoUseWorkspaceTsdk": true,
+			"typescript": {
+				"tsdk": "node_modules/typescript/lib"
+			}
+		}
+	}
+}

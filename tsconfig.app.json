@@ -7,7 +7,8 @@
 		"exactOptionalPropertyTypes": true,
 		"forceConsistentCasingInFileNames": true,
 		"isolatedModules": true,
-		"lib": ["ESNext"],
+		"jsx": "react-jsx",
+		"lib": ["ESNext", "DOM", "DOM.Iterable"],
 		"module": "esnext",
 		"moduleDetection": "force",
 		"moduleResolution": "bundler",
@@ -22,8 +23,9 @@
 		"skipLibCheck": true,
 		"strict": true,
 		"target": "esnext",
-		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+		"tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+		"types": ["@testing-library/jest-dom"],
 		"verbatimModuleSyntax": true
 	},
-	"include": ["vite.config.ts"]
+	"include": ["src"]
 }
