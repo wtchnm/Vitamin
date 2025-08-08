@@ -1,7 +1,7 @@
-import {App} from 'App'
-import {server} from 'mocks/server'
 import {HttpResponse, http} from 'msw'
-import {queryClient, render, screen} from 'test-utils'
+import {App} from './App'
+import {server} from './mocks/server'
+import {queryClient, render, screen} from './test-utils'
 
 it('renders apple', async () => {
 	const {user} = render(<App />)
@@ -16,7 +16,7 @@ it('renders apple', async () => {
 	await expect(screen.findByText('Vitamin K')).resolves.toBeInTheDocument()
 })
 
-it('renders home page when trying to access an invalid fruit', async () => {
+it('redirects home page when trying to access an invalid fruit', async () => {
 	render(<App />, {route: '/invalid-fruit'})
 
 	await expect(screen.findAllByRole('link')).resolves.toHaveLength(6)

@@ -1,6 +1,6 @@
-import type {Fruit as FruitType} from 'api/fruits'
 import {Link} from 'react-router'
-import {useMediaQuery} from 'utils/useMediaQuery'
+import type {Fruit as FruitType} from '@/api/fruits'
+import {useMediaQuery} from '@/utils/useMediaQuery'
 import {ImageAttribution} from './ImageAttribution'
 
 const PREFERRED_IMAGE_WIDTH = 384

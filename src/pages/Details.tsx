@@ -1,9 +1,9 @@
 import {useSuspenseQuery} from '@tanstack/react-query'
-import {getFruits} from 'api/fruits'
-import {Head} from 'components/Head'
-import {ImageAttribution} from 'components/ImageAttribution'
 import {Link, Navigate, useParams} from 'react-router'
-import {useMediaQuery} from 'utils/useMediaQuery'
+import {getFruits} from '@/api/fruits'
+import {Head} from '@/components/Head'
+import {ImageAttribution} from '@/components/ImageAttribution'
+import {useMediaQuery} from '@/utils/useMediaQuery'
 
 const DESKTOP_IMAGE_WIDTH_PERCENTAGE = 0.4
 const MOBILE_IMAGE_HEIGHT_PERCENTAGE = 0.3
@@ -17,7 +17,7 @@ export function Details() {
 		queryKey: ['fruits']
 	})
 
-	const fruit = data.find(
+	const fruit = data?.find(
 		f => f.name.toLowerCase() === fruitName?.toLowerCase()
 	)
 	if (!fruit) {
@@ -50,7 +50,7 @@ export function Details() {
 				</div>
 				<div className='my-8 sm:my-0 sm:ml-16'>
 					<Link className='flex items-center' to='/'>
-						<img alt='' className='h-5 w-5' src='/icons/arrow-left.svg' />
+						<img alt='' height={20} src='/icons/arrow-left.svg' width={20} />
 						<span className='ml-4 text-xl'>Back</span>
 					</Link>
 

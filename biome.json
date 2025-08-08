@@ -50,15 +50,20 @@
 			"linter": {
 				"rules": {
 					"correctness": {
-						"useImportExtensions": "off",
-						"noUndeclaredDependencies": "off"
+						"useImportExtensions": "off"
 					},
 					"nursery": {
-						"noUnresolvedImports": "off",
-						"noUnknownAtRule": "off",
 						"useExplicitType": "off",
 						"useForComponent": "off",
-						"useExportsLast": "off"
+						"noMagicNumbers": "off",
+						"useExportsLast": "off",
+						"noUnresolvedImports": "off",
+						"noSecrets": {
+							"level": "error",
+							"options": {
+								"entropyThreshold": 100
+							}
+						}
 					},
 					"suspicious": {
 						"noReactSpecificProps": "off"
@@ -68,6 +73,7 @@
 						"noNamespaceImport": "off"
 					},
 					"style": {
+						"useBlockStatements": "off",
 						"useNamingConvention": {
 							"level": "error",
 							"options": {

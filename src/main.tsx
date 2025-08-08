@@ -35,5 +35,5 @@ enableMocking()
 		}
 	})
 	.catch(error => {
-		alert(`Failed to enable mocking: ${error}`)
+		throw new Error(`Failed to enable mocking: ${error}`)
 	})

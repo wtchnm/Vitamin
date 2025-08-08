@@ -2,7 +2,7 @@ import process from 'node:process'
 import {defineConfig, devices} from '@playwright/test'
 
 export default defineConfig({
-	forbidOnly: !!process.env.CI,
+	forbidOnly: Boolean(process.env.CI),
 	fullyParallel: true,
 	projects: [
 		{
