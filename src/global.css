@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* biome-ignore lint/nursery/noUnknownAtRule: Tailwind CSS */
 @theme {
 	--font-sans: Inter, sans-serif;
 }

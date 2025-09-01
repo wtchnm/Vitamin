@@ -54,9 +54,6 @@
 					},
 					"nursery": {
 						"useExplicitType": "off",
-						"useForComponent": "off",
-						"noMagicNumbers": "off",
-						"useExportsLast": "off",
 						"noUnresolvedImports": "off",
 						"noSecrets": {
 							"level": "error",
@@ -66,13 +63,17 @@
 						}
 					},
 					"suspicious": {
-						"noReactSpecificProps": "off"
+						"noReactSpecificProps": "off",
+						"noUnknownAtRules": "off"
 					},
 					"performance": {
 						"noImgElement": "off",
-						"noNamespaceImport": "off"
+						"noNamespaceImport": "off",
+						"useSolidForComponent": "off"
 					},
 					"style": {
+						"noMagicNumbers": "off",
+						"useExportsLast": "off",
 						"useBlockStatements": "off",
 						"useNamingConvention": {
 							"level": "error",
