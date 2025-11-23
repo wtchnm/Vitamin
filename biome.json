@@ -11,6 +11,11 @@
 		},
 		"enabled": true
 	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		}
+	},
 	"formatter": {
 		"enabled": true,
 		"indentStyle": "tab"
@@ -55,12 +60,7 @@
 					"nursery": {
 						"useExplicitType": "off",
 						"noUnresolvedImports": "off",
-						"noSecrets": {
-							"level": "error",
-							"options": {
-								"entropyThreshold": 100
-							}
-						}
+						"noJsxLiterals": "off"
 					},
 					"suspicious": {
 						"noReactSpecificProps": "off",
@@ -88,6 +88,14 @@
 								"strictCase": false,
 								"requireAscii": true,
 								"filenameCases": ["camelCase", "kebab-case", "PascalCase"]
+							}
+						}
+					},
+					"security": {
+						"noSecrets": {
+							"level": "error",
+							"options": {
+								"entropyThreshold": 100
 							}
 						}
 					}
