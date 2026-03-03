@@ -4,7 +4,7 @@ export function useMediaQuery(query: string) {
 	const [matches, setMatches] = useState(false)
 
 	useEffect(() => {
-		const mediaQuery = window.matchMedia(query)
+		const mediaQuery = globalThis.matchMedia(query)
 
 		function onMediaQueryChange() {
 			setMatches(mediaQuery.matches)

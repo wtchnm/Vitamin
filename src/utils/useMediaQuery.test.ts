@@ -6,7 +6,7 @@ const MIN_WITDH = 600
 
 describe('useMediaQuery', () => {
 	it('renders', () => {
-		window.happyDOM?.setViewport({
+		globalThis.happyDOM?.setViewport({
 			height: BELOW_MIN_WIDTH,
 			width: BELOW_MIN_WIDTH
 		})
@@ -17,7 +17,7 @@ describe('useMediaQuery', () => {
 		expect(result.current).toBeFalsy()
 
 		act(() =>
-			window.happyDOM?.setViewport({height: MIN_WITDH, width: MIN_WITDH})
+			globalThis.happyDOM?.setViewport({height: MIN_WITDH, width: MIN_WITDH})
 		)
 
 		expect(result.current).toBeTruthy()

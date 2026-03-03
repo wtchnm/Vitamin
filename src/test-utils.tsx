@@ -16,7 +16,7 @@ export function render(
 		reactStrictMode: true
 	}
 ) {
-	window.history.pushState({}, '', route)
+	globalThis.history.pushState({}, '', route)
 
 	return {
 		user: userEvent.setup(),

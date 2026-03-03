@@ -8,12 +8,12 @@ const widths = [360, 1280]
 it.each(
 	widths
 )('should show a list of fruits and then select one with %o viewport', async width => {
-	window.happyDOM?.setViewport({width, height: 720})
+	globalThis.happyDOM?.setViewport({width, height: 720})
 	const {user} = render(<App />, {route: '/'})
 
 	await expect(screen.findAllByRole('link')).resolves.toHaveLength(6)
 
-	const button = await screen.findByRole('link', {name: /Apple/})
+	const button = await screen.findByRole('link', {name: /Apple/u})
 	await user.click(button)
 
 	await expect(screen.findByText('Vitamin K')).resolves.toBeInTheDocument()

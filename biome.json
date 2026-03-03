@@ -55,12 +55,12 @@
 			"linter": {
 				"rules": {
 					"correctness": {
-						"useImportExtensions": "off"
+						"useImportExtensions": "off",
+						"noUnresolvedImports": "off"
 					},
 					"nursery": {
 						"useExplicitType": "off",
-						"noUnresolvedImports": "off",
-						"noJsxLiterals": "off"
+						"noTernary": "off"
 					},
 					"suspicious": {
 						"noReactSpecificProps": "off",
@@ -89,7 +89,8 @@
 								"requireAscii": true,
 								"filenameCases": ["camelCase", "kebab-case", "PascalCase"]
 							}
-						}
+						},
+						"noJsxLiterals": "off"
 					},
 					"security": {
 						"noSecrets": {

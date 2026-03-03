@@ -3,7 +3,5 @@
 import type DetachedWindowApi from 'happy-dom/lib/window/DetachedWindowAPI.js'
 
 declare global {
-	interface Window {
-		happyDOM?: DetachedWindowApi
-	}
+	var happyDOM: DetachedWindowApi | undefined
 }
