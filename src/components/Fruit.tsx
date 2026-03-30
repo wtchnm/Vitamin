@@ -45,9 +45,8 @@ export function Fruit({fruit, index}: Properties) {
 					src={`${fruit.image.url}&w=${
 						imageWidth * window.devicePixelRatio
 					}&h=${imageHeight * window.devicePixelRatio}`}
-					style={{
-						backgroundColor: fruit.image.color
-					}}
+					// biome-ignore lint/nursery/noInlineStyles: dynamic color
+					style={{backgroundColor: fruit.image.color}}
 					width={imageWidth}
 				/>
 				<ImageAttribution author={fruit.image.author} />

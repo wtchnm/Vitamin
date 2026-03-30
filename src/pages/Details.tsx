@@ -41,9 +41,8 @@ export function Details() {
 						fetchPriority='high'
 						height={imageHeight}
 						src={`${fruit.image.url}&w=${imageWidth}&h=${imageHeight}`}
-						style={{
-							backgroundColor: fruit.image.color
-						}}
+						// biome-ignore lint/nursery/noInlineStyles: dynamic color
+						style={{backgroundColor: fruit.image.color}}
 						width={imageWidth}
 					/>
 					<ImageAttribution author={fruit.image.author} />
